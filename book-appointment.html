@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment | EgoCarz</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Main css -->
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div data-include="components/navbar.html"></div>
+
+<!-- Booking Form -->
+<section class="booking my-5">
+  <div class="container">
+    <h2 class="mb-2 text-center">Book an Appointment</h2>
+
+    <div class="row">
+     <div class="col-12 col-md-12">
+        <div class="form-section">
+          <form action="confirmation.html" method="POST">
+            <!-- Car Info -->
+            <div class="form-group">
+              <label for="carInfo">Car</label>
+            <input type="text" id="carInfo" name="carInfo" class="form-control" placeholder="Start typing car name" autocomplete="on">
+            </div>
+
+            <!-- Name -->
+            <div class="form-group">
+              <label for="userName">Your Name</label>
+              <input type="text" id="userName" name="userName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Contact1 -->
+            <div class="form-group">
+              <label for="userContact">Phone</label>
+              <input type="text" id="userContact" name="userContact" class="form-control" placeholder="+234 800 000 0000" required>
+            </div>
+
+             <!-- Contact2 -->
+             <div class="form-group">
+              <label for="userContact">Email</label>
+              <input type="text" id="userContact" name="userContact" class="form-control" placeholder="email@example.com">
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+              <label for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate" name="preferredDate" class="form-control" required>
+            </div>
+
+            <!-- Time -->
+            <div class="form-group">
+              <label for="preferredTime">Preferred Time</label>
+              <input type="time" id="preferredTime" name="preferredTime" class="form-control" required>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="userMessage">Optional Message</label>
+              <textarea id="userMessage" name="userMessage" class="form-control" rows="4" placeholder="Any additional request or info?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Booking</button>
+          </form>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div data-include="components/footer.html"></div>
+ 
+  
+
+<!-- components JS -->
+<script src="js/include.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Get URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const carName = urlParams.get('car');
+
+  if (carName) {
+    document.getElementById('carInfo').value = decodeURIComponent(carName);
+  }
+</script>
+
+</body>
+</html>
