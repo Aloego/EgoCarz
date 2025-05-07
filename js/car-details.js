@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const message = `I want to buy:
       - Car: ${car.name}
       - Price: ₦${Number(car.price.replace(/[^\d]/g, "")).toLocaleString()}
-      - Price: ₦${Number(car.price).toLocaleString()}
       - Mileage: ${car.mileage}
       - Location: ${car.location}
       - Year: ${car.year || "Not specified"}`;
