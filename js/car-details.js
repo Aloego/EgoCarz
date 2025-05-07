@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const carId = urlParams.get("id");
   
     const car = carData.find(c => c.id === carId);
+
+    
   
     if (car) {
       const mainImage = document.getElementById("mainCarImage");
@@ -59,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const message = `I want to buy:
       - Car: ${car.name}
-      - Price: ₦${Number(car.price)}
-      // - Price: ₦${Number(car.price).toLocaleString()}
+      - Price: ₦${Number(car.price.replace(/[^\d]/g, "")).toLocaleString()}
+      - Price: ₦${Number(car.price).toLocaleString()}
       - Mileage: ${car.mileage}
       - Location: ${car.location}
       - Year: ${car.year || "Not specified"}`;
