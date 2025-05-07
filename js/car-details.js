@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       - Year: ${car.year || "Not specified"}`;
 
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = "2348105031064"; // Replace with your WhatsApp number
+        const phoneNumber = "2348105031964"; // Replace with your WhatsApp number
 
         const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
         const waLink = isMobile
