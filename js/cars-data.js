@@ -10,6 +10,7 @@ const carData = [
             "images/CarPhoto3.jpg",
             "images/CarPhoto4.jpg",
           ],
+          year: "2020",
           price: "₦4,000,000",
           mileage: "45,000km",
           location: "Lagos",
