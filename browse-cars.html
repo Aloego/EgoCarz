@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Browse Cars | EgoCarz</title>
 
+  <!-- Open Graph (for Facebook, LinkedIn, etc.) -->
+  
+  <meta property="og:title" content="Browse Affordable Cars | EgoCarz" />
+
+  <meta property="og:description" content="Discover quality cars at great prices across Nigeria. Find your perfect ride today!" />
+  <meta property="og:image" content="https://github.com/Aloego/EgoCarz/blob/main/images/camry2020.jpg" />
+  <meta property="og:url" content="https://aloego.github.io/EgoCarz/browse-cars.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Browse Affordable Cars | EgoCarz" />
+  <meta name="twitter:description" content="Discover quality cars at great prices across Nigeria. Find your perfect ride today!" />
+  <meta name="twitter:image" content="https://github.com/Aloego/EgoCarz/blob/main/images/camry2020.jpg" />
+
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
@@ -32,10 +48,10 @@
 
         <div class="row">
           <div class="col-12 col-md-4 col-lg-4 ml-auto mb-3">
-            <select class="form-control w-50">
-              <option>Sort: Newest</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
+            <select class="form-control w-50" id="sortSelect">
+              <option value="newest" selected>Sort: Newest</option>
+              <option value="priceLow">Price: Low to High</option>
+              <option value="priceHigh">Price: High to Low</option>
             </select>
           </div>
         </div>
@@ -46,18 +62,18 @@
         <div class="col-12 col-md-4 col-lg-3">
           <div class="filters">
             <h5 class="text-nowrap">Filter Cars</h5>
-            <form>
+            <form id="filterForm">
               <div class="form-group">
                 <label>Make</label>
-                <input type="text" class="form-control" placeholder="e.g. Toyota">
+                <input type="text" class="form-control" id="makeFilter" placeholder="e.g. Toyota">
               </div>
               <div class="form-group">
                 <label>Model</label>
-                <input type="text" class="form-control" placeholder="e.g. Camry">
+                <input type="text" class="form-control" id="modelFilter" placeholder="e.g. Camry">
               </div>
               <div class="form-group">
                 <label>Year</label>
-                <select class="form-control">
+                <select class="form-control" id="yearFilter">
                   <option selected>All Years</option>
                   <option>2023</option>
                   <option>2022</option>
@@ -66,7 +82,7 @@
               </div>
               <div class="form-group">
                 <label>Price</label>
-                <select class="form-control">
+                <select class="form-control" id="priceFilter">
                   <option>All</option>
                   <option>₦0 - ₦2M</option>
                   <option>₦2M - ₦5M</option>
@@ -75,11 +91,11 @@
               </div>
               <div class="form-group">
                 <label>Mileage</label>
-                <input type="number" class="form-control" placeholder="Max km">
+                <input type="number" class="form-control" id="mileageFilter" placeholder="Max km">
               </div>
               <div class="form-group">
                 <label>Condition</label>
-                <select class="form-control">
+                <select class="form-control" id="conditionFilter">
                   <option selected>All</option>
                   <option>New</option>
                   <option>Used</option>
@@ -87,9 +103,9 @@
               </div>
               <div class="form-group">
                 <label>Location</label>
-                <input type="text" class="form-control" placeholder="e.g. Lagos">
+                <input type="text" class="form-control" id="locationFilter" placeholder="e.g. Lagos">
               </div>
-              <button class="btn btn-primary btn-block">Apply Filters</button>
+              <button class="btn btn-primary btn-block" type="button">Apply Filters</button>
             </form>
           </div>
         </div>
@@ -107,7 +123,7 @@
           <div class="row" id="carGrid">
               <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card car-card" data-make="Toyota" data-model="Corolla" data-price="4500000">
-                  <img src="images/carPhotos.jpg" class="card-img-top" alt="Toyota Camry">
+                  <img src="images/camry2020.jpg" class="card-img-top" alt="Toyota Camry">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Camry 2020</h5>
                     <p class="card-text">₦4,000,000 • 45,000km • Lagos</p>
@@ -121,10 +137,10 @@
             <!-- More cards -->
               <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card car-card" data-make="Toyota" data-model="Corolla" data-price="4500000">
-                  <img src="images/carWhite.jpg" class="card-img-top" alt="Honda CR-V">
+                  <img src="images/toyotaHighlander5.jpg" class="card-img-top" alt="Honda CR-V">
                   <div class="card-body">
-                    <h5 class="card-title">Honda CR-V 2019</h5>
-                    <p class="card-text">₦5,500,000 • 35,000km • Abuja</p>
+                    <h5 class="card-title">Toyota Highlander XLE</h5>
+                    <p class="card-text">₦40,000,000 • Festac, Lagos</p>
                     <a href="car-details.html?id=car2" class="btn btn-sm btn-primary">View Details</a>
                   </div>
                 </div>
@@ -159,6 +175,15 @@
 
   <!-- components JS -->
 <script src="js/include.js"></script>
+<!-- <script src="js/cars-data.js"></script> -->
+<!-- <script src="js/browse-cars.js"></script> -->
+<!-- <script src="js/browse-cars.js"></script> -->
+
+<!-- <script src="js/browse-cars.js"></script> -->
+
+
+
+
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
