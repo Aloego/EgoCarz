@@ -46,9 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("carPrice").textContent = `Price: ${car.price}`;
       document.getElementById("carMileage").textContent = `Mileage: ${car.mileage}`;
       document.getElementById("carLocation").textContent = `Location: ${car.location}`;
-      document.getElementById("carDescription").textContent = car.description;
-  
-      // document.getElementById("bookButton").href = `book-appointment.html?car=${encodeURIComponent(car.name)}`;
+      document.getElementById("carDescription").textContent = `${car.description}`;
+      document.getElementById("carCondition").textContent = `Condition: ${car.condition}`  || "Not specified";
+
+      
     } else {
       document.querySelector(".car-detail").innerHTML = "<p>Car not found.</p>";
     }
@@ -77,19 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open(waLink, "_blank");
       });
 
+      // Event Listeners for filters and Sorting
+      document.getElementById("applyFilters").addEventListener("click", () => {
+        applyFiltersAndSort();
+      });
+
 });
 
 
 
 
 
-// document.getElementById("carName").textContent = car.name;
-// document.getElementById("carPrice").textContent = `Price: ${car.price}`;
-// document.getElementById("carMileage").textContent = `Mileage: ${car.mileage}`;
-// document.getElementById("carLocation").textContent = `Location: ${car.location}`;
-// document.getElementById("carDescription").textContent = car.description;
 
-
-  
 
 

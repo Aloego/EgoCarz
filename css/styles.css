@@ -33,11 +33,11 @@ header .navbar .navbar-nav .nav-item .nav-link {
       height: 100%;
     }
 
-    header .navbar .navbar-nav .nav-item .nav-link:hover {
+header .navbar .navbar-nav .nav-item .nav-link:hover {
       background-color: #f8f9fa;
       color: #000 !important;
       
-    }
+}
 
     
     /* HomePage styles */
