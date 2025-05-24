@@ -3,7 +3,7 @@ const carData = [
 
         {
           id: "car1",
-          name: "Lexus",
+          name: "Lexus RX 350",
           model: "RX 350",
           year: 2013,
           images: [
