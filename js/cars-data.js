@@ -7,7 +7,7 @@ const carData = [
           model: "RX 350",
           year: 2013,
           images: [
-            "images/lexusrx350_10.jpg",
+            "images/lexusrx350_10.jpeg",
             "images/lexusrx350_1.jpg",
             "images/lexusrx350_2.jpg",
             "images/lexusrx350_3.jpg",
