@@ -7,6 +7,7 @@ const carData = [
           model: "RX 350",
           year: 2013,
           images: [
+            "images/lexusrx350_10.jpg",
             "images/lexusrx350_1.jpg",
             "images/lexusrx350_2.jpg",
             "images/lexusrx350_3.jpg",
@@ -16,7 +17,7 @@ const carData = [
             "images/lexusrx350_7.jpg",
             "images/lexusrx350_8.jpg",
             "images/lexusrx350_9.jpg",
-            "images/lexusrx350_10.jpg",
+            
           ],
           price: "₦27,500,000",
             // mileage: "45,000km",
