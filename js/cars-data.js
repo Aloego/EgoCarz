@@ -63,24 +63,43 @@ const carData = [
 
         {
             id: "car3",
-            name: "Toyota Camry 2020",
-            image: "images/carPhotos.jpg",
-            price: "₦4,000,000",
-            mileage: "45,000km",
+            name: "Toyota Highlander",
+            model: "Highlander XLE",
+            year: 2015,
+            image: ["images/toyotaHighlander2015_xle1.jpeg",
+            "images/toyotaHighlander2015_xle2.jpeg",
+            "images/toyotaHighlander2015_xle3.jpeg",
+            "images/toyotaHighlander2015_xle4.jpeg",
+            "images/toyotaHighlander2015_xle5.jpeg",
+            "images/toyotaHighlander2015_xle6.jpeg",
+            "images/toyotaHighlander2015_xle7.jpeg",
+            "images/toyotaHighlander2015_xle8.jpeg",
+            "images/toyotaHighlander2015_xle9.jpeg",
+            "images/toyotaHighlander2015_xle10.jpeg",
+            "images/toyotaHighlander2015_xle11.jpeg",
+            ],
+            price: "₦30,200,000",
+            // mileage: "45,000km",
             location: "Lagos",
-            description: "This Toyota Camry 2020 is in excellent condition with a clean interior and exterior. Perfect for city and highway driving."
-          },
+            description: "Experience the ultimate in comfort and technology with this Toyota Highlander. Equipped with advanced features such as Keyless Entry, Power Boot, and a Reverse Camera, this car offers both convenience and peace of mind. The modern navigation system ensures you’re always on the right path, while the spacious interior and sleek exterior make every drive enjoyable. Perfect for city commutes and long journeys, this Highlander stands out for its reliability, safety, and style.",
+            condition: "Foreign Used",
+            type: "SUV",
+            fuelType: "Petrol",
+            transmission: "Automatic",
+            },
 
-          {
-            id: "car4",
-            name: "Honda CR-V 2019",
-            image: "images/carWhite.jpg",
-            price: "₦5,500,000",
-            mileage: "35,000km",
-            location: "Abuja",
-            description: "A well-maintained Honda CR-V with great fuel efficiency and advanced safety features. Smooth and reliable."
-          }
-          
+
+
+
+            // {
+            // id: "car4",
+            // name: "Honda CR-V 2019",
+            // image: "images/carWhite.jpg",
+            // price: "₦5,500,000",
+            // mileage: "35,000km",
+            // location: "Abuja",
+            // description: "A well-maintained Honda CR-V with great fuel efficiency and advanced safety features. Smooth and reliable."
+            // }
           // Add more cars here
       
   ];
