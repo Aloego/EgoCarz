@@ -66,7 +66,8 @@ const carData = [
             name: "Toyota Highlander",
             model: "Highlander XLE",
             year: 2015,
-            image: ["images/toyotaHighlander2015_xle1.jpeg",
+            images: [
+            "images/toyotaHighlander2015_xle1.jpeg",
             "images/toyotaHighlander2015_xle2.jpeg",
             "images/toyotaHighlander2015_xle3.jpeg",
             "images/toyotaHighlander2015_xle4.jpeg",
