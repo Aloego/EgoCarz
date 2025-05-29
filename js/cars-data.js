@@ -92,15 +92,35 @@ const carData = [
 
 
 
-            // {
-            // id: "car4",
-            // name: "Honda CR-V 2019",
-            // image: "images/carWhite.jpg",
-            // price: "₦5,500,000",
+            {
+            id: "car4",
+            name: "Toyota Highlander Limited",
+            model: "Highlander",
+            year: 2007,
+            images: [
+             "images/toyotahighlander2007limited01.jpg",
+              "images/toyotahighlander2007limited02.jpg",
+              "images/toyotahighlander2007limited03.jpg",
+              "images/toyotahighlander2007limited04.jpg",
+              "images/toyotahighlander2007limited05.jpg",
+              "images/toyotahighlander2007limited06.jpg",
+              "images/toyotahighlander2007limited07.jpg",
+              "images/toyotahighlander2007limited08.jpg",
+              "images/toyotahighlander2007limited09.jpg",
+              "images/toyotahighlander2007limited10.jpg",
+              "images/toyotahighlander2007limited11.jpg",
+              "images/toyotahighlander2007limited12.jpg",
+              "images/toyotahighlander2007limited13.jpg",
+            ],
+            price: "₦15,000,000",
             // mileage: "35,000km",
-            // location: "Abuja",
-            // description: "A well-maintained Honda CR-V with great fuel efficiency and advanced safety features. Smooth and reliable."
-            // }
+            location: "Lagos",
+            description: "Discover reliability and comfort with this 2007 Toyota Highlander Limited. Featuring a spacious interior, leather seats, and advanced safety features, this SUV is perfect for families and long journeys. Enjoy smooth performance, ample cargo space, and a reputation for durability. Ideal for city driving or road trips, the Highlander Limited offers a blend of luxury and practicality.",
+            condition: "Foreign Used",
+            type: "SUV",
+            fuelType: "Petrol",
+            transmission: "Automatic",
+            }
           // Add more cars here
       
   ];
