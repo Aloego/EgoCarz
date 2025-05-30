@@ -112,6 +112,7 @@ const carData = [
               "images/toyotahighlander2007limited12.jpg",
               "images/toyotahighlander2007limited13.jpg",
             ],
+
             price: "₦15,000,000",
             // mileage: "35,000km",
             location: "Lagos",
@@ -120,7 +121,8 @@ const carData = [
             type: "SUV",
             fuelType: "Petrol",
             transmission: "Automatic",
-            }
+            },
+            
           // Add more cars here
       
   ];
