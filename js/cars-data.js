@@ -1,6 +1,5 @@
 // js/cars-data.js
 const carData = [
-
         {
           id: "car1",
           name: "Lexus RX 350",
@@ -98,19 +97,19 @@ const carData = [
             model: "Highlander",
             year: 2007,
             images: [
-             "images/toyotahighlander2007limited01.jpg",
-              "images/toyotahighlander2007limited02.jpg",
-              "images/toyotahighlander2007limited03.jpg",
-              "images/toyotahighlander2007limited04.jpg",
-              "images/toyotahighlander2007limited05.jpg",
-              "images/toyotahighlander2007limited06.jpg",
-              "images/toyotahighlander2007limited07.jpg",
-              "images/toyotahighlander2007limited08.jpg",
-              "images/toyotahighlander2007limited09.jpg",
-              "images/toyotahighlander2007limited10.jpg",
-              "images/toyotahighlander2007limited11.jpg",
-              "images/toyotahighlander2007limited12.jpg",
-              "images/toyotahighlander2007limited13.jpg",
+              "images/toyotahighlander2007limited_13.jpg",
+               "images/toyotahighlander2007limited_12.jpg",
+              "images/toyotahighlander2007limited_11.jpg", 
+              "images/toyotahighlander2007limited_10.jpg",
+              "images/toyotahighlander2007limited_009.jpg",
+              "images/toyotahighlander2007limited_008.jpg",
+              "images/toyotahighlander2007limited_007.jpg",
+              "images/toyotahighlander2007limited_006.jpg",
+              "images/toyotahighlander2007limited_005.jpg",
+              "images/toyotahighlander2007limited_004.jpg",
+              "images/toyotahighlander2007limited_003.jpg",
+              "images/toyotahighlander2007limited_002.jpg",
+              "images/toyotahighlander2007limited_001.jpg",
             ],
 
             price: "₦15,000,000",
@@ -122,7 +121,7 @@ const carData = [
             fuelType: "Petrol",
             transmission: "Automatic",
             },
-            
+
           // Add more cars here
       
   ];
