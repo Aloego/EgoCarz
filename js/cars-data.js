@@ -27,7 +27,12 @@ const carData = [
             fuelType: "Petrol",
             transmission: "Automatic",
           // VIN: 2345677668675554,
-                
+            // LEXUS RX 350 2013 MODEL FULL OP
+            // REVERSECAMERA
+            // NAVIGATION
+            // POWER BOOT
+            // PARKING ASSIT SENSOR
+            // OriginalPrice: 26.5M
           
         },
 
@@ -57,6 +62,13 @@ const carData = [
             fuelType: "Petrol",
             transmission: "Automatic",
           // VIN: 2345677668675554,
+          // Toyota highlander 2013
+            // Full option
+            // Reverse camera
+            // 3sitter row
+            // Navigation
+            // Keyless
+            // OriginalPrice: 22.5million Naira
         },
 
 
@@ -86,6 +98,13 @@ const carData = [
             type: "SUV",
             fuelType: "Petrol",
             transmission: "Automatic",
+            // VIN: 2345677668675554,
+            // Toyota highlander 2015 xle
+            // OriginalPrice: 29.5m
+            // Keyless
+            // Powerboat
+            // Reverse camera
+            // Navigation
             },
 
 
@@ -120,7 +139,55 @@ const carData = [
             type: "SUV",
             fuelType: "Petrol",
             transmission: "Automatic",
+            // VIN: 2345677668675554,
+            // Toyota highlander 2007 limited
+            // Full option
+            // 3sitter
+            // OriginalPrice: 14million Naira
             },
+
+
+            {
+              id: "car5",
+              name: "Toyota",
+              model: "Venza",
+              year: 2010,
+              images: [
+              "images/toyotaVenza-2010-black_1.jpeg",
+              "images/toyotaVenza-2010-black_2.jpeg",
+              "images/toyotaVenza-2010-black_3.jpeg",
+              "images/toyotaVenza-2010-black_4.jpeg",
+              "images/toyotaVenza-2010-black_5.jpeg",
+              "images/toyotaVenza-2010-black_6.jpeg",
+              "images/toyotaVenza-2010-black_7.jpeg",
+              "images/toyotaVenza-2010-black_8.jpeg",
+              "images/toyotaVenza-2010-black_9.jpeg",
+              "images/toyotaVenza-2010-black_10.jpeg",
+              "images/toyotaVenza-2010-black_11.jpeg",
+              "images/toyotaVenza-2010-black_12.jpeg",
+              ],
+              price: "₦20,000,000",
+              mileage: "101,000km/Hour",
+              location: "Lagos",
+              description: "This 2010 Toyota Venza comes in a sleek black color and is packed with premium features including ALLOYED RIMS, KEYLESS entry, PANORAMIC ROOF, REVERSE CAMERA, and NAVIGATION. The car is as good as new, offering a spacious interior, advanced safety features, and a smooth ride. Perfect for daily commutes or weekend getaways, the Venza combines style, comfort, and modern technology for an exceptional driving experience.",
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+               // Toyota Venza 2010 black
+            //   Mileage-101,000M/HR
+            //   DUTY PAID
+            //   ALLOYED RIMS
+            //   TINCAN
+            //   KEYLESS
+            //   PANORAMIC ROOF
+            //   REVERSECAMERA
+            //   NAVIGATION
+            //   BRANDNEW
+            //   OriginalPrice: 19Million Naira
+            },
+           
 
           // Add more cars here
       
