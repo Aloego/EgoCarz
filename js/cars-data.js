@@ -254,7 +254,7 @@ const carData = [
               // mileage: "101,000km/Hour",
               location: "Lagos",
               description: `<h6> Sleek and Versatile 2010 Pontiac Vibe – Black Hatchback. </h6>
-                Step into style and utility with this 2010 Pontiac Vibe, finished in a clean, glossy black that adds a bold presence on the road. Designed to offer the perfect blend of practicality, fuel efficiency, and sporty appeal, this hatchback stands out with its sharp lines, compact body, and high-roof design — ideal for city driving or weekend getaways.<br>
+                Step into style and utility with this 2010 Pontiac Vibe, finished in a clean, glossy black that adds a bold presence on the road. Designed to offer the perfect blend of practicality, fuel efficiency, and sporty appeal, this hatchback stands out with its sharp lines, compact body, and high-roof design — ideal for city driving or weekend getaways.<br><br>
 
                 <h6>Key Features:</h6>
                     <ul>
@@ -278,9 +278,7 @@ const carData = [
                         Well-maintained body with clear taillights and badging (indicating 2.4L engine and model identity)
                       </li>
                     </ul>
-                Whether you're a student, professional, or small family looking for a reliable, no-nonsense ride with surprising space and personality, this Pontiac Vibe delivers a smooth driving experience in a stylish and dependable package.
-
-`,
+                Whether you're a student, professional, or small family looking for a reliable, no-nonsense ride with surprising space and personality, this Pontiac Vibe delivers a smooth driving experience in a stylish and dependable package.`,
               condition: "Foreign Used",
               type: "Sedan",
               fuelType: "Petrol",
@@ -289,6 +287,37 @@ const carData = [
               // PONTIAC VIBE 2010 black
               //  DUTY PAID
               //  OriginalPrice: 10.5Million Naira
+            },
+
+
+             {
+              id: "car8",
+              name: "Toyota Corolla",
+              model: "Corolla",
+              year: 2010,
+              images: [
+              "images/ToyotaCorolla_1_2010.jpeg",
+              "images/ToyotaCorolla_2_2010.jpeg",
+              "images/ToyotaCorolla_3_2010.jpeg",
+              "images/ToyotaCorolla_4_2010.jpeg",
+              "images/ToyotaCorolla_5_2010.jpeg",
+              "images/ToyotaCorolla_6_2010.jpeg",
+              "images/ToyotaCorolla_7_2010.jpeg",
+              "images/ToyotaCorolla_8_2010.jpeg",
+              "images/ToyotaCorolla_9_2010.jpeg",
+              ],
+              price: "₦12,000,000",
+              // mileage: "101,000km/Hour",
+              location: "Lagos",
+              description: ``,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // Toyota corolla 2010 
+              //  DUTY PAID
+              //  OriginalPrice: 10.9Million Naira
             },
            
 
