@@ -43,8 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   
       document.getElementById("carName").textContent = car.name;
-      document.getElementById("carPrice").textContent = `Price: ${car.price}` ;
-      document.getElementById("carMileage").textContent = `Mileage: ${car.mileage}` || "";
+      document.getElementById("carPrice").textContent = `Price: ${car.price}`;
+      document.getElementById("carYear").textContent = `Year: ${car.year}`;
+      document.getElementById("carMileage").textContent = `Mileage: ${car.mileage}` || "Not Specified";
       document.getElementById("carLocation").textContent = `Location: ${car.location}`;
       document.getElementById("carDescription").innerHTML = `${car.description}`;
       document.getElementById("carCondition").textContent = `Condition: ${car.condition}`  || "Not specified";

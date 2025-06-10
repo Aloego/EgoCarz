@@ -323,5 +323,72 @@ const carData = [
 
           // Add more cars here
       
+           {
+              id: "car9",
+              name: "LEXUS ES 350",
+              model: "ES 350",
+              year: 2014,
+              images: [
+              "images/LEXUS_ES_350_2014_1.jpeg",
+              "images/LEXUS_ES_350_2014_2.jpeg",
+              "images/LEXUS_ES_350_2014_3.jpeg",
+              "images/LEXUS_ES_350_2014_4.jpeg",
+              "images/LEXUS_ES_350_2014_5.jpeg",
+              "images/LEXUS_ES_350_2014_6.jpeg",
+              // "images/LEXUS_ES_350_2014_7.jpeg",
+              "images/LEXUS_ES_350_2014_8.jpeg",
+              "images/LEXUS_ES_350_2014_9.jpeg",
+              "images/LEXUS_ES_350_2014_10.jpeg",
+              "images/LEXUS_ES_350_2014_11.jpeg",
+              ],
+              price: "₦24,000,000",
+              mileage: "94,217km/Hour",
+              location: "Lagos",
+              description: ``,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: LEXUS ES 350 2014  
+              // OriginalPrice: 22.5Million Naira
+            },
+           
+
+          // Add more cars here
+
+
+           {
+              id: "car10",
+              name: "LEXUS ES 350",
+              model: "ES 350",
+              year: 2014,
+              color: "gray",
+              images: [
+              "images/Lexus_Es_350_gray_2014_8.jpeg",
+              "images/Lexus_Es_350_gray_2014_7.jpeg",
+              "images/Lexus_Es_350_gray_2014_6.jpeg",
+              "images/Lexus_Es_350_gray_2014_5.jpeg",
+              "images/Lexus_Es_350_gray_2014_4.jpeg",
+              "images/Lexus_Es_350_gray_2014_3.jpeg",
+              "images/Lexus_Es_350_gray_2014_2.jpeg",
+              "images/Lexus_Es_350_gray_2014_1.jpeg",
+              ],
+              price: "₦24,000,000",
+              // mileage: "101,000km/Hour",
+              location: "Lagos",
+              description: ``,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: LEXUS ES 350 2014  
+              // OriginalPrice: 22.5Million Naira
+            },
+           
+
+          // Add more cars here
+      
   ];
   
