@@ -232,6 +232,67 @@ const carData = [
            
 
           // Add more cars here
+            
+
+           {
+              id: "car7",
+              name: "Pontiac",
+              model: "Vibe",
+              year: 2010,
+              images: [
+              "images/Pontiac_vibe_black_1_2010.jpeg",
+              "images/Pontiac_vibe_black_2_2010.jpeg",
+              "images/Pontiac_vibe_black_3_2010.jpeg",
+              "images/Pontiac_vibe_black_4_2010.jpeg",
+              "images/Pontiac_vibe_black_5_2010.jpeg",
+              "images/Pontiac_vibe_black_6_2010.jpeg",
+              "images/Pontiac_vibe_black_7_2010.jpeg",
+              "images/Pontiac_vibe_black_8_2010.jpeg",
+              "images/Pontiac_vibe_black_9_2010.jpeg",
+              ],
+              price: "₦12,000,000",
+              // mileage: "101,000km/Hour",
+              location: "Lagos",
+              description: `<h2>Sleek and Versatile 2010 Pontiac Vibe – Black Hatchback</h2>
+                Step into style and utility with this 2010 Pontiac Vibe, finished in a clean, glossy black that adds a bold presence on the road. Designed to offer the perfect blend of practicality, fuel efficiency, and sporty appeal, this hatchback stands out with its sharp lines, compact body, and high-roof design — ideal for city driving or weekend getaways.
+
+                <h4>Key Features:<h4>
+                    <ul>
+                      <li>
+                        Black exterior with a modern, aerodynamic shape and roof rails for added cargo versatility
+                      </li>
+
+                      <li>
+                        Spacious interior visible from the open door — offering comfort and easy access
+                      </li>
+
+                      <li>
+                        Fuel-efficient engine for economical daily commutes or long drives
+                      </li>
+
+                      <li>
+                        Hatchback design providing ample trunk space and flexible seating arrangements
+                      </li>
+
+                      <li>
+                        Well-maintained body with clear taillights and badging (indicating 2.4L engine and model identity)
+                      </li>
+                    </ul>
+                Whether you're a student, professional, or small family looking for a reliable, no-nonsense ride with surprising space and personality, this Pontiac Vibe delivers a smooth driving experience in a stylish and dependable package.
+
+`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // PONTIAC VIBE 2010 black
+              //  DUTY PAID
+              //  OriginalPrice: 10.5Million Naira
+            },
+           
+
+          // Add more cars here
       
   ];
   
