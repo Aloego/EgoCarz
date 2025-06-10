@@ -251,7 +251,7 @@ const carData = [
               "images/Pontiac_vibe_black_9_2010.jpeg",
               ],
               price: "₦12,000,000",
-              // mileage: "101,000km/Hour",
+              mileage: ``,
               location: "Lagos",
               description: `<h6> Sleek and Versatile 2010 Pontiac Vibe – Black Hatchback. </h6>
                 Step into style and utility with this 2010 Pontiac Vibe, finished in a clean, glossy black that adds a bold presence on the road. Designed to offer the perfect blend of practicality, fuel efficiency, and sporty appeal, this hatchback stands out with its sharp lines, compact body, and high-roof design — ideal for city driving or weekend getaways.<br><br>
@@ -292,7 +292,7 @@ const carData = [
 
              {
               id: "car8",
-              name: "Toyota Corolla",
+              name: "Toyota Corolla 2010",
               model: "Corolla",
               year: 2010,
               images: [
