@@ -211,7 +211,15 @@ const carData = [
               price: "₦14,000,000",
               // mileage: "101,000km/Hour",
               location: "Lagos",
-              description: "Introducing the 2011 Toyota Camry in a stunning metallic gray finish. The perfect blend of performance, comfort, and durability. This well-maintained sedan is engineered for those who value dependability, fuel efficiency, and elegant style. With its proven track record, the Camry continues to set the standard for mid-size sedans, and this model is no exception. "<br>" "<ul>" "<li>" Powerful yet smooth ride with a responsive engine, "</li>" "<li>" Spacious interior with premium upholstery and ample legroom "</li>" "<li>" Excellent fuel economy \- ideal for both city drives and long journeys "</li>" "<li>" Modern safety features and solid crash-test ratings for peace of mind "</li>" "<li>" Sleek gray exterior that stays sharp and professional in any setting "</li>" Whether you\'re a commuter, a small family, or someone looking for a reliable daily driver, this Toyota Camry offers long-term value without compromise.",
+              description: `Introducing the 2011 Toyota Camry in a stunning metallic gray finish. The perfect blend of performance, comfort, and durability. This well-maintained sedan is engineered for those who value dependability, fuel efficiency, and elegant style. With its proven track record, the Camry continues to set the standard for mid-size sedans, and this model is no exception.  
+              <ul>  
+                <li> Powerful yet smooth ride with a responsive engine</li>
+                <li> Spacious interior with premium upholstery and ample legroom</li> 
+                <li> Excellent fuel economy - ideal for both city drives and long journeys</li>
+                <li> Modern safety features and solid crash-test ratings for peace of mind </li>
+                <li> Sleek gray exterior that stays sharp and professional in any setting </li>
+              </ul>
+              Whether you're a commuter, a small family, or someone looking for a reliable daily ride, this Toyota Camry offers long-term value without compromise.`,
               condition: "Foreign Used",
               type: "Sedan",
               fuelType: "Petrol",
