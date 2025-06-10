@@ -190,6 +190,40 @@ const carData = [
            
 
           // Add more cars here
+            
+
+           {
+              id: "car6",
+              name: "Toyota",
+              model: "Camry",
+              year: 2011,
+              images: [
+              "images/ToyotaCamry_1_gray_2011.jpeg",
+              "images/ToyotaCamry_2_gray_2011.jpeg",
+              "images/ToyotaCamry_3_gray_2011.jpeg",
+              "images/ToyotaCamry_4_gray_2011.jpeg",
+              "images/ToyotaCamry_5_gray_2011.jpeg",
+              "images/ToyotaCamry_6_gray_2011.jpeg",
+              "images/ToyotaCamry_7_gray_2011.jpeg",
+              "images/ToyotaCamry_8_gray_2011.jpeg",
+              "images/ToyotaCamry_9_gray_2011.jpeg",
+              ],
+              price: "₦14,000,000",
+              // mileage: "101,000km/Hour",
+              location: "Lagos",
+              description: "Introducing the 2011 Toyota Camry in a stunning metallic gray finish \– the perfect blend of performance, comfort, and durability\. \n This well\-maintained sedan is engineered for those who value dependability, fuel efficiency, and elegant style. With its proven track record, the Camry continues to set the standard for mid-size sedans, and this 2011 model is no exception. \n Powerful yet smooth ride with a responsive engine \n Spacious interior with premium upholstery and ample legroom \n Excellent fuel economy \- ideal for both city drives and long journeys \n Modern safety features and solid crash-test ratings for peace of mind \n Sleek gray exterior that stays sharp and professional in any setting \n Whether you\'re a commuter, a small family, or someone looking for a reliable daily driver, this Toyota Camry offers long-term value without compromise.",
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // Toyota Camry 2011 gray
+              //  DUTY PAID
+              //  OriginalPrice: 11Million Naira
+            },
+           
+
+          // Add more cars here
       
   ];
   
