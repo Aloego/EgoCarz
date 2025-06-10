@@ -253,10 +253,10 @@ const carData = [
               price: "₦12,000,000",
               // mileage: "101,000km/Hour",
               location: "Lagos",
-              description: `<h2>Sleek and Versatile 2010 Pontiac Vibe – Black Hatchback</h2>
+              description: `<h6> Sleek and Versatile 2010 Pontiac Vibe – Black Hatchback </h6>
                 Step into style and utility with this 2010 Pontiac Vibe, finished in a clean, glossy black that adds a bold presence on the road. Designed to offer the perfect blend of practicality, fuel efficiency, and sporty appeal, this hatchback stands out with its sharp lines, compact body, and high-roof design — ideal for city driving or weekend getaways.
 
-                <h4>Key Features:<h4>
+                <h5>Key Features:</h5>
                     <ul>
                       <li>
                         Black exterior with a modern, aerodynamic shape and roof rails for added cargo versatility
