@@ -422,6 +422,209 @@ const carData = [
            
 
           // Add more cars here
+
+
+          {
+              id: "car12",
+              name: "Hyundai Elantra",
+              model: "Elentra",
+              year: 2013,
+              // color: "gray",
+              images: [
+              "images/HyundaiELANTRA_2013_limited_1.jpeg",
+              "images/HyundaiELANTRA_2013_limited_2.jpeg",
+              "images/HyundaiELENTRA_2013_limited_3.jpeg",
+              "images/HyundaiELANTRA_2013_limited_4.jpeg",
+              "images/HyundaiELANTRA_2013_limited_5.jpeg",
+              "images/HyundaiELANTRA_2013_limited_6.jpeg",
+              "images/HyundaiELANTRA_2013_limited_7.jpeg",
+              "images/HyundaiELANTRA_2013_limited_8.jpeg",
+              ],
+              price: "₦14,000,000",
+              mileage: "92,483 miles",
+              location: "Lagos",
+              description: `keyless entry, power boot, reverse camera, navigation, full option, leather seats, alloyed rims, tinted windows. This 2013 Hyundai Elantra is a perfect blend of style and functionality. It features a spacious interior, advanced safety systems, and a powerful engine. Ideal for family trips or daily commutes, this sedan offers comfort and reliability.`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla 2007  
+              // OriginalPrice: 12Million Naira
+            },
+           
+
+          // Add more cars here
+
+
+          
+          {
+              id: "car13",
+              name: "LEXUS RX 350 F- SPORTS",
+              model: "RX 350",
+              year: 2017,
+              // color: "gray",
+              images: [
+              "images/lexusRX_350_2017_F-SPORTS_1.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_2.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_3.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_4.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_5.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_6.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_7.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_8.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_9.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_10.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_12.jpeg",
+              "images/lexusRX_350_2017_F-SPORTS_13.jpeg",
+              ],
+              price: "₦60,000,000",
+              mileage: "118,516 miles",
+              location: "Lagos",
+              description: `<strong>Experience Luxury and Performance – 2017 Lexus RX 350 F-Sport (Full Option)</strong>
+
+              Elevate your driving experience with this 2017 Lexus RX 350 F-Sport, fully loaded with top-tier features for comfort, safety, and performance. This SUV combines Lexus’ signature reliability with sporty elegance and cutting-edge technology.
+              <ul>
+              <li> Full Option Package – Enjoy every premium feature Lexus has to offer.</li>
+              <li> Blind Spot Monitor (BSM) – Drive with confidence, knowing your surroundings are fully covered.</li>
+              <li< Park Assist & 360° Camera – Maneuver effortlessly with complete visibility and smart assistance.</li>
+              <li> Advanced Navigation System – Reach your destination with precision and ease.</li>
+              <li> Power Boot – Access your cargo space hands-free at the touch of a button.</li>
+              <li> Premium Sound System – Immerse yourself in rich, high-quality audio on every journey.</li>
+              </ul>
+
+              Whether you're navigating city streets or cruising the open highway, this RX 350 F-Sport delivers a smooth, powerful ride with the style and features to match.`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla 2007  
+              // OriginalPrice: 56.5Million Naira
+            },
+           
+
+          // Add more cars here
+
+
+
+          {
+              id: "car14",
+              name: "Honda CRV",
+              model: "CR-V",
+              year: 2011,
+              // color: "gray",
+              images: [
+              "images/HondaCRV_2011_1.jpeg",
+              "images/HondaCRV_2011_2.jpeg",
+              "images/HondaCRV_2011_3.jpeg",
+              "images/HondaCRV_2011_4.jpeg",
+              "images/HondaCRV_2011_5.jpeg",
+              "images/HondaCRV_2011_6.jpeg",
+              "images/HondaCRV_2011_7.jpeg",
+              "images/HondaCRV_2011_8.jpeg",
+              "images/HondaCRV_2011_9.jpeg",
+              "images/HondaCRV_2011_10.jpeg",
+              "images/HondaCRV_2011_11.jpeg",
+              "images/HondaCRV_2011_12.jpeg",
+              "images/HondaCRV_2011_13.jpeg",
+              "images/HondaCRV_2011_14.jpeg",
+              ],
+              price: "₦15,000,000",
+              // mileage: "118,516 miles",
+              location: "Lagos",
+              description: `<strong>Discover the Perfect Blend of Comfort and Versatility – 2011 Honda CRV</strong>
+              Step into a world of reliability and spaciousness with this 2011 Honda CRV. Known for its exceptional build quality and practicality, this SUV is designed to meet the needs of families and adventurers alike. With its roomy interior, advanced safety features, and smooth handling, the CRV is perfect for both city driving and weekend getaways.`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla 2007  
+              // OriginalPrice: 13Million Naira
+            },
+           
+
+          // Add more cars here
+
+
+
+          
+          {
+              id: "car15",
+              name: "Toyota Highlander",
+              model: "Highlander",
+              year: 2009,
+              // color: "gray",
+              images: [
+              "images/toyotaHighlande_2009_1.jpeg",
+              "images/toyotaHighlande_2009_2.jpeg",
+              "images/toyotaHighlande_2009_3.jpeg",
+              "images/toyotaHighlande_2009_4.jpeg",
+              "images/toyotaHighlande_2009_5.jpeg",
+              "images/toyotaHighlande_2009_6.jpeg",
+              "images/toyotaHighlande_2009_7.jpeg",
+              "images/toyotaHighlande_2009_8.jpeg",
+              "images/toyotaHighlande_2009_9.jpeg",
+              "images/toyotaHighlande_2009_10.jpeg",
+              "images/toyotaHighlande_2009_11.jpeg",
+              "images/toyotaHighlande_2009_12.jpeg",
+              ],
+              price: "₦17,000,000",
+              // mileage: "118,516 miles",
+              location: "Lagos",
+              description: `<strong>Experience Reliability and Space – 2009 Toyota Highlander</strong>
+              Discover the perfect family SUV with this 2009 Toyota Highlander. Known for its spacious interior and dependable performance, this vehicle is designed to accommodate your lifestyle. Whether you're commuting in the city or embarking on a road trip, the Highlander offers comfort, safety, and versatility for all your adventures.`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName:   
+              // OriginalPrice: 15Million Naira
+            },
+           
+
+          // Add more cars here
+
+
+          {
+              id: "car16",
+              name: "Lexus ",
+              model: "RX350",
+              year: 2014,
+              // color: "gray",
+              images: [
+              "images/LexusRX_350_2014_1.jpeg",
+              "images/LexusRX_350_2014_2.jpeg",
+              "images/LexusRX_350_2014_3.jpeg",
+              "images/LexusRX_350_2014_4.jpeg",
+              "images/LexusRX_350_2014_5.jpeg",
+              "images/LexusRX_350_2014_6.jpeg",
+              "images/LexusRX_350_2014_7.jpeg",
+              "images/LexusRX_350_2014_8.jpeg",
+              "images/LexusRX_350_2014_9.jpeg",
+              "images/LexusRX_350_2014_10.jpeg",
+              "images/LexusRX_350_2014_11.jpeg",
+              "images/LexusRX_350_2014_12.jpeg",
+              "images/LexusRX_350_2014_13.jpeg",
+              ],
+              price: "₦30,000,000",
+              // mileage: "118,516 miles",
+              location: "Lagos",
+              description: `<strong>Luxury and Performance Combined – 2014 Lexus RX 350</strong>
+              Step into the world of luxury with this 2014 Lexus RX 350. This SUV is designed for those who appreciate elegance and performance. With its spacious interior, advanced technology, and smooth ride, the RX 350 is perfect for everyday commutes including both short and long journeys. Experience the blend of comfort, style, and reliability that Lexus is known for.`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName:   
+              // OriginalPrice: 27.5Million Naira
+            },
+           
+
+          // Add more cars here
       
   ];
   
