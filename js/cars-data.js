@@ -389,6 +389,39 @@ const carData = [
            
 
           // Add more cars here
+
+
+
+           {
+              id: "car11",
+              name: "Toyota Corolla",
+              model: "Corolla",
+              year: 2007,
+              // color: "gray",
+              images: [
+              "images/ToyotaCorolla_2007_1.jpeg",
+              "images/ToyotaCorolla_2007_2.jpeg",
+              "images/ToyotaCorolla_2007_3.jpeg",
+              "images/ToyotaCorolla_2007_4.jpeg",
+              "images/ToyotaCorolla_2007_5.jpeg",
+              "images/ToyotaCorolla_2007_6.jpeg",
+              "images/ToyotaCorolla_2007_7.jpeg",
+              ],
+              price: "₦10,000,000",
+              // mileage: "101,000km/Hour",
+              location: "Lagos",
+              description: ``,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla 2007  
+              // OriginalPrice: 8.7Million Naira
+            },
+           
+
+          // Add more cars here
       
   ];
   
