@@ -7,7 +7,7 @@ const carData = [
           year: 2013,
           images: [
             "images/lexusrx350010.jpeg",
-             "images/lexusrx35009.jpeg",
+            "images/lexusrx35009.jpeg",
             "images/lexusrx35008.jpeg",
             "images/lexusrx35007.jpeg",
             "images/lexusrx35006.jpeg",
@@ -116,8 +116,9 @@ const carData = [
             model: "Highlander",
             year: 2007,
             images: [
+              "images/toyotahighlander2007limited_16.jpeg",
               "images/toyotahighlander2007limited_13.jpg",
-               "images/toyotahighlander2007limited_12.jpg",
+              "images/toyotahighlander2007limited_12.jpg",
               "images/toyotahighlander2007limited_11.jpg", 
               "images/toyotahighlander2007limited_10.jpg",
               "images/toyotahighlander2007limited_009.jpg",
@@ -569,6 +570,7 @@ const carData = [
               "images/toyotaHighlande_2009_10.jpeg",
               "images/toyotaHighlande_2009_11.jpeg",
               "images/toyotaHighlande_2009_12.jpeg",
+              "images/toyotaHighlande_2009_13.jpeg",
               ],
               price: "₦17,000,000",
               // mileage: "118,516 miles",
@@ -625,6 +627,418 @@ const carData = [
            
 
           // Add more cars here
+
+           {
+              id: "car17",
+              name: "Toyota Corolla",
+              model: "Corolla",
+              year: 2015,
+              // color: "gray",
+              images: [
+              "images/toyotaCorolla_2015_1.jpeg",
+              "images/toyotaCorolla_2015_2.jpeg",
+              "images/toyotaCorolla_2015_3.jpeg",
+              "images/toyotaCorolla_2015_4.jpeg",
+              "images/toyotaCorolla_2015_5.jpeg",
+              "images/toyotaCorolla_2015_6.jpeg",
+              "images/toyotaCorolla_2015_7.jpeg",
+              "images/toyotaCorolla_2015_8.jpeg",
+              "images/toyotaCorolla_2015_9.jpeg",
+              "images/toyotaCorolla_2015_10.jpeg",
+              
+              ],
+              price: "₦18,000,000",
+              mileage: "114,636km",
+              location: "Lagos",
+              description: `<strong>Reliable and Efficient – 2015 Toyota Corolla</strong>
+              Discover the perfect compact sedan with this 2015 Toyota Corolla. Known for its reliability and fuel efficiency, this vehicle is ideal for daily commuting and city driving. With its comfortable interior, advanced safety features, and smooth handling, the Corolla offers a dependable and enjoyable driving experience.`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla 2015
+              // OriginalPrice: 16.8Million Naira
+            },
+           
+
+
+           {
+              id: "car18",
+              name: "Toyota",
+              model: "Highlander",
+              year: 2006,
+              // color: "gray",
+              images: [
+              "images/toyotaHighlander_2006_1.jpeg",
+              "images/toyotaHighlander_2006_2.jpeg",
+              "images/toyotaHighlander_2006_3.jpeg",
+              "images/toyotaHighlander_2006_4.jpeg",
+              "images/toyotaHighlander_2006_5.jpeg",
+              "images/toyotaHighlander_2006_6.jpeg",
+              "images/toyotaHighlander_2006_7.jpeg",
+              "images/toyotaHighlander_2006_8.jpeg",
+              "images/toyotaHighlander_2006_9.jpeg",
+              "images/toyotaHighlander_2006_10.jpeg",
+              "images/toyotaHighlander_2006_11.jpeg",
+              ],
+              price: "₦15,000,000",
+              // mileage: "114,636km",
+              location: "Lagos",
+              description: `<strong>Versatile and Spacious – 2006 Toyota Highlander</strong>
+              Experience the reliability and versatility of this 2006 Toyota Highlander. With its spacious interior and comfortable seating, this SUV is perfect for families and those who need extra cargo space. The Highlander is known for its durability and performance, making it a great choice for all kinds of road trips.`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander 2006
+              // OriginalPrice: 12.5Million Naira
+            },
+           
+
+          // Add more cars  starts here
+          
+
+
+           {
+              id: "car19",
+              name: "MERCEDES BENZ",
+              model: "GLK",
+              year: 2014,
+              // color: "gray",
+              images: [
+              "images/MERCEDESBENZ_GLK_1.jpeg",
+              "images/MERCEDESBENZ_GLK_2.jpeg",
+              "images/MERCEDESBENZ_GLK_3.jpeg",
+              "images/MERCEDESBENZ_GLK_4.jpeg",
+              "images/MERCEDESBENZ_GLK_5.jpeg",
+              "images/MERCEDESBENZ_GLK_6.jpeg",
+              "images/MERCEDESBENZ_GLK_7.jpeg",
+              "images/MERCEDESBENZ_GLK_8.jpeg",
+              "images/MERCEDESBENZ_GLK_9.jpeg",
+              "images/MERCEDESBENZ_GLK_10.jpeg", 
+              ],
+              price: "₦26,000,000",
+              // mileage: "114,636km",
+              location: "Lagos",
+              description: `<strong>Luxury and Performance – 2014 Mercedes Benz GLK</strong>
+              Step into the world of luxury with this 2014 Mercedes Benz GLK. This SUV combines elegance, performance, and advanced technology to provide a superior driving experience. With its spacious interior, high-end features, and smooth ride, the GLK is perfect for those who appreciate both style and functionality.`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: MERCEDES BENZ GLK
+              // 2014 FULL OPTION REVERSECAMERA NAVIGATION 
+              // PANORAMIC ROOF
+              // POWER BOOT 
+              // OriginalPrice: 23M
+            },
+           
+
+          // Add more cars ends here
+      
+
+          
+          // Add more cars  starts here
+          
+
+
+           {
+              id: "car20",
+              name: "Toyota Corolla",
+              model: "Corolla LE",
+              year: 2021,
+              // color: "gray",
+              images: [
+              "images/ToyotaCorolla_LE_2021_1.jpeg",
+              "images/ToyotaCorolla_LE_2021_2.jpeg",
+              "images/ToyotaCorolla_LE_2021_3.jpeg",
+              "images/ToyotaCorolla_LE_2021_4.jpeg",
+              "images/ToyotaCorolla_LE_2021_5.jpeg",
+              "images/ToyotaCorolla_LE_2021_6.jpeg",
+              "images/ToyotaCorolla_LE_2021_7.jpeg",
+              "images/ToyotaCorolla_LE_2021_8.jpeg",
+              "images/ToyotaCorolla_LE_2021_9.jpeg",
+              "images/ToyotaCorolla_LE_2021_10.jpeg",
+              "images/ToyotaCorolla_LE_2021_11.jpeg", 
+              "images/ToyotaCorolla_LE_2021_12.jpeg",
+              "images/ToyotaCorolla_LE_2021_13.jpeg",
+              "images/ToyotaCorolla_LE_2021_14.jpeg",
+              "images/ToyotaCorolla_LE_2021_15.jpeg",
+              "images/ToyotaCorolla_LE_2021_16.jpeg",
+              "images/ToyotaCorolla_LE_2021_17.jpeg",
+              ],
+              price: "₦33,000,000",
+              mileage: "8,132miles",
+              location: "Lagos",
+              description: `<strong>Experience Modern Comfort and Efficiency – 2021 Toyota Corolla LE</strong>
+              Discover the perfect blend of style, comfort, and technology with this 2021 Toyota Corolla LE. This compact sedan is designed for those who appreciate modern features and fuel efficiency. With its sleek design, spacious interior, and advanced safety systems, the Corolla LE is ideal for daily commuting and long drives alike.`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla LE 2021
+              // OriginalPrice: 29M
+            },
+           
+
+          // Add more cars ends here
+      
+
+          
+          // Add more cars  starts here
+          
+
+
+           {
+              id: "car21",
+              name: "Toyota Rav4",
+              model: "Rav4 XLE",
+              year: 2015,
+              // color: "gray",
+              images: [
+              "images/ToyotaRav4_2015_xle_1.jpeg",
+              "images/ToyotaRav4_2015_xle_2.jpeg",
+              "images/ToyotaRav4_2015_xle_3.jpeg",
+              "images/ToyotaRav4_2015_xle_4.jpeg",
+              "images/ToyotaRav4_2015_xle_5.jpeg",
+              "images/ToyotaRav4_2015_xle_6.jpeg",
+              "images/ToyotaRav4_2015_xle_7.jpeg",
+              "images/ToyotaRav4_2015_xle_8.jpeg",
+              "images/ToyotaRav4_2015_xle_9.jpeg",
+              "images/ToyotaRav4_2015_xle_10.jpeg",
+              "images/ToyotaRav4_2015_xle_11.jpeg",
+              "images/ToyotaRav4_2015_xle_12.jpeg",
+              ],
+              price: "₦25,000,000",
+              // mileage: "8,132miles",
+              location: "Lagos",
+              description: `<strong>Toyota RAV4 2015 XLE – Reliable Comfort Meets Smart Tech</strong>
+              <p>Experience the perfect blend of style, utility, and technology with this well-maintained Toyota RAV4 2015 XLE. Whether you're commuting in the city or heading out on a road trip, this SUV delivers smooth performance, fuel efficiency, and Toyota’s legendary reliability.<p>
+
+              <h4>Key Features:</h4>
+              
+              <ul>
+                <li>  Reverse Camera – Park and maneuver with ease and confidence, even in tight spots.</li>
+
+                <li>  Built-in Navigation System – Stay on track wherever you go with an intuitive navigation interface.</li>
+
+                <li>  Two Functional Keys – Comes with two original keys for convenience and peace of mind.</li>
+
+                <li> Spacious Interior – Comfortable seating for five with ample cargo space.</li>
+
+                <li> Alloy Wheels & Fog Lights – Stylish design meets practical road performance.</li>
+              </ul>
+
+                <p>This RAV4 is a perfect fit for anyone seeking a dependable SUV with just the right touch of modern features. Ready for immediate inspection!</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Rav4 XLE,
+              // OriginalPrice: 22.5M
+            },
+           
+
+          // Add more cars ends here
+      
+
+          // Add more cars  starts here
+          
+
+
+           {
+              id: "car22",
+              name: "Lexus RX 350",
+              model: "RX 350",
+              year: 2010,
+              // color: "gray",
+              images: [
+              "images/Lexus_RX_350_2010_1.jpeg",
+              "images/Lexus_RX_350_2010_2.jpeg",
+              "images/Lexus_RX_350_2010_3.jpeg",
+              "images/Lexus_RX_350_2010_4.jpeg",
+              "images/Lexus_RX_350_2010_5.jpeg",
+              "images/Lexus_RX_350_2010_6.jpeg",
+              "images/Lexus_RX_350_2010_7.jpeg",
+              "images/Lexus_RX_350_2010_8.jpeg",
+              ],
+              price: "₦25,000,000",
+              mileage: "126,422km",
+              location: "Lagos",
+              description: `<strong> Lexus RX 350 2010 – Luxury, Comfort, and Convenience Combined</strong>
+
+              <p>Drive in style with this clean Lexus RX 350 2010, built for comfort and performance. It comes fully equipped with premium features including:</p>
+              <ul>
+              <li> Reverse Camera for easy parking and safety</li>
+              <li> Built-in Navigation to guide every journey</li>
+              <li>Power Boot for effortless trunk access</li>
+              <li>Keyless Entry & Start for modern convenience</li>
+              <li>Leather Seats for a touch of luxury</li>
+              </ul>
+
+               <p>  Smooth ride, elegant interior, and trusted performance—this SUV is ready for the road.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Lexus RX 350 2010,
+              // OriginalPrice: 21M
+            },
+           
+
+          // Add more cars ends here
+      
+          
+          // Add more cars  starts here
+
+           {
+              id: "car23",
+              name: "Mercedes_Benz",
+              model: "ML 350",
+              year: 2013,
+              // color: "gray",
+              images: [
+              "images/Mercedes_Benz_2013_1.jpeg",
+              "images/Mercedes_Benz_2013_2.jpeg",
+              "images/Mercedes_Benz_2013_3.jpeg",
+              "images/Mercedes_Benz_2013_4.jpeg",
+              "images/Mercedes_Benz_2013_5.jpeg",
+              "images/Mercedes_Benz_2013_6.jpeg",
+              "images/Mercedes_Benz_2013_7.jpeg",
+              "images/Mercedes_Benz_2013_8.jpeg",
+              "images/Mercedes_Benz_2013_9.jpeg",
+              "images/Mercedes_Benz_2013_10.jpeg",
+              "images/Mercedes_Benz_2013_11.jpeg",
+              "images/Mercedes_Benz_2013_12.jpeg",
+              "images/Mercedes_Benz_2013_13.jpeg",              
+              ],
+              price: "₦35,000,000",
+              // mileage: "126,422km",
+              location: "Lagos",
+              description: `<strong> For Sale: 2013 Mercedes-Benz ML 350 | Excellent Condition | Well-Equipped</strong>
+
+<p>Up for sale is a well-maintained 2013 Mercedes-Benz ML 350 — a luxury midsize SUV that offers smooth performance, premium comfort, and timeless style. Powered by a 3.5L V6 engine and 7-speed automatic transmission, this SUV delivers a refined and responsive driving experience.</p>
+
+<h4>Features Include:</h4>
+<ul>
+<li>3.5L V6 engine with 302 hp</li>
+<li>7-speed automatic transmission for smooth shifting</li>
+<li>4MATIC all-wheel drive for enhanced traction and stability</li>
+<li>MB-Tex synthetic leather upholstery</li>
+<li>Power tilt/sliding sunroof</li>
+<li> Navigation system</li>
+<li>Keyless entry and push-button start</li>
+<li> Panoramic sunroof</li>
+</ul>
+
+<p>This ML 350 is in excellent condition inside and out, offering a great balance of luxury, performance, and practicality. Ready to drive and enjoy.</p>
+
+
+<p>Don't miss this opportunity to own a well-equipped Mercedes-Benz SUV at a great price!</p>
+              <p>Contact us today to schedule a viewing or for more information.</p>`,
+
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Mercedes Benz ML 350 2013,
+              // OriginalPrice: 28.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+             // Add more cars  starts here
+
+           {
+              id: "car24",
+              name: "Toyota Highlander_LIMITED(FULL-OPTION)",
+              model: "Highlander",
+              year: 2005,
+              // color: "gray",
+              images: [
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_1.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_2.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_3.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_4.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_5.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_6.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_7.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_8.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_9.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_10.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_11.jpeg",
+              "images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_12.jpeg",              
+              ],
+              price: "₦15,000,000",
+              // mileage: "126,422km",
+              location: "Lagos",
+              description: `<strong>2005 Toyota Highlander Limited Full Option | Reliable and fully loaded </strong>
+This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a smooth ride, spacious interior, and premium features. As a "Full Option" model, it includes leather seats, a sunroof, premium audio system, alloy wheels, and advanced climate control. Known for its reliability and comfort, it's an excellent choice for families or daily commuting.`,
+
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander LIMITED(FULL-OPTION) 2005,
+              // OriginalPrice: 12.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+          
+             // Add more cars  starts here
+
+           {
+              id: "car25",
+              name: "Toyota highlander limited full-option",
+              model: "Highlander",
+              year: 2013,
+              // color: "gray",
+              images: [
+              "images/ToyotaHighlander_2013_limited_1.jpeg",
+              "images/ToyotaHighlander_2013_limited_2.jpeg",
+              "images/ToyotaHighlander_2013_limited_3.jpeg",
+              "images/ToyotaHighlander_2013_limited_4.jpeg",
+              "images/ToyotaHighlander_2013_limited_5.jpeg",
+              "images/ToyotaHighlander_2013_limited_6.jpeg",
+              "images/ToyotaHighlander_2013_limited_7.jpeg",
+              "images/ToyotaHighlander_2013_limited_8.jpeg",
+              "images/ToyotaHighlander_2013_limited_9.jpeg",
+              "images/ToyotaHighlander_2013_limited_10.jpeg",
+              "images/ToyotaHighlander_2013_limited_11.jpeg",
+              "images/ToyotaHighlander_2013_limited_12.jpeg",
+              "images/ToyotaHighlander_2013_limited_13.jpeg",
+              "images/ToyotaHighlander_2013_limited_14.jpeg",              
+              ],
+              price: "₦25,000,000",
+              mileage: "110,734miles",
+              location: "Lagos",
+              description: `<strong>2013 Toyota Highlander Limited Full Option – Luxury and Reliability Combined</strong>
+              <p>Experience the perfect blend of luxury and reliability with this 2013 Toyota Highlander Limited Full Option. This SUV is designed for those who appreciate comfort, space, and advanced features. With its spacious interior, premium materials, and cutting-edge technology, the Highlander Limited is perfect for family trips or daily commutes.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander limited full-option 2013,
+              // OriginalPrice: 22M
+            },
+           
+
+          // Add more cars ends here
+
       
   ];
   

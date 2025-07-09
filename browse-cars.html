@@ -24,6 +24,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
+   <!-- Isotope filters -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
   <!-- Main css -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -92,9 +95,10 @@
               <div class="form-group">
                 <label>Condition</label>
                 <select class="form-control" id="conditionFilter">
-                  <option selected>All</option>
+                  <option value="All" selected>All</option>
                   <option>New</option>
-                  <option>Used</option>
+                  <option>Foreign Used</option>
+                   <option>Naija Used</option>
                 </select>
               </div>
               <div class="form-group">
@@ -116,22 +120,21 @@
           </p>
           <!-- your search didn't match the criteria end -->
             <!-- Car Card -->
-          <div class="row" id="carGrid">
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Lexus" data-model="RX 350" data-price="27500000">
+          <div class="row car-grid" id="carGrid">
+              <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Lexus" data-model="RX 350" data-price="27500000" data-condition="Foreign Used">
                   <img src="images/lexusrx350010.jpeg" class="card-img-top" alt="LEXUS RX 350">
                   <div class="card-body">
                     <h5 class="card-title">LEXUS RX 350</h5>
                     <p class="card-text">₦27,500,000 • Lagos</p>
                     <a href="car-details.html?id=car1" class="btn btn-sm btn-primary">View Details</a>
-
                   </div>
                 </div>
               </div>
 
             <!-- More cards -->
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Highlander" data-price="23500000">
+              <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Highlander" data-price="23500000" data-condition="Foreign Used">
                   <img src="images/toyotahighlander2013.jpeg" class="card-img-top" alt="Toyota Highlander">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Highlander 2013</h5>
@@ -141,8 +144,8 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Highlander XLE" data-price="30200000">
+              <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Highlander XLE" data-price="30200000" data-condition="Foreign Used">
                   <img src="images/toyotaHighlander2015_xle2.jpeg" class="card-img-top" alt="Toyota Highlander XLE 2015">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Highlander XLE</h5>
@@ -153,9 +156,9 @@
               </div>
 
               
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Highlander Limited Edition" data-price="15000000">
-                  <img src="images/toyotahighlander2007limited_13.jpg" class="card-img-top" alt="Toyota Highlander Limited Edition">
+              <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Highlander Limited Edition" data-price="15000000" data-condition="Foreign Used">
+                  <img src="images/toyotahighlander2007limited_16.jpeg" class="card-img-top" alt="Toyota Highlander Limited Edition">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Highlander Limited Edition</h5>
                     <p class="card-text">₦15,000,000 • Lagos</p>
@@ -164,8 +167,8 @@
                 </div>
               </div>
 
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Venza" data-price="20000000">
+              <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Venza" data-price="20000000" data-condition="Foreign Used">
                   <img src="images/toyotaVenza-2010-black_1.jpeg" class="card-img-top" alt="Toyota Venza">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Venza 2010</h5>
@@ -175,8 +178,8 @@
                 </div>
               </div>
 
-               <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Camry"    data-price="14000000">
+               <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Camry"    data-price="14000000" data-condition="Foreign Used">
                   <img src="images/ToyotaCamry_1_gray_2011.jpeg" class="card-img-top" alt="Toyota Camry 2011">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Camry 2011</h5>
@@ -187,8 +190,8 @@
               </div>
 
               <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Pontiac" data-model="Vibe"    data-price="12000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Pontiac" data-model="Vibe"    data-price="12000000" data-condition="Foreign Used">
                   <img src="images/Pontiac_vibe_black_1_2010.jpeg" class="card-img-top" alt="Pontiac Vibe 2010">
                   <div class="card-body">
                     <h5 class="card-title">Pontiac Vibe 2010</h5>
@@ -200,8 +203,8 @@
               <!-- end of new car entry -->
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Corolla"    data-price="12000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Corolla"    data-price="12000000" data-condition="Foreign Used">
                   <img src="images/ToyotaCorolla_1_2010.jpeg" class="card-img-top" alt="Toyota Corolla 2010">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Corolla 2010</h5>
@@ -213,8 +216,8 @@
               <!-- end of new car entry -->
 
               <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Lexus" data-model="ES 350"    data-price="24000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Lexus" data-model="ES 350"    data-price="24000000" data-condition="Foreign Used">
                   <img src="images/LEXUS_ES_350_2014_1.jpeg" class="card-img-top" alt="Lexus ES 350 2014">
                   <div class="card-body">
                     <h5 class="card-title">Lexus ES 350</h5>
@@ -226,8 +229,8 @@
               <!-- end of new car entry -->
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Lexus" data-model="ES 350"    data-price="24000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Lexus" data-model="ES 350"    data-price="24000000" data-condition="Foreign Used">
                   <img src="images/Lexus_Es_350_gray_2014_8.jpeg" class="card-img-top" alt="Lexus ES 350 2014">
                   <div class="card-body">
                     <h5 class="card-title">Lexus ES 350</h5>
@@ -239,8 +242,8 @@
               <!-- end of new car entry -->
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Corolla"    data-price="10000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Corolla"    data-price="10000000" data-condition="Foreign Used">
                   <img src="images/ToyotaCorolla_2007_1.jpeg" class="card-img-top" alt="Toyota Corolla 2007">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Corolla 2007</h5>
@@ -253,8 +256,8 @@
 
 
               <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Hyundai" data-model="Elentra"    data-price="14000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Hyundai" data-model="Elentra"    data-price="14000000" data-condition="Foreign Used">
                   <img src="images/HyundaiELANTRA_2013_limited_3.jpeg" class="card-img-top" alt="Hyundai Elentra 2013">
                   <div class="card-body">
                     <h5 class="card-title">Hyundai Elentra 2013</h5>
@@ -267,8 +270,8 @@
 
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="LEXUS" data-model="RX 350"    data-price="60000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="LEXUS" data-model="RX 350"    data-price="60000000" data-condition="Foreign Used">
                   <img src="images/lexusRX_350_2017_F-SPORTS_1.jpeg" class="card-img-top" alt="lexus rx 350 f-sports 2017">
                   <div class="card-body">
                     <h5 class="card-title">LEXUS RX 350 F-SPORTS</h5>
@@ -281,8 +284,8 @@
 
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="HONDA" data-model="CR-V"    data-price="15000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="HONDA" data-model="CR-V"    data-price="15000000" data-condition="Foreign Used">
                   <img src="images/HondaCRV_2011_1.jpeg"" class="card-img-top" alt="HONDA CR-V 2011">
                   <div class="card-body">
                     <h5 class="card-title">HONDA CR-V 2011</h5>
@@ -294,9 +297,9 @@
               <!-- end of new car entry -->
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="Toyota" data-model="Highlander" data-price="17000000">
-                  <img src="images/toyotaHighlande_2009_1.jpeg" class="card-img-top" alt="Toyota Highlander 2009">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Highlander" data-price="17000000" data-condition="Foreign Used">
+                  <img src="images/toyotaHighlande_2009_13.jpeg" class="card-img-top" alt="Toyota Highlander 2009">
                   <div class="card-body">
                     <h5 class="card-title">Toyota Highlander 2009</h5>
                     <p class="card-text">₦17,000,000 • Lagos</p>
@@ -307,13 +310,138 @@
               <!-- end of new car entry -->
 
                <!--start of new car entry -->
-                 <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card car-card" data-make="LEXUS" data-model="RX 350" data-price="30000000">
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="LEXUS" data-model="RX 350" data-price="30000000" data-condition="Foreign Used">
                   <img src="images/LexusRX_350_2014_1.jpeg" class="card-img-top" alt="Lexus RX 350 2014">
                   <div class="card-body">
                     <h5 class="card-title">LEXUS RX 350</h5>
                     <p class="card-text">₦30,000,000 • Lagos</p>
                     <a href="car-details.html?id=car16" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+
+               <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Corolla" data-price="18000000" data-condition="Foreign Used">
+                  <img src="images/toyotaCorolla_2015_1.jpeg" class="card-img-top" alt="Toyota Corolla 2015">
+                  <div class="card-body">
+                    <h5 class="card-title">Toyota Corolla</h5>
+                    <p class="card-text">₦18,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car17" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+              
+               <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Higlander" data-price="15000000" data-condition="Foreign Used">
+                  <img src="images/toyotaHighlander_2006_1.jpeg" class="card-img-top" alt="Toyota Higlander 2006">
+                  <div class="card-body">
+                    <h5 class="card-title">Toyota Highlander</h5>
+                    <p class="card-text">₦15,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car18" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+
+              <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Mercedes Benz" data-model="GLK" data-price="26000000" data-condition="Foreign Used">
+                  <img src="images/MERCEDESBENZ_GLK_1.jpeg" class="card-img-top" alt="Mercedes Benz GLK">
+                  <div class="card-body">
+                    <h5 class="card-title">Mercedes Benz GLK</h5>
+                    <p class="card-text">₦26,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car19" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+              
+              <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Corolla LE" data-price="33000000" data-condition="Foreign Used" data-year="2021">
+                  <img src="images/ToyotaCorolla_LE_2021_1.jpeg" class="card-img-top" alt="Toyota Corolla LE 2021">
+                  <div class="card-body">
+                    <h5 class="card-title">Toyota Corolla LE</h5>
+                    <p class="card-text">₦33,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car20" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+               
+              <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="Toyota" data-model="Rav4 XLE" data-price="25000000" data-condition="Foreign Used" data-year="2015">
+                  <img src="images/ToyotaRav4_2015_xle_1.jpeg" class="card-img-top" alt="Toyota RAV4 XLE">
+                  <div class="card-body">
+                    <h5 class="card-title">Toyota Rav4 XLE</h5>
+                    <p class="card-text">₦25,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car21" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+               <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="lexus" data-model="rx 350" data-price="25000000" data-condition="Foreign Used" data-year="2010">
+                  <img src="images/Lexus_RX_350_2010_1.jpeg" class="card-img-top" alt="Lexus RX 350 2010">
+                  <div class="card-body">
+                    <h5 class="card-title">Lexus RX 350</h5>
+                    <p class="card-text">₦25,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car22" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+               <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="mercedes benz" data-model="ml 350" data-price="35000000" data-condition="Foreign Used" data-year="2013">
+                  <img src="images/Mercedes_Benz_2013_1.jpeg" class="card-img-top" alt="Mercedes ML 350 2013">
+                  <div class="card-body">
+                    <h5 class="card-title">Mercedes Benz ML 350- full option</h5>
+                    <p class="card-text">₦35,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car23" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+
+                <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="toyota" data-model="Higlander" data-price="15000000" data-condition="Foreign Used" data-year="2005">
+                  <img src="images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_1.jpeg" class="card-img-top" alt="Toyota Highlander LIMITED(FULL-OPTION) 2005">
+                  <div class="card-body">
+                    <h5 class="card-title">2005 Toyota Highlander Limited – Full Option</h5>
+                    </h5>
+                    <p class="card-text">₦15,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car24" class="btn btn-sm btn-primary">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end of new car entry -->
+
+              <!--start of new car entry -->
+                 <div class="car-item col-md-6 col-lg-4 mb-4">
+                <div class="card car-card" data-make="toyota" data-model="Higlander" data-price="25000000" data-condition="Foreign Used" data-year="2013">
+                  <img src="images/ToyotaHighlander_2013_limited_1.jpeg" class="card-img-top" alt="Toyota Highlander LIMITED(FULL-OPTION) 2013">
+                  <div class="card-body">
+                    <h5 class="card-title">2013 Toyota Highlander Limited – Full Option</h5>
+                    </h5>
+                    <p class="card-text">₦25,000,000 • Lagos</p>
+                    <a href="car-details.html?id=car25" class="btn btn-sm btn-primary">View Details</a>
                   </div>
                 </div>
               </div>
@@ -335,28 +463,27 @@
 
 
  
-
-  <!-- components JS -->
-<script src="js/include.js"></script>
-<script src="js/cars-data.js"></script>
-<!-- <script src="js/browse-cars.js"></script> -->
-<!-- <script src="js/browse-cars.js"></script> -->
-
-<!-- <script src="js/browse-cars.js"></script> -->
-
-
-
-
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
+  <!-- components JS -->
+<script src="js/include.js"></script>
+<script src="js/cars-data.js"></script>
+<script src="js/browse-cars.js"></script>
 
-  <script>
-  
 
 
-</script>
+
+
+
+
+
+
+
+
+ 
+
 </body>
 </html>

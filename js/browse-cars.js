@@ -57,104 +57,211 @@
 
 
 
+// OLD filter
+// document.addEventListener("DOMContentLoaded", () => {
+//     const carGrid = document.getElementById("carGrid");
+//     const filterForm = document.getElementById("filterForm");
+//     const sortSelect = document.getElementById("sortSelect");
+//     const noResults = document.getElementById("noResults");
+  
+//     function renderCars(cars) {
+//       carGrid.innerHTML = "";
+//       if (cars.length === 0) {
+//         noResults.style.display = "block";
+//         return;
+//       }
+//       noResults.style.display = "none";
+//       cars.forEach(car => {
+//         const carCard = document.createElement("div");
+//         carCard.className = "col-md-4 col-lg-4 mb-4";
+//         carCard.innerHTML = `
+//           <div class="card car-card">
+//             <img src="${car.image}" class="card-img-top" alt="${car.make} ${car.model}">
+//             <div class="card-body">
+//               <h5 class="card-title">${car.make} ${car.model} ${car.year}</h5>
+//               <p class="card-text">₦${car.price.toLocaleString()} • ${car.mileage.toLocaleString()}km • ${car.location}</p>
+//               <a href="car-details.html?id=${car.id}" class="btn btn-sm btn-primary">View Details</a>
+//             </div>
+//           </div>
+//         `;
+//         carGrid.appendChild(carCard);
+//       });
+//     }
+  
+//     function applyFilters() {
+//       let filteredCars = [...carData];
+//       const make = document.getElementById("makeFilter").value.toLowerCase();
+//       const model = document.getElementById("modelFilter").value.toLowerCase();
+//       const year = document.getElementById("yearFilter").value;
+//       const priceRange = document.getElementById("priceFilter").value;
+//       const mileage = document.getElementById("mileageFilter").value;
+//       const condition = document.getElementById("conditionFilter").value;
+//       const location = document.getElementById("locationFilter").value.toLowerCase();
+  
+//       if (make) {
+//         filteredCars = filteredCars.filter(car => car.make.toLowerCase().includes(make));
+//       }
+//       if (model) {
+//         filteredCars = filteredCars.filter(car => car.model.toLowerCase().includes(model));
+//       }
+//       if (year) {
+//         filteredCars = filteredCars.filter(car => car.year.toString() === year);
+//       }
+//       if (priceRange) {
+//         const [min, max] = priceRange.split("-").map(p => parseInt(p.replace("₦", "").replace("M", "000000")));
+//         filteredCars = filteredCars.filter(car => {
+//           if (max) {
+//             return car.price >= min && car.price <= max;
+//           }
+//           return car.price >= min;
+//         });
+//       }
+//       if (mileage) {
+//         filteredCars = filteredCars.filter(car => car.mileage <= parseInt(mileage));
+//       }
+//       if (condition) {
+//         filteredCars = filteredCars.filter(car => car.condition === condition);
+//       }
+//       if (location) {
+//         filteredCars = filteredCars.filter(car => car.location.toLowerCase().includes(location));
+//       }
+  
+//       return filteredCars;
+//     }
+  
+//     function applySort(cars) {
+//       const sortValue = sortSelect.value;
+//       if (sortValue === "priceLow") {
+//         return cars.sort((a, b) => a.price - b.price);
+//       } else if (sortValue === "priceHigh") {
+//         return cars.sort((a, b) => b.price - a.price);
+//       }
+//       // Default is newest; assuming newer cars have higher year
+//       return cars.sort((a, b) => b.year - a.year);
+//     }
+  
+//     function updateCarDisplay() {
+//       const filtered = applyFilters();
+//       const sorted = applySort(filtered);
+//       renderCars(sorted);
+//     }
+  
+//     filterForm.addEventListener("submit", event => {
+//       event.preventDefault();
+//       updateCarDisplay();
+//     });
+  
+//     sortSelect.addEventListener("change", updateCarDisplay);
+  
+//     // Initial render
+//     renderCars(carData);
+//   });
+  
+//  isotope Javascript 
+ document.addEventListener("DOMContentLoaded", function () {
+     console.log(carData); // to check if it's loaded
+    // your rendering logic here
+    // const container = document.querySelector(".car-grid");
+    
+    // container.innerHTML = ""; // Clear old content first
 
-document.addEventListener("DOMContentLoaded", () => {
-    const carGrid = document.getElementById("carGrid");
-    const filterForm = document.getElementById("filterForm");
-    const sortSelect = document.getElementById("sortSelect");
-    const noResults = document.getElementById("noResults");
-  
-    function renderCars(cars) {
-      carGrid.innerHTML = "";
-      if (cars.length === 0) {
-        noResults.style.display = "block";
-        return;
-      }
-      noResults.style.display = "none";
-      cars.forEach(car => {
-        const carCard = document.createElement("div");
-        carCard.className = "col-md-4 col-lg-4 mb-4";
-        carCard.innerHTML = `
-          <div class="card car-card">
-            <img src="${car.image}" class="card-img-top" alt="${car.make} ${car.model}">
-            <div class="card-body">
-              <h5 class="card-title">${car.make} ${car.model} ${car.year}</h5>
-              <p class="card-text">₦${car.price.toLocaleString()} • ${car.mileage.toLocaleString()}km • ${car.location}</p>
-              <a href="car-details.html?id=${car.id}" class="btn btn-sm btn-primary">View Details</a>
-            </div>
-          </div>
-        `;
-        carGrid.appendChild(carCard);
-      });
-    }
-  
-    function applyFilters() {
-      let filteredCars = [...carData];
-      const make = document.getElementById("makeFilter").value.toLowerCase();
-      const model = document.getElementById("modelFilter").value.toLowerCase();
-      const year = document.getElementById("yearFilter").value;
-      const priceRange = document.getElementById("priceFilter").value;
-      const mileage = document.getElementById("mileageFilter").value;
-      const condition = document.getElementById("conditionFilter").value;
-      const location = document.getElementById("locationFilter").value.toLowerCase();
-  
-      if (make) {
-        filteredCars = filteredCars.filter(car => car.make.toLowerCase().includes(make));
-      }
-      if (model) {
-        filteredCars = filteredCars.filter(car => car.model.toLowerCase().includes(model));
-      }
-      if (year) {
-        filteredCars = filteredCars.filter(car => car.year.toString() === year);
-      }
-      if (priceRange) {
-        const [min, max] = priceRange.split("-").map(p => parseInt(p.replace("₦", "").replace("M", "000000")));
-        filteredCars = filteredCars.filter(car => {
-          if (max) {
-            return car.price >= min && car.price <= max;
-          }
-          return car.price >= min;
-        });
-      }
-      if (mileage) {
-        filteredCars = filteredCars.filter(car => car.mileage <= parseInt(mileage));
-      }
-      if (condition) {
-        filteredCars = filteredCars.filter(car => car.condition === condition);
-      }
-      if (location) {
-        filteredCars = filteredCars.filter(car => car.location.toLowerCase().includes(location));
-      }
-  
-      return filteredCars;
-    }
-  
-    function applySort(cars) {
-      const sortValue = sortSelect.value;
-      if (sortValue === "priceLow") {
-        return cars.sort((a, b) => a.price - b.price);
-      } else if (sortValue === "priceHigh") {
-        return cars.sort((a, b) => b.price - a.price);
-      }
-      // Default is newest; assuming newer cars have higher year
-      return cars.sort((a, b) => b.year - a.year);
-    }
-  
-    function updateCarDisplay() {
-      const filtered = applyFilters();
-      const sorted = applySort(filtered);
-      renderCars(sorted);
-    }
-  
-    filterForm.addEventListener("submit", event => {
-      event.preventDefault();
-      updateCarDisplay();
-    });
-  
-    sortSelect.addEventListener("change", updateCarDisplay);
-  
-    // Initial render
-    renderCars(carData);
+//  carData.forEach(car => {
+//   const item = document.createElement("div");
+//   item.classList.add("car-item");
+//   ``
+
+
+//    const card = document.createElement("div");
+//    card.classList.add("car-card");
+//    card.dataset.make = car.name || "";
+//   card.dataset.model = car.model || "";
+//   card.dataset.price = car.price.replace(/[^\d]/g, ""); // Removes ₦ and commas
+
+//   // Optional: add other dataset fields if needed for filtering
+//   // card.dataset.condition = car.condition;
+//   // card.dataset.location = car.location;
+
+//    card.innerHTML = `
+//      <img src="${car.images[0]}" alt="${car.name}">
+//      <h5>${car.name} ${car.model}</h5>
+//      <p>${car.year} - ${car.price}</p>
+//      <p>${car.location}</p>
+//    `;
+
+//    item.appendChild(card);
+//    container.appendChild(item);
+//  });
+
+
+
+  // Initialize Isotope on the container
+  const iso = new Isotope('.car-grid', {
+    itemSelector: '.car-item',
+    layoutMode: 'fitRows'
   });
-  
- 
+
+  // Filter button logic
+  // document.querySelector('.btn-block').addEventListener('click', function () {
+  //   const make = document.getElementById('makeFilter').value.trim().toLowerCase();
+  //   const model = document.getElementById('modelFilter').value.trim().toLowerCase();
+  //   const year = document.getElementById('yearFilter').value; // Not used here unless you add data-year
+  //   const price = document.getElementById('priceFilter').value;
+  //   const mileage = document.getElementById('mileageFilter').value; // Not used unless data-mileage is added
+  //   const condition = document.getElementById('conditionFilter').value; // Not used unless data-condition is added
+  //   const location = document.getElementById('locationFilter').value.trim().toLowerCase();
+
+  //   iso.arrange({
+  //     filter: function (elem) {
+  //       const card = elem.querySelector('.car-card');
+  //       const data = card.dataset;
+
+  //       const matchMake = !make || data.make.toLowerCase().includes(make);
+  //       const matchModel = !model || data.model.toLowerCase().includes(model);
+
+  //       let matchPrice = true;
+  //       const priceInt = parseInt(data.price);
+  //       if (price === '₦0 - ₦2M') matchPrice = priceInt <= 2000000;
+  //       else if (price === '₦2M - ₦5M') matchPrice = priceInt > 2000000 && priceInt <= 5000000;
+  //       else if (price === '₦5M+') matchPrice = priceInt > 5000000;
+
+  //       const matchLocation = !location || card.innerText.toLowerCase().includes(location);
+
+  //       return matchMake && matchModel && matchPrice && matchLocation;
+  //     }
+  //   });
+  // });
+
+  document.querySelector('.btn-block').addEventListener('click', function () {
+  const make = document.getElementById('makeFilter').value.trim().toLowerCase();
+  const model = document.getElementById('modelFilter').value.trim().toLowerCase();
+  const price = document.getElementById('priceFilter').value;
+  const location = document.getElementById('locationFilter').value.trim().toLowerCase();
+  const condition = document.getElementById('conditionFilter').value; // Not used unless data-condition is added
+
+  iso.arrange({
+    filter: function (elem) {
+      const card = elem.querySelector('.car-card');
+      const data = card.dataset;
+
+      const matchMake = !make || data.make.toLowerCase().includes(make);
+      const matchModel = !model || data.model.toLowerCase().includes(model);
+
+      let matchPrice = true;
+      const priceInt = parseInt(data.price);
+      if (price === '₦0 - ₦2M') matchPrice = priceInt <= 2000000;
+      else if (price === '₦2M - ₦5M') matchPrice = priceInt > 2000000 && priceInt <= 5000000;
+      else if (price === '₦5M+') matchPrice = priceInt > 5000000;
+
+      const matchLocation = !location || card.innerText.toLowerCase().includes(location);
+      // Uncomment if you want to filter by condition
+      const matchCondition = !condition || condition.toLowerCase() === "all" || 
+      (data.condition && data.condition.toLowerCase().includes(condition.toLowerCase()));
+
+     
+
+      return matchMake && matchModel && matchPrice && matchLocation && matchCondition;
+    }
+  });
+});
+
+ });
