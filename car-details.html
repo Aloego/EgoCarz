@@ -6,8 +6,12 @@
   <title>Car Details | EgoCarz</title>
 
   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -57,7 +61,17 @@
               <p id="carFuelType"></p>
               <p id="carTransmission"></p>
       
-              <a id="bookButton" href="#" target="_blank" class="btn btn-primary mt-3">Buy Now</a> 
+              <!-- <a id="bookButton" href="contact.html" target="_blank" class="btn btn-primary mt-3">Buy Now</a>  -->
+              <a id="buyNowBtn" href="contact.html" class="btn btn-primary">Buy Now</a>
+
+
+              <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#buyNowForm">Buy Now
+              </button> -->
+
+              
+               <!-- Your content and Buy Now button -->
+             <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#buyNowForm">Buy Now</button> -->
+              
 
             </div>
           </div>
@@ -76,11 +90,72 @@
 
   <!-- components JS -->
   <script src="js/include.js"></script>
-<!-- Bootstrap JS -->
+    <!-- Bootstrap Local -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap JS CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
 <script src="js/cars-data.js"></script>
 <script src="js/car-details.js"></script>
+
+
+ 
+
+
+
+ <!-- ⬇️ Paste this below — the form modal -->
+<!-- <div class="modal fade" id="buyNowForm" tabindex="-1" role="dialog" aria-labelledby="buyNowFormLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form id="buyForm" class="modal-content" action="https://formspree.io/f/manojnpk" method="POST">
+      <div class="modal-header">
+        <h5 class="modal-title" id="buyNowFormLabel">Request to Buy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="text" name="name" class="form-control mb-2" placeholder="Your Name" required>
+        <input type="email" name="email" class="form-control mb-2" placeholder="Your Email" required>
+        <input type="phone" name="phone" class="form-control mb-2" placeholder="Your Number" required>
+        <textarea name="message" class="form-control mb-2" placeholder="Your message..."></textarea>
+        <input type="hidden" name="product_link" id="productLink">
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Send Request</button>
+      </div>
+    </form>
+  </div>
+</div> -->
+
+  <!-- ⬆️ End of Form -->
+
+
+ 
+
+<!-- <script>
+  $('#buyNowForm').on('show.bs.modal', function () {
+    const currentUrl = window.location.href;
+    $('#productLink').val(currentUrl);
+  });
+</script> -->
+
+<script>
+  const buyNowLink = document.getElementById('buyNowBtn');
+  const currentPage = window.location.href;
+  const encodedPage = encodeURIComponent(currentPage);
+
+  buyNowLink.href = `contact.html?from=${encodedPage}`;
+</script>
+
+
+</body>
+</html>
 
 </body>
 </html>

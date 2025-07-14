@@ -40,36 +40,39 @@ header .navbar .navbar-nav .nav-item .nav-link:hover {
 }
 
     
-    /* HomePage styles */
-     .hero {
-      background: #f0f8ff; 
-      height: 100vh;
-      /* margin: 5rem 0; */
-    
-    } 
+/* HomePage styles */
+  .hero {
+  background: #f0f8ff; 
+  height: 100vh;
+  /* margin: 5rem 0; */
 
-    .heroContent {
-      padding: 14rem 0; 
-    }
+} 
+
+.heroContent {
+  padding: 14rem 0; 
+}
 
 
-    .btn-primary {
-      background-color: #007bff;
-      border-color: #007bff;
-    }
-    .featured-cars {
-      padding: 4rem 0;
-    }
-    .featured-cars .card {
-      transition: transform 0.2s ease-in-out;
-    }
-    .featured-cars .card:hover {
-      transform: scale(1.03);
-    }
-    footer {
-      /* padding: 2rem 0; */
-      padding: 0.2rem 0;
-    }
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.featured-cars {
+  padding: 4rem 0;
+}
+
+
+.featured-cars .card {
+  transition: transform 0.2s ease-in-out;
+}
+.featured-cars .card:hover {
+  transform: scale(1.03);
+}
+footer {
+  /* padding: 2rem 0; */
+  padding: 0.2rem 0;
+}
 
     /* About Page Styles */
     
@@ -122,6 +125,17 @@ header .navbar .navbar-nav .nav-item .nav-link:hover {
     
     .browseCars {
       padding: 4rem 0;
+    }
+
+    .sold {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      color: #fff;
+      background-color: red;
+      font-weight: 900;
+      border-radius: 10px 20px 10px 20px;
+      padding: 5px 10px 5px 10px;
     }
 
 

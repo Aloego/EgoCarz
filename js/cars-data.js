@@ -769,6 +769,7 @@ const carData = [
               "images/ToyotaCorolla_LE_2021_15.jpeg",
               "images/ToyotaCorolla_LE_2021_16.jpeg",
               "images/ToyotaCorolla_LE_2021_17.jpeg",
+              "images/ToyotaCorolla_LE_2021_18.jpeg",
               ],
               price: "₦33,000,000",
               mileage: "8,132miles",
@@ -1034,6 +1035,46 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
               // VIN: 2345677668675554,
               // CarName: Toyota Highlander limited full-option 2013,
               // OriginalPrice: 22M
+            },
+           
+
+          // Add more cars ends here
+
+          
+             // Add more cars  starts here
+
+           {
+              id: "car26",
+              name: "LEXUS",
+              model: "RX 350",
+              year: 2013,
+              // color: "gray",
+              images: [
+              "images/LEXUS_RX_350_2013_1.jpeg",
+              "images/LEXUS_RX_350_2013_2.jpeg",
+              "images/LEXUS_RX_350_2013_3.jpeg",
+              "images/LEXUS_RX_350_2013_4.jpeg",
+              "images/LEXUS_RX_350_2013_5.jpeg",
+              "images/LEXUS_RX_350_2013_6.jpeg",
+              "images/LEXUS_RX_350_2013_7.jpeg",
+              "images/LEXUS_RX_350_2013_8.jpeg",
+              "images/LEXUS_RX_350_2013_9.jpeg",
+              "images/LEXUS_RX_350_2013_10.jpeg",
+              // "images/LEXUS_RX_350_2013_11.jpeg",
+                           
+              ],
+              price: "₦30,000,000",
+              mileage: "89,523Km",
+              location: "Lagos",
+              description: `<strong>2013 Lexus RX 350 – Luxury and Performance in One Package</strong>
+              <p>Step into the world of luxury with this 2013 Lexus RX 350. This SUV is designed for those who appreciate elegance and performance. With its spacious interior, advanced technology, and smooth ride, the RX 350 is perfect for everyday commutes and long journeys alike.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: LEXUS_RX_350_2013,
+              // OriginalPrice: 27.5M
             },
            
 

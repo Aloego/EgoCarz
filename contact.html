@@ -44,17 +44,23 @@
             <label for="email">Email Address</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required/>
           </div>
+
+           <!-- Auto-filled product link -->
+           <div class="form-group col-12">
+              <!-- <input type="text" name="car_link" id="carLinkInput" class="form-control mb-2" readonly> -->
+               <input type="hidden" name="car_link" id="carLinkInput" class="form-control mb-2">
+          </div>
         </div>
         <div class="form-group">
           <label for="message">Your Message</label>
           <textarea class="form-control" id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <button type="submit" class="btn btn-primary btn-block">SEND</button>
       </form>
 
       <!-- Map Placeholder -->
       <div class="map-container text-center">
-        <p class="mt-5"><strong>Our Office:</strong> 123 EgoCarz Avenue, Lagos, Nigeria</p>
+        <p class="mt-5"><strong>Our Office:</strong> Governor's road Ikotun Lagos, Nigeria</p>
         <iframe src="https://maps.google.com/maps?q=Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </div>
@@ -71,5 +77,16 @@
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const fromPage = urlParams.get('from');
+
+  if (fromPage) {
+    document.getElementById('carLinkInput').value = decodeURIComponent(fromPage);
+  }
+</script>
+
 </body>
 </html>
