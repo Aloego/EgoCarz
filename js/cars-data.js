@@ -168,7 +168,7 @@ const carData = [
               "images/toyotaVenza-2010-black_12.jpeg",
               ],
               price: "₦20,000,000",
-              mileage: "101,000km/Hour",
+              mileage: "101,000miles",
               location: "Lagos",
               description: "This 2010 Toyota Venza comes in a sleek black color and is packed with premium features including ALLOYED RIMS, KEYLESS entry, PANORAMIC ROOF, REVERSE CAMERA, and NAVIGATION. The car is as good as new, offering a spacious interior, advanced safety features, and a smooth ride. Perfect for daily commutes or weekend getaways, the Venza combines style, comfort, and modern technology for an exceptional driving experience.",
               condition: "Foreign Used",
@@ -343,7 +343,7 @@ const carData = [
               "images/LEXUS_ES_350_2014_11.jpeg",
               ],
               price: "₦24,000,000",
-              mileage: "94,217km/Hour",
+              mileage: "94,217miles",
               location: "Lagos",
               description: ``,
               condition: "Foreign Used",
@@ -428,7 +428,7 @@ const carData = [
           {
               id: "car12",
               name: "Hyundai Elantra",
-              model: "Elentra",
+              model: "Elantra",
               year: 2013,
               // color: "gray",
               images: [
@@ -442,7 +442,7 @@ const carData = [
               "images/HyundaiELANTRA_2013_limited_8.jpeg",
               ],
               price: "₦14,000,000",
-              mileage: "92,483 miles",
+              mileage: "92,483miles",
               location: "Lagos",
               description: `keyless entry, power boot, reverse camera, navigation, full option, leather seats, alloyed rims, tinted windows. This 2013 Hyundai Elantra is a perfect blend of style and functionality. It features a spacious interior, advanced safety systems, and a powerful engine. Ideal for family trips or daily commutes, this sedan offers comfort and reliability.`,
               condition: "Foreign Used",
@@ -480,7 +480,7 @@ const carData = [
               "images/lexusRX_350_2017_F-SPORTS_13.jpeg",
               ],
               price: "₦60,000,000",
-              mileage: "118,516 miles",
+              mileage: "118,516miles",
               location: "Lagos",
               description: `<strong>Experience Luxury and Performance – 2017 Lexus RX 350 F-Sport (Full Option)</strong>
 
@@ -648,7 +648,7 @@ const carData = [
               
               ],
               price: "₦18,000,000",
-              mileage: "114,636km",
+              mileage: "114,636KM",
               location: "Lagos",
               description: `<strong>Reliable and Efficient – 2015 Toyota Corolla</strong>
               Discover the perfect compact sedan with this 2015 Toyota Corolla. Known for its reliability and fuel efficiency, this vehicle is ideal for daily commuting and city driving. With its comfortable interior, advanced safety features, and smooth handling, the Corolla offers a dependable and enjoyable driving experience.`,
@@ -869,7 +869,7 @@ const carData = [
               "images/Lexus_RX_350_2010_8.jpeg",
               ],
               price: "₦25,000,000",
-              mileage: "126,422km",
+              mileage: "126,422Miles",
               location: "Lagos",
               description: `<strong> Lexus RX 350 2010 – Luxury, Comfort, and Convenience Combined</strong>
 
@@ -1075,6 +1075,751 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
               // VIN: 2345677668675554,
               // CarName: LEXUS_RX_350_2013,
               // OriginalPrice: 27.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+
+          
+             // Add more cars  starts here
+
+           {
+              id: "car27",
+              name: "Hyundai",
+              model: "SantaFe Sports",
+              year: 2017,
+              // color: "gray",
+              images: [
+              "images/2017_Hyundai_SantaFe_Sport_1.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_3.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_4.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_5.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_7.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_8.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_9.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_11.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_12.jpeg",
+              "images/2017_Hyundai_SantaFe_Sport_14.jpeg",
+              ],
+              price: "₦22,500,000",
+              mileage: "67,675miles",
+              location: "Lagos",
+              description: `<strong>Hyundai Santa Fe Sport 2017 – Adventure-Ready & Family-Friendly!</strong>
+              <p>Get ready to turn heads and own the road with this bold and beautiful 2017 Hyundai Santa Fe Sport!
+               Power meets comfort in this sporty SUV – perfect for road trips, city cruising, or school runs in style.</p>
+              
+              <b>Top Features:</b>
+              <ul>
+              <li>Reverse Camera – Park like a pro with eyes behind your back!</li>
+              <li>Built-in Navigation – Never miss a turn, whether you're road-tripping or dodging Lagos traffic!</li>
+              <li>Spacious interior, smooth drive, and great fuel economy.</li>
+              </ul>
+              <p>Price: Just **₦22.5 million** – a sweet deal for a stylish ride like this!</p>
+              <p><em>Ready to upgrade your lifestyle?</em></p>
+              <strong>📞 Call now to book an appointment for a physical inspection.</strong>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: 2017_Hyundai_SantaFe_Sports
+              // OriginalPrice: 19.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+          
+             // Add more cars  starts here
+
+           {
+              id: "car28",
+              name: "Toyota",
+              model: "Rav4",
+              year: 2011,
+              // color: "gray",
+              images: [
+              "images/ToyotaRav4_2011_limited_1.jpeg",
+              "images/ToyotaRav4_2011_limited_2.jpeg",
+              "images/ToyotaRav4_2011_limited_3.jpeg",
+              "images/ToyotaRav4_2011_limited_4.jpeg",
+              "images/ToyotaRav4_2011_limited_5.jpeg",
+              "images/ToyotaRav4_2011_limited_6.jpeg",
+              "images/ToyotaRav4_2011_limited_7.jpeg",
+              "images/ToyotaRav4_2011_limited_8.jpeg",
+              "images/ToyotaRav4_2011_limited_10.jpeg",
+              "images/ToyotaRav4_2011_limited_11.jpeg",
+              "images/ToyotaRav4_2011_limited_12.jpeg",
+              ],
+              price: "₦18,200,000",
+              mileage: "165,221miles",
+              location: "Lagos",
+              description: `<strong>**Toyota RAV4 2011 Limited – Fully Loaded and Ready to Drive**</strong>,
+              <p>If you're looking for a dependable, stylish SUV with all the top features, this **2011 Toyota RAV4 Limited** is the one for you. It’s the full option model, offering comfort, performance, and convenience in one solid package.</p>
+              <b>Key Features:</b>
+              <ul>
+              <li>Keyless Entry & Start – Unlock and start your car without taking the key out of your pocket.</li>
+              <li>Reverse Camera – Park confidently with a clear view of what’s behind you.</li>
+              <li>Built-in Navigation – Find your way easily without needing a mobile GPS.</li>
+              <li>Limited Trim – Premium features like leather seats, alloy wheels, upgraded audio system, and more.</li>
+              </ul>
+              <p>Price: ₦18.2 million — A great value for a top-trim SUV in excellent condition.</p>
+              <p>Toyota RAV4s are known for their durability, fuel efficiency, and strong resale value.</p>
+              <p><em>Ready for inspection? Contact now and make it yours.</em></p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Rav4 
+              // OriginalPrice: 15.2M
+            },
+           
+
+          // Add more cars ends here
+          
+          
+             // Add more cars  starts here
+
+           {
+              id: "car29",
+              name: "Lexus",
+              model: "ES 350",
+              year: 2009,
+              // color: "gray",
+              images: [
+              "images/LEXUS_ES_350_2009_1.jpeg",
+              "images/LEXUS_ES_350_2009_2.jpeg",
+              "images/LEXUS_ES_350_2009_3.jpeg",
+              "images/LEXUS_ES_350_2009_4.jpeg",
+              "images/LEXUS_ES_350_2009_5.jpeg",
+              "images/LEXUS_ES_350_2009_6.jpeg",
+              "images/LEXUS_ES_350_2009_7.jpeg",
+              "images/LEXUS_ES_350_2009_8.jpeg",
+              // "images/LEXUS_ES_350_2009_10.jpeg",
+              "images/LEXUS_ES_350_2009_12.jpeg",
+              "images/LEXUS_ES_350_2009_13.jpeg",
+              ],
+              price: "₦17,500,000",
+              mileage: "110,680miles",
+              location: "Lagos",
+              description: `<strong>**Lexus ES 350 2009 – Luxury, Comfort, and Performance in One Ride**</strong>
+              <p>Step into premium comfort with this well-maintained **Lexus ES 350 2009 model**, a full option sedan designed for those who appreciate class and performance. Known for its smooth ride and timeless design, this car is built to impress both inside and out.</p>
+              <b>Key Features</b>
+              <ul>
+                <li>Full Option – Comes fully loaded with high-end features.</li>
+                <li>Panoramic Roof – Wide glass roof for a more open and airy driving experience.</li>
+                <li>Navigation System – Find your way with ease wherever you go.</li>
+                <li>Reverse Camera – Enhanced visibility and safer parking.</li>
+              </ul>
+              <p>**Price**: ₦17.5 million – A great value for a top-tier luxury sedan in excellent condition.</p>
+              <p>This Lexus offers refined styling, a powerful V6 engine, and a quiet, comfortable interior.</p>
+              <p><em>Ready for inspection? Contact now and enjoy luxury at an unbeatable price.</em></p>`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Lexus ES 350 2009,
+              // OriginalPrice: 14.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+            // Add more cars  starts here
+
+           {
+              id: "car30",
+              name: "Toyota",
+              model: " Corolla LE",
+              year: 2013,
+              // color: "gray",
+              images: [
+              "images/ToyotaCorolla_LE_2013_1.jpeg",
+              "images/ToyotaCorolla_LE_2013_2.jpeg",
+              "images/ToyotaCorolla_LE_2013_3.jpeg",
+              "images/ToyotaCorolla_LE_2013_4.jpeg",
+              "images/ToyotaCorolla_LE_2013_5.jpeg",
+              "images/ToyotaCorolla_LE_2013_6.jpeg",
+              // "images/ToyotaCorolla_LE_2013_8.jpeg",
+              "images/ToyotaCorolla_LE_2013_9.jpeg",
+              "images/ToyotaCorolla_LE_2013_10.jpeg",
+              "images/ToyotaCorolla_LE_2013_11.jpeg",
+              ],
+              price: "₦15,500,000",
+              mileage: "187,810miles",
+              location: "Lagos",
+              description: `<strong>**Toyota Corolla 2013 LE – Reliable, Efficient, and Well-Equipped**</strong>
+              <p>Looking for a fuel-efficient and dependable car with modern features? This **2013 Toyota Corolla LE** is the perfect blend of practicality and comfort, ideal for both daily driving and long-distance trips.</p>
+              <b>Key Features</b>
+              <ul>
+                <li>Reverse Camera – Makes parking and reversing much easier and safer</li>
+                <li>Navigation System – Built-in guidance for stress-free driving</li>
+                <li>Bluetooth Connectivity – Hands-free calls and music streaming on the go</li>
+              </ul>
+
+              <p>**Price**: ₦13.5 million – A solid deal for a clean, well-equipped sedan.</p>
+              <p><em>Well-maintained and ready to hit the road. Contact now for inspection.</em></p>`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla LE 2013,
+              // OriginalPrice: 13.5M
+            },
+           
+
+          // Add more cars ends here
+
+          
+            // Add more cars  starts here
+
+           {
+              id: "car31",
+              name: "Toyota",
+              model: " Corolla Sport",
+              year: 2015,
+              // color: "gray",
+              images: [
+              "images/ToyotaCorollaSport_2015_1.jpeg",
+              "images/ToyotaCorollaSport_2015_2.jpeg",
+              "images/ToyotaCorollaSport_2015_3.jpeg",
+              "images/ToyotaCorollaSport_2015_4.jpeg",
+              "images/ToyotaCorollaSport_2015_5.jpeg",
+              "images/ToyotaCorollaSport_2015_6.jpeg",
+              "images/ToyotaCorollaSport_2015_7.jpeg",
+              "images/ToyotaCorollaSport_2015_8.jpeg",
+              "images/ToyotaCorollaSport_2015_9.jpeg",
+              "images/ToyotaCorollaSport_2015_10.jpeg",
+              "images/ToyotaCorollaSport_2015_11.jpeg",
+              "images/ToyotaCorollaSport_2015_12.jpeg",
+              ],
+              price: "₦19,500,000",
+              mileage: "93,517miles",
+              location: "Lagos",
+              description: `<strong>Toyota Corolla 2015 Sport – Full Option, Sleek and Reliable</strong>
+              <p>Upgrade your drive with this stylish and well-maintained **Toyota Corolla 2015 Sport edition**. Built for comfort and performance, this full-option sedan combines modern tech with Toyota’s trusted reliability.</p>
+
+              <b>Key Features</b>
+              <ul>
+                <li>Full Option – All premium features included</li>
+                <li>Keyless Entry & Start – Unlock and start the car without taking the key out</li>
+                <li>Reverse Camera – Park and reverse with confidence</li>
+                <li>Navigation System – Built-in GPS to keep you on track</li>
+                <li>Bluetooth Connectivity – Enjoy hands-free calls and wireless music streaming</li>
+              </ul>
+              <p>**Price**: ₦19.5 million – A great deal for a fully loaded, fuel-efficient sedan.</p>
+              <p>Perfect for city driving, long-distance travel, or everyday use.</p>
+              <p><em>Available for inspection.</em></p>
+              `,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla Sport 2015,
+              // OriginalPrice: 16.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+             // Add more cars  starts here
+
+           {
+              id: "car32",
+              name: "Lexus ",
+              model: "ES 350",
+              year: 2014,
+              // color: "gray",
+              images: [
+              "images/LEXUS-ES-350-2014_1.jpeg",
+              "images/LEXUS-ES-350-2014_2.jpeg",
+              "images/LEXUS-ES-350-2014_3.jpeg",
+              "images/LEXUS-ES-350-2014_4.jpeg",
+              "images/LEXUS-ES-350-2014_5.jpeg",
+              "images/LEXUS-ES-350-2014_6.jpeg",
+              "images/LEXUS-ES-350-2014_7.jpeg",
+              "images/LEXUS-ES-350-2014_8.jpeg",
+              "images/LEXUS-ES-350-2014_9.jpeg",
+              "images/LEXUS-ES-350-2014_10.jpeg",
+              "images/LEXUS-ES-350-2014_12.jpeg",
+              "images/LEXUS-ES-350-2014_13.jpeg",
+              ],
+              price: "₦27,500,000",
+              // mileage: "93,517miles",
+              location: "Lagos",
+              description: `<strong>Lexus ES 350 2014 – Luxury, Technology, and Comfort in One Powerful Ride</strong>
+              <p>Experience true executive comfort with this **2014 Lexus ES 350 Full Option**, designed to deliver a smooth, quiet ride wrapped in luxury and loaded with intelligent features.</p>
+              <b> Premium Highlights:</b>
+              <ul>
+                <li>Full Option – Every feature you’d expect from a top-tier Lexus</li>
+                <li>Keyless Entry & Push Start – Step in and go with ease</li>
+                <li>Blind Spot Monitor (BSM) – Advanced safety that keeps an extra eye on the road</li>
+                <li>Power Boot (Trunk) – Open and close your boot at the press of a button</li>
+                <li>Ambient Lighting – Stylish interior glow that sets the mood for every drive</li>
+                <li>Reverse Camera – Park with confidence, no matter the space</li>
+              </ul>
+              <p>**Price**: ₦27.5 million – Exceptional value for a luxury sedan in this condition</p>
+              <p>This car is clean, sharp, and built for both class and performance. Whether you're cruising through town or heading out for a long drive, the ES 350 delivers refinement you can feel.</p>
+              <p><em>Now available for inspection and immediate purchase. Serious buyers only.</em></p>`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Lexus ES 350 2014,
+              // OriginalPrice: 24.5M
+            },
+           
+
+          // Add more cars ends here
+
+
+              // Add more cars  starts here
+
+           {
+              id: "car33",
+              name: "Toyota",
+              model: "Highlander Limited",
+              year: 2018,
+              // color: "gray",
+              images: [
+              "images/ToyotaHighlander_Limited_2018_1.jpeg",
+              "images/ToyotaHighlander_Limited_2018_2.jpeg",
+              "images/ToyotaHighlander_Limited_2018_3.jpeg",
+              "images/ToyotaHighlander_Limited_2018_4.jpeg",
+              "images/ToyotaHighlander_Limited_2018_5.jpeg",
+              "images/ToyotaHighlander_Limited_2018_6.jpeg",
+              "images/ToyotaHighlander_Limited_2018_7.jpeg",
+              "images/ToyotaHighlander_Limited_2018_8.jpeg",
+              "images/ToyotaHighlander_Limited_2018_9.jpeg",
+              // "images/ToyotaHighlander_Limited_2018_10.jpeg",
+              "images/ToyotaHighlander_Limited_2018_11.jpeg",
+              "images/ToyotaHighlander_Limited_2018_12.jpeg",
+              "images/ToyotaHighlander_Limited_2018_13.jpeg",
+              "images/ToyotaHighlander_Limited_2018_14.jpeg",
+              "images/ToyotaHighlander_Limited_2018_15.jpeg",
+              // "images/ToyotaHighlander_Limited_2018_16.jpeg",
+              // "images/ToyotaHighlander_Limited_2018_17.jpeg",  
+              "images/ToyotaHighlander_Limited_2018_18.jpeg",
+              // "images/ToyotaHighlander_Limited_2018_19.jpeg",
+              "images/ToyotaHighlander_Limited_2018_20.jpeg",
+              ],
+              price: "₦48,500,000",
+              mileage: "116,739miles",
+              location: "Lagos",
+              description: `<strong>Toyota Highlander 2018 Limited Platinum – Full Option, Top of the Line</strong>
+              <p>Step into unmatched comfort, performance, and technology with this **Toyota Highlander 2018 Limited Platinum Edition**. This is not your average Highlander — it’s the **complete version**, fully loaded with every premium feature Toyota offers.</p>
+              <b> Premium Features:</b>
+              <ul>
+                <li>Limited Platinum Trim – Top-tier luxury and performance</li>
+                <li>Full Option & Complete Version – Nothing left out, every feature included</li>
+                <li>Panoramic Roof – A full-glass view that elevates every drive</li>
+                <li>360-Degree Camera – Total awareness from every angle</li>
+                <li>Ambient Lighting – Stylish interior lighting that adds a premium feel</li>
+                <li>Navigation System – Built-in and ready to guide</li>
+                <li>Park Assist – Smart sensors to help you park like a pro</li>
+                <li>Keyless Entry & Push Start – Convenience at your fingertips</li>
+                <li>Blind Spot Monitor (BSM) – Advanced safety for stress-free lane changes</li>
+              </ul>
+              <p>**Price**: ₦48.5 million — but if you're a serious buyer, just send a message and let's talk.</p>
+              <p>This SUV is sharp, clean, and ready to hit the road. It’s perfect for families, road trips, or anyone who loves driving in comfort and style.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander Limited 2018,
+              // OriginalPrice: 45M
+            },
+           
+
+          // Add more cars ends here
+
+
+          // Add more cars  starts here
+
+           {
+              id: "car34",
+              name: "Toyota",
+              model: "Highlander Limited",
+              year: 2006,
+              // color: "gray",
+              images: [
+              "images/ToyotaHighlander_2006_limited_1.jpeg",
+              "images/ToyotaHighlander_2006_limited_2.jpeg",
+              "images/ToyotaHighlander_2006_limited_3.jpeg",
+              "images/ToyotaHighlander_2006_limited_4.jpeg",
+              "images/ToyotaHighlander_2006_limited_5.jpeg",
+              "images/ToyotaHighlander_2006_limited_6.jpeg",
+              "images/ToyotaHighlander_2006_limited_7.jpeg",
+              "images/ToyotaHighlander_2006_limited_8.jpeg",
+              "images/ToyotaHighlander_2006_limited_9.jpeg",
+              "images/ToyotaHighlander_2006_limited_10.jpeg",
+              // "images/ToyotaHighlander_2006_limited_11.jpeg",
+              ],
+              price: "₦16,000,000",
+              mileage: "140,249KM",
+              location: "Lagos",
+              description: `<strong>Toyota Highlander 2006 Limited – Full Option</strong>
+              <p>Experience comfort, space, and reliability with this 2006 Toyota Highlander Limited.</p>
+              
+              <ul>
+                <li>Full Option – All features for maximum convenience and driving pleasure</li>
+                
+                <li>3 Rows of Seats – Spacious enough for the whole family or extra cargo</li>
+
+                 <li>Formica Interior Finish – Adds a classy touch to the cabin</li>
+
+                 <li>Well-Maintained & Ready to Drive</li>
+              </ul>
+              <p><strong>**Price**: ₦16 million</strong>.</p>
+              <p>A perfect blend of luxury and durability. Buy now to make it yours!</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander Limited 2006,
+              // OriginalPrice: 12.8M
+            },
+           
+
+          // Add more cars ends here
+
+
+          // Add more cars  starts here
+
+           {
+              id: "car35",
+              name: "Toyota",
+              model: "Camry SE",
+              year: 2018,
+              // color: "gray",
+              images: [
+              "images/ToyotaCamry_SE_2018_1.jpeg",
+              "images/ToyotaCamry_SE_2018_2.jpeg",
+              "images/ToyotaCamry_SE_2018_3.jpeg",
+              "images/ToyotaCamry_SE_2018_4.jpeg",
+              "images/ToyotaCamry_SE_2018_5.jpeg",
+              "images/ToyotaCamry_SE_2018_6.jpeg",
+              "images/ToyotaCamry_SE_2018_7.jpeg",
+              // "images/ToyotaCamry_SE_2018_8.jpeg",
+              // "images/ToyotaCamry_SE_2018_9.jpeg",
+              // "images/ToyotaCamry_SE_2018_10.jpeg",
+              "images/ToyotaCamry_SE_2018_11.jpeg",
+              "images/ToyotaCamry_SE_2018_12.jpeg",
+              "images/ToyotaCamry_SE_2018_13.jpeg",
+              ],
+              price: "₦35,000,000",
+              mileage: "108,200Miles",
+              location: "Lagos",
+              description: `<strong>Toyota Camry 2018 SE – Sweet, Stylish & Ready to Impress</strong>
+              <p>Fall in love with this 2018 Toyota Camry SE, built for comfort, safety, and style.</p>
+              <b> Premium Features:</b>
+              <ul>
+                <li>Keyless Entry & Start – Convenience at your fingertips</li>
+                
+                <li> Reverse Camera – Park and maneuver with ease</li>
+
+                <li> Navigation System – Always find your way with confidence</li>
+
+                <li>Blind Spot Monitor (BSM) – Drive safer with advanced awareness</li>
+
+                <li>Sleek, Sporty Design – Modern look that turns heads</li>
+                  
+              </ul>
+              <p><strong>**Price**:  ₦35M</strong>.</p>
+              <p>A perfect blend of performance and elegance. Buy now – this beauty won’t last long!</p>`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Camry 2018 SE,
+              // OriginalPrice: 30M
+            },
+           
+
+          // Add more cars ends here
+
+          
+          // Add more cars  starts here
+
+           {
+              id: "car36",
+              name: "Toyota",
+              model: "Corolla LE",
+              year: 2021,
+              // color: "gray",
+              images: [
+              "images/toyotacorolla_LE_2021_1.jpeg",
+              "images/toyotacorolla_LE_2021_2.jpeg",
+              "images/toyotacorolla_LE_2021_3.jpeg",
+              "images/toyotacorolla_LE_2021_4.jpeg",
+              "images/toyotacorolla_LE_2021_5.jpeg",
+              // "images/toyotacorolla_LE_2021_6.jpeg",
+              "images/toyotacorolla_LE_2021_7.jpeg",
+              "images/toyotacorolla_LE_2021_8.jpeg",
+              "images/toyotacorolla_LE_2021_9.jpeg",
+              "images/toyotacorolla_LE_2021_10.jpeg",
+              "images/toyotacorolla_LE_2021_11.jpeg",
+              "images/toyotacorolla_LE_2021_12.jpeg",
+              "images/toyotacorolla_LE_2021_13.jpeg",
+              // "images/toyotacorolla_LE_2021_14.jpeg",`
+              ],
+              price: "₦34,000,000",
+              // mileage: "108,200Miles",
+              location: "Lagos",
+              description: `<strong>Toyota Corolla 2021 LE – Modern, Efficient & Safe</strong>
+              <p>Step into comfort and smart driving with this 2021 Toyota Corolla LE, built for everyday excellence.</p>
+              <b> Premium Features:</b>
+              <ul>
+                <li>Reverse Camera – Easy parking and safer maneuvering</li>
+
+                <li> ECO System – Fuel-efficient performance that saves you money</li>
+
+                <li>Blind Spot Monitor (BSM) – Drive safer with advanced awareness</li>
+
+                <li>Sleek & Stylish – A design that turns heads everywhere you go</li>
+                  
+              </ul>
+              <p><strong>**Price**:  ₦34M</strong>.</p>
+              <p>Reliable, economical, and ready to hit the road. Buy Now to make it yours!</p>`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Corolla LE 2021,
+              // OriginalPrice: 28.5M
+            },
+           
+          // Add more cars ends here
+
+
+           // Add more cars  starts here
+
+           {
+              id: "car37",
+              name: "Lexus",
+              model: "RX 350",
+              year: 2018,
+              color: "Metalic LITE GOLD",
+              images: [
+              "images/LEXUS_RX_350_2018_FullOption_1.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_2.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_3.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_4.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_5.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_6.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_7.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_8.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_9.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_10.jpeg",
+              "images/LEXUS_RX_350_2018_FullOption_11.jpeg",
+              ],
+              price: "₦50,000,000",
+              // mileage: "108,200Miles",
+              location: "Lagos",
+              description: `<strong>Lexus RX 350 2018 – Full Option Luxury SUV</strong>
+              <p>Drive in elegance and power with this 2018 Lexus RX 350 Full Option, finished in a stunning Metallic Lite Gold that radiates class.</p>
+              <b> Premium Features:</b>
+              <ul>
+                <li>Full Option – All the comfort and tech you could ask for</li>
+
+                <li> Alloy Rims – Stylish and durable for a smooth ride</li>
+
+                <li>Reverse Camera & Sonar Parking Assist – Park with total confidence</li>
+
+                <li>Navigation System – Stay on course effortlessly</li>
+
+                <li>Brand New Tires – Ready for any journey</li>
+
+                <li>Power Boot & Keyless Entry – Convenience at your fingertips</li>
+
+              </ul>
+              <p><strong>**Price**:  ₦50M</strong>.</p>
+              <p>A perfect blend of performance, luxury, and reliability. Buy now to make this beauty yours.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Lexus RX 350 2018 Full Option,
+              // OriginalPrice: 47M
+            },
+           
+
+          // Add more cars ends here
+
+          // Add more cars  starts here
+
+           {
+              id: "car38",
+              name: "Mercedes-Benz",
+              model: "GLE",
+              year: 2018,
+              // color: "Metalic LITE GOLD",
+              images: [
+              "images/MercedesBenz_GLE_2018_fullOption_1.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_2.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_3.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_4.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_5.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_6.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_7.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_8.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_9.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_10.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_11.jpeg",
+              "images/MercedesBenz_GLE_2018_fullOption_12.jpeg",
+              ],
+              price: "₦50,000,000",
+              // mileage: "108,200Miles",
+              location: "Lagos",
+              description: `<strong>Mercedes-Benz GLE 2018 – Full Option Luxury SUV</strong>
+              <p>Experience the perfect mix of power, elegance, and advanced technology with this 2018 Mercedes-Benz GLE Full Option.</p>
+              <b> Premium Features:</b>
+              <ul>
+
+                 <li>Keyless Entry & Start – Convenience at your fingertips</li>
+
+                <li>Full Option – All the comfort and tech you could ask for</li>
+
+                <li> Panoramic Roof – Enjoy wide-open views and natural light</li>
+
+                <li>360° Camera – Full visibility for safer driving and parking</li>
+
+                <li>Luxury Interior & Smooth Ride – Crafted for comfort and style</li>
+
+                <li>and More</li>
+
+              </ul>
+              <p><strong>**Price**:  ₦50M</strong>.</p>
+              <p>Step into German engineering at its finest. Buy now to own this masterpiece.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Mercedes-Benz GLE 2018 Full Option,
+              // OriginalPrice: 45M
+            },
+           
+
+          // Add more cars ends here
+
+
+          // Add more cars  starts here
+
+           {
+              id: "car39",
+              name: "Mercedes-Benz",
+              model: "GLK",
+              year: 2010,
+              // color: "Metalic LITE GOLD",
+              images: [
+              "images/MERCEDES-BENZ_GLK_2010_1.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_2.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_3.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_4.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_5.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_6.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_7.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_8.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_9.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_10.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_11.jpeg",
+              "images/MERCEDES-BENZ_GLK_2010_12.jpeg",
+              // "images/MERCEDES-BENZ_GLK_2010_13.jpeg",
+              ],
+              price: "₦25,000,000",
+              // mileage: "108,200Miles",
+              location: "Lagos",
+              description: `<strong>Mercedes-Benz GLK 2010 – Luxury, Comfort & Style</strong>
+              <p>Enjoy German engineering at its finest with this 2010 Mercedes-Benz GLK, built for drivers who value performance and elegance.</p>
+              <b> Premium Features:</b>
+              <ul>
+
+                 <li>Reverse Camera – Park and maneuver with ease</li>
+
+                <li>Power Boot – Convenience with just a touch</li>
+
+                <li> Panoramic Roof – Let in the light and fresh air</li>
+
+                <li>Foldable Side Mirrors – Sleek design and easy parking</li>
+
+                <li>and More</li>
+
+              </ul>
+              <p><strong>**Price**:  ₦25M</strong>.</p>
+              <p>Well-maintained and ready for the road. Call or chat now to make it yours!</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Mercedes-Benz GLE 2018 Full Option,
+              // OriginalPrice: 18.3M
+            },
+           
+
+          // Add more cars ends here
+
+          // Add more cars  starts here
+
+           {
+              id: "car40",
+              name: "Toyota",
+              model: "Yaris",
+              year: 2008,
+              // color: "Metalic LITE GOLD",
+              images: [
+              "images/ToyotaYarix_1.jpeg",
+              "images/ToyotaYarix_2.jpeg",
+              "images/ToyotaYarix_3.jpeg",
+              "images/ToyotaYarix_4.jpeg",
+              "images/ToyotaYarix_5.jpeg",
+              "images/ToyotaYarix_6.jpeg",
+              "images/ToyotaYarix_7.jpeg",
+              "images/ToyotaYarix_8.jpeg",
+              "images/ToyotaYarix_9.jpeg",
+              "images/ToyotaYarix_10.jpeg",
+              // "images/ToyotaYarix_11.jpeg",
+              ],
+              price: "₦9,000,000",
+              mileage: "111,354KM",
+              location: "Lagos",
+              description: `<strong>Toyota Yaris 2008 – Compact, Reliable & Economical</strong>
+              <p>Get a car that’s easy to drive, fuel-efficient, and built to last. This 2008 Toyota Yaris is perfect for city driving and everyday use.</p>
+              <b>Features:</b>
+              <ul>
+
+                 <li>Smooth performance & low fuel consumption</li>
+
+                <li>Compact size for easy parking</li>
+
+                <li>Well-maintained and ready to go</li>
+
+              </ul>
+              <p><strong>**Price**:  ₦9M</strong>.</p>
+              <p>Affordable, reliable, and practical. Buy now to make it yours!</p>`,
+              condition: "Foreign Used",
+              type: "Sedan",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Mercedes-Benz GLE 2018 Full Option,
+              // OriginalPrice: 8.3M
             },
            
 

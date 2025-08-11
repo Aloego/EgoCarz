@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
-
+<!-- Time picker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 
 
   <!-- Google Fonts -->
@@ -60,18 +61,19 @@
               <p id="carType"></p>
               <p id="carFuelType"></p>
               <p id="carTransmission"></p>
-      
+              
+              <!-- whatsapp appointment attached to the car details.js -->
               <!-- <a id="bookButton" href="contact.html" target="_blank" class="btn btn-primary mt-3">Buy Now</a>  -->
-              <a id="buyNowBtn" href="contact.html" class="btn btn-primary">Buy Now</a>
 
+              <!-- this is for the script commented out below  -->
+               <!-- <a id="buyNowBtn" href="contact.html" class="btn btn-primary">Buy Now</a> -->
 
-              <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#buyNowForm">Buy Now
-              </button> -->
-
-              
-               <!-- Your content and Buy Now button -->
-             <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#buyNowForm">Buy Now</button> -->
-              
+               <!-- ================= BUY NOW BUTTON ================= -->
+                <!-- UPDATE START: Added Buy Now button that triggers modal -->
+                <a id="buyNowBtn" href="#" class="btn btn-primary" data-toggle="modal" data-target="#appointmentModal">
+                    Buy Now
+                </a>
+                <!-- UPDATE END -->
 
             </div>
           </div>
@@ -96,6 +98,9 @@
    <script src="js/bootstrap.min.js"></script>
 <!-- Bootstrap JS CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- Timepicker JS (place after your jQuery 3.5.1 script) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -105,53 +110,120 @@
 <script src="js/car-details.js"></script>
 
 
- 
 
-
-
- <!-- ⬇️ Paste this below — the form modal -->
-<!-- <div class="modal fade" id="buyNowForm" tabindex="-1" role="dialog" aria-labelledby="buyNowFormLabel" aria-hidden="true">
+<!-- ================= APPOINTMENT MODAL ================= -->
+<!-- UPDATE START: Added Bootstrap 4 modal form for booking -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <form id="buyForm" class="modal-content" action="https://formspree.io/f/manojnpk" method="POST">
-      <div class="modal-header">
-        <h5 class="modal-title" id="buyNowFormLabel">Request to Buy</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="text" name="name" class="form-control mb-2" placeholder="Your Name" required>
-        <input type="email" name="email" class="form-control mb-2" placeholder="Your Email" required>
-        <input type="phone" name="phone" class="form-control mb-2" placeholder="Your Number" required>
-        <textarea name="message" class="form-control mb-2" placeholder="Your message..."></textarea>
-        <input type="hidden" name="product_link" id="productLink">
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-primary">Send Request</button>
-      </div>
-    </form>
-  </div>
-</div> -->
+    <div class="modal-content">
+      <form action="https://formspree.io/f/manojnpk" method="POST">
+        <div class="modal-header">
+          <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Car Name</label>
+            <input type="text" id="formCarName" name="carName" class="form-control" readonly>
+          </div>
+          <div class="form-group">
+            <label>Model</label>
+            <input type="text" id="formCarModel" name="carModel" class="form-control" readonly>
+          </div>
+          <div class="form-group">
+            <label>Price</label>
+            <input type="text" id="formCarPrice" name="carPrice" class="form-control" readonly>
+          </div>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="customerName" class="form-control" required>
+          </div>
 
-  <!-- ⬆️ End of Form -->
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="customerPhone" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="customerEmail" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Preferred Appointment Date</label>
+            <input type="date" name="appointmentDate" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+                  <label for="appointmentTime">Preferred Time</label>
+                  <input type="text" id="appointmentTime" name="appointmentTime" class="form-control" placeholder="2pm" required>
+                  <small class="form-text text-muted">Available between 9:00 AM and 5:00 PM</small>
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" class="form-control" rows="3" placeholder="Any additional information?"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- UPDATE END -->
+
+ 
+
+
 
 
  
 
-<!-- <script>
-  $('#buyNowForm').on('show.bs.modal', function () {
-    const currentUrl = window.location.href;
-    $('#productLink').val(currentUrl);
-  });
-</script> -->
 
-<script>
+<!-- contact form with the car product details hidden input field -->
+<!-- <script>
   const buyNowLink = document.getElementById('buyNowBtn');
   const currentPage = window.location.href;
   const encodedPage = encodeURIComponent(currentPage);
 
   buyNowLink.href = `contact.html?from=${encodedPage}`;
+</script> -->
+
+
+
+<!-- ================= AUTO-FILL SCRIPT ================= -->
+<!-- UPDATE START: Script to auto-fill form fields with car details -->
+<script>
+document.getElementById('buyNowBtn').addEventListener('click', function() {
+    document.getElementById('formCarName').value = document.getElementById('carName').innerText;
+    document.getElementById('formCarModel').value = document.getElementById('carModel').innerText;
+    document.getElementById('formCarPrice').value = document.getElementById('carPrice').innerText;
+});
 </script>
+<!-- UPDATE END -->
+
+
+
+<!-- Time picker script -->
+<script>
+$(document).ready(function(){
+  $('#appointmentTime').timepicker({
+    timeFormat: 'h:mm p',   // 12-hour format with AM/PM
+    interval: 1,            // 1-minute steps
+    minTime: '9:00am',      // start time
+    maxTime: '5:00pm',      // end time
+    startTime: '9:00am',    
+    dynamic: false,
+    dropdown: true,
+    scrollbar: true
+  });
+});
+</script>
+
 
 
 </body>

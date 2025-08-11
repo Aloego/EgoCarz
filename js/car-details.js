@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   
       document.getElementById("carName").textContent = car.name;
+      document.getElementById("carModel").textContent = `Model: ${car.model}`;
       document.getElementById("carPrice").textContent = `Price: ${car.price}`;
       document.getElementById("carYear").textContent = `Year: ${car.year}`;
       document.getElementById("carMileage").textContent = `Mileage: ${car.mileage}` || "Not Specified";
