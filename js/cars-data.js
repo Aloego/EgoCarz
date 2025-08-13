@@ -1825,6 +1825,51 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
 
           // Add more cars ends here
 
+
+
+          
+          // Add more cars  starts here
+
+           {
+              id: "car41",
+              name: "Toyota",
+              model: "Matrix",
+              year: 2008,
+              // color: "Metalic LITE GOLD",
+              images: [
+              "images/ToyotaMatrix_2008_1.jpeg",
+              "images/ToyotaMatrix_2008_2.jpeg",
+              "images/ToyotaMatrix_2008_3.jpeg",
+              "images/ToyotaMatrix_2008_4.jpeg",
+              "images/ToyotaMatrix_2008_5.jpeg",
+              "images/ToyotaMatrix_2008_6.jpeg",
+              "images/ToyotaMatrix_2008_7.jpeg",
+              "images/ToyotaMatrix_2008_8.jpeg",
+              "images/ToyotaMatrix_2008_9.jpeg",
+              "images/ToyotaMatrix_2008_10.jpeg",
+              "images/ToyotaMatrix_2008_11.jpeg",
+              "images/ToyotaMatrix_2008_12.jpeg",
+              "images/ToyotaMatrix_2008_13.jpeg",
+              ],
+              price: "₦9,500,000",
+              // mileage: "111,354KM",
+              location: "Lagos",
+              description: `<strong>Toyota Matrix 2008 – Reliable, Versatile, and Stylish</strong>
+              <p>The 2008 Toyota Matrix blends the practicality of a hatchback with the sporty feel of a sedan. Powered by a fuel-efficient 1.8L 4-cylinder engine, it delivers smooth performance while keeping running costs low. Its spacious interior offers flexible cargo space thanks to fold-flat rear seats, making it perfect for daily commutes, family outings, or weekend adventures. With Toyota’s proven reliability, comfortable ride quality, and sleek design, the Matrix remains a smart choice for anyone seeking value, durability, and style in one package.</p>
+              <p><strong>**Price**:  ₦9.5M</strong>.</p>
+              <p>Affordable, reliable, and practical. Buy now to make it yours!</p>`,
+              condition: "Foreign Used",
+              // type: "",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Matrix 2008,
+              // OriginalPrice: 8.8M
+            },
+           
+
+          // Add more cars ends here
+
       
   ];
   
