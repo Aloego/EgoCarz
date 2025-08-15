@@ -31,7 +31,7 @@ const carData = [
             // REVERSECAMERA
             // NAVIGATION
             // POWER BOOT
-            // PARKING ASSIT SENSOR
+            // PARKING ASSIST SENSOR
             // OriginalPrice: 26.5M
           
         },
@@ -1719,7 +1719,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
           // Add more cars ends here
 
 
-          // Add more cars  starts here
+          // Add more cars starts here
 
            {
               id: "car39",
@@ -1865,6 +1865,62 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
               // VIN: 2345677668675554,
               // CarName: Toyota Matrix 2008,
               // OriginalPrice: 8.8M
+            },
+           
+
+          // Add more cars ends here
+
+
+           // Add more cars starts here
+
+           {
+              id: "car42",
+              name: "TOYOTA",
+              model: "HIGHLANDER",
+              year: 2008,
+              // color: "Metalic LITE GOLD",
+              images: [
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_1.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_2.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_3.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_4.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_5.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_6.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_7.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_8.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_9.jpeg",
+              "images/TOYOTA_HIGHLANDER_LIMITED_2008_10.jpeg",
+              ],
+              price: "₦18,000,000",
+              // mileage: "108,200Miles",
+              location: "Lagos",
+              description: `<strong>Toyota Highlander 2008 Limited – Full Option Luxury SUV</strong>
+              <p>Experience premium comfort, power, and style with this 2008 Toyota Highlander Limited – fully loaded with every feature you could dream of.</p>
+              <b> Premium Features:</b>
+              <ul>
+
+                 <li>Full Option Package – All the top-tier features included.</li>
+
+                <li>Keyless Entry & Start – Step in and go with ease.</li>
+
+                <li> Spacious 3-Row Seating – Comfortably seats the whole family or crew.</li>
+
+                <li>JBL Premium Sound System – Crystal-clear audio for every journey.</li>
+
+                <li> Roof-Mounted Factory DVD Player – Entertainment on the go for passengers.</li>
+
+                <li>and More</li>
+
+              </ul>
+              <p>This Highlander combines Toyota’s legendary reliability with luxury touches that make every drive a pleasure. Whether you’re cruising through the city or embarking on a road trip, it delivers performance, comfort, and class.</p>
+              <p>Drive away today in elegance and comfort — this Highlander won’t stay on the market for long!</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander Limited 2008,
+              // OriginalPrice: 17M BUT I AM GIVING U GUYS 16.5M
             },
            
 
