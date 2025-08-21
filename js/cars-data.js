@@ -1988,6 +1988,70 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
 
           // Add more cars ends here
 
+
+          
+           // Add more cars starts here
+
+           {
+              id: "car44",
+              name: "TOYOTA",
+              model: "HIGHLANDER",
+              year: 2013,
+              // color: "Metalic LITE GOLD",
+              images: [
+              "images/ToyotaHighlanderLimited_2013_1.jpeg",
+              "images/ToyotaHighlanderLimited_2013_2.jpeg",
+              "images/ToyotaHighlanderLimited_2013_3.jpeg",
+              "images/ToyotaHighlanderLimited_2013_4.jpeg",
+              "images/ToyotaHighlanderLimited_2013_5.jpeg",
+              "images/ToyotaHighlanderLimited_2013_6.jpeg",
+              "images/ToyotaHighlanderLimited_2013_7.jpeg",
+              "images/ToyotaHighlanderLimited_2013_8.jpeg",
+              "images/ToyotaHighlanderLimited_2013_9.jpeg",
+              "images/ToyotaHighlanderLimited_2013_10.jpeg",
+              "images/ToyotaHighlanderLimited_2013_11.jpeg",
+              "images/ToyotaHighlanderLimited_2013_12.jpeg",
+              // "images/ToyotaHighlanderLimited_2013_13.jpeg",
+              ],
+              price: "₦25,000,000",
+              mileage: "low mileage",
+              location: "Lagos",
+              description: `<strong>Toyota Highlander 2013 Limited – Full Option</strong>
+              <p>Experience comfort, luxury, and reliability with this **2013 Toyota Highlander Limited**. This SUV comes fully loaded with premium features, making it the perfect family or executive ride.</p>
+              <b> Premium Features:</b>
+              <ul>
+
+                 <li>Keyless Entry & Start** – Enjoy modern convenience.</li>
+
+                <li>3 Row Seating** – Spacious and comfortable for the whole family.</li>
+
+                <li>Built-in Navigation System** – Find your way with ease. </li>
+
+                <li>Bluetooth Connectivity** – Stay connected on the go.</li>
+
+                <li>Reverse Camera** – Safer and easier parking.</li>
+
+                <li>Power Boot** – Hassle-free trunk access.</li>
+
+                <li>Clean Title** – Buy with confidence</li>
+
+                <li>Low Mileage** – Well-maintained and ready to drive</li>
+
+              </ul>
+             
+              <p>This Highlander delivers a smooth drive, elegant design, and advanced features that make every journey enjoyable.</p>`,
+              condition: "Foreign Used",
+              type: "SUV",
+              fuelType: "Petrol",
+              transmission: "Automatic",
+              // VIN: 2345677668675554,
+              // CarName: Toyota Highlander Limited 2013,
+              // OriginalPrice: 22M
+            },
+           
+
+          // Add more cars ends here
+
       
   ];
   
