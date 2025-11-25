@@ -1,669 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EgoCarz | Find Your Dream Car</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EgoCarz | Find Your Dream Car</title>
 
-  <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
-  <!-- FontAwesome CDN kit -->
-  <script src="https://kit.fontawesome.com/478caa2948.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome CDN kit -->
+    <script
+      src="https://kit.fontawesome.com/478caa2948.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Main CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div data-include="components/navbar.html"></div>
 
-</head>
-<body>
-
-  <!-- Navbar -->
-  <div data-include="components/navbar.html"></div>
- 
- 
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-12">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12">
             <div class="heroContent mx-auto text-center">
-              <h1 class="display-4 mb-3">Drive Your Dreams Today with <strong>EgoCarz</strong></h1>
-              <p class="lead mb-4">  Discover unbeatable deals on reliable, top-quality cars. At EgoCarz, we make car buying simple, secure, and satisfying — no stress, no guesswork. Start your journey to ownership now.
+              <h1 class="display-4 mb-3">
+                Drive Your Dreams Today with <strong>EgoCarz</strong>
+              </h1>
+              <p class="lead mb-4">
+                Discover unbeatable deals on reliable, top-quality cars. At
+                EgoCarz, we make car buying simple, secure, and satisfying — no
+                stress, no guesswork. Start your journey to ownership now.
               </p>
-              <a href="browse-cars.html" class="btn btn-primary btn-lg">Browse & Buy</a>
+              <a href="browse-cars.html" class="btn btn-primary btn-lg"
+                >Browse & Buy</a
+              >
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured Cars Section -->
-  <section class="featured-cars">
-    <div class="container">
-      <h2 class="text-center mb-5">Featured Cars</h2>
-      <div class="row">
-        <!-- Car Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/lexusrx350010.jpeg" class="card-img-top" alt="lexusrx350_10">
-            <div class="card-body">
-              <span class="sold">SOLD</span>
-              <h5 class="card-title">LEXUS RX 350</h5>
-              <p class="card-text">₦27,500,000 • Lagos</p>
-              <a href="car-details.html?id=car1" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Repeat as needed -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotahighlander2013.jpeg" class="card-img-top" alt="Toyota Highlander">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Highlander</h5>
-              <p class="card-text">23,500,000 • Festac Lagos</p>
-              <a href="car-details.html?id=car2" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
+    <!-- Featured Cars Section -->
+    <section class="featured-cars">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Cars</h2>
+        <div class="row">
           <!-- Car Card -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotaHighlander2015_xle2.jpeg" class="card-img-top" alt="Toyota Higlander XLE 2015">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Highlander XLE</h5>
-              <p class="card-text">₦30,200,000 • Lagos</p>
-              <a href="car-details.html?id=car3" class="btn btn-primary btn-sm">View Details</a>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car1">
+                <img
+                  src="images/lexusrx350010.jpeg"
+                  class="card-img-top"
+                  alt="lexusrx350_10"
+              /></a>
+              <div class="card-body">
+                <span class="sold">SOLD</span>
+                <h5 class="card-title">LEXUS RX 350</h5>
+                <p class="card-text">₦27,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car1"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotahighlander2007limited_003.jpg" class="card-img-top" alt="Toyota Higlander Limited Edition">
-            <div class="card-body">
-               <span class="sold">SOLD</span>
-              <h5 class="card-title">Toyota Highlander Limited Edition</h5>
-              <p class="card-text">₦15,000,000 • Lagos</p>
-              <a href="car-details.html?id=car4" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Repeat as needed -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car2">
+                <img
+                  src="images/toyotahighlander2013.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Highlander</h5>
+                <p class="card-text">23,500,000 • Festac Lagos</p>
+                <a
+                  href="car-details.html?id=car2"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards -->
-
-        <!-- Add more cards -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotaVenza-2010-black_1.jpeg" class="card-img-top" alt="Toyota Venza 2010">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Venza 2010</h5>
-              <p class="card-text">₦20,000,000 • Lagos</p>
-              <a href="car-details.html?id=car5" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Car Card -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car3">
+                <img
+                  src="images/toyotaHighlander2015_xle2.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander XLE 2015"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Highlander XLE</h5>
+                <p class="card-text">₦30,200,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car3"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCamry_1_gray_2011.jpeg" class="card-img-top" alt="Toyota Camry 2011">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Camry 2011</h5>
-              <p class="card-text">₦14,000,000 • Lagos</p>
-              <a href="car-details.html?id=car6" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car4">
+                <img
+                  src="images/toyotahighlander2007limited_003.jpg"
+                  class="card-img-top"
+                  alt="Toyota Higlander Limited Edition"
+                />
+              </a>
+              <div class="card-body">
+                <span class="sold">SOLD</span>
+                <h5 class="card-title">Toyota Highlander Limited Edition</h5>
+                <p class="card-text">₦15,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car4"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards -->
 
-
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Pontiac_vibe_black_1_2010.jpeg" class="card-img-top" alt="Pontiac Vibe 2010">
-            <div class="card-body">
-              <h5 class="card-title">Pontiac Vibe 2010</h5>
-              <p class="card-text">₦12,000,000 • Lagos</p>
-              <a href="car-details.html?id=car7" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car5">
+                <img
+                  src="images/toyotaVenza-2010-black_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Venza 2010"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Venza 2010</h5>
+                <p class="card-text">₦20,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car5"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
-
-
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCorolla_1_2010.jpeg" class="card-img-top" alt="Toyota Corolla 2010">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Corolla 2010</h5>
-              <p class="card-text">₦12,000,000 • Lagos</p>
-              <a href="car-details.html?id=car8" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/LEXUS_ES_350_2014_1.jpeg" class="card-img-top" alt="Lexus ES 350">
-            <div class="card-body">
-              <h5 class="card-title">Lexus ES 350</h5>
-              <p class="card-text">₦24,000,000 • Lagos</p>
-              <a href="car-details.html?id=car9" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Lexus_Es_350_gray_2014_8.jpeg" class="card-img-top" alt="Lexus ES 350">
-            <div class="card-body">
-              <h5 class="card-title">Lexus ES 350</h5>
-              <p class="card-text">₦24,000,000 • Lagos</p>
-              <a href="car-details.html?id=car10" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCorolla_2007_1.jpeg" class="card-img-top" alt="Toyota Corolla 2007">
-            <div class="card-body">
-              <span class="sold">SOLD</span>
-              <h5 class="card-title">Toyota Corolla 2007</h5>
-              <p class="card-text">₦10,000,000 • Lagos</p>
-              <a href="car-details.html?id=car11" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/HyundaiELANTRA_2013_limited_1.jpeg" class="card-img-top" alt="Hyundai ELANTRA 2013 limited">
-            <div class="card-body">
-              <h5 class="card-title">Hyundai Elantra 2013</h5>
-              <p class="card-text">₦14,000,000 • Lagos</p>
-              <a href="car-details.html?id=car12" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/lexusRX_350_2017_F-SPORTS_1.jpeg" class="card-img-top" alt="lexus RX 350 2017 F-SPORTS">
-            <div class="card-body">
-              <h5 class="card-title">Lexus RX 350 F-SPORTS</h5>
-              <p class="card-text">₦60,000,000 • Lagos</p>
-              <a href="car-details.html?id=car13" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/HondaCRV_2011_1.jpeg" class="card-img-top" alt="Honda CR-V 2011">
-            <div class="card-body">
-              <h5 class="card-title">Honda CR-V 2011</h5>
-              <p class="card-text">₦15,000,000 • Lagos</p>
-              <a href="car-details.html?id=car14" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotaHighlande_2009_1.jpeg" class="card-img-top" alt="Toyota Highlander 2009">
-            <span class="sold">SOLD</span>
-            <div class="card-body">
-              <h5 class="card-title">Toyota Highlander 2009</h5>
-              <p class="card-text">₦17,000,000 • Lagos</p>
-              <a href="car-details.html?id=car15" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/LexusRX_350_2014_1.jpeg" class="card-img-top" alt="Lexus RX 350 2014">
-            <div class="card-body">
-              <h5 class="card-title">Lexus RX 350</h5>
-              <p class="card-text">₦30,000,000 • Lagos</p>
-              <a href="car-details.html?id=car16" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotaCorolla_2015_1.jpeg" class="card-img-top" alt="Toyota Corolla 2015">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Corolla 2015</h5>
-              <p class="card-text">₦18,000,000 • Lagos</p>
-              <a href="car-details.html?id=car17" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotaHighlander_2006_1.jpeg" class="card-img-top" alt="Toyota Highlander 2006">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Highlander 2006</h5>
-              <p class="card-text">₦15,000,000 • Lagos</p>
-              <a href="car-details.html?id=car18" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/MERCEDESBENZ_GLK_1.jpeg" class="card-img-top" alt="MERCEDES BENZ GLK">
-            <div class="card-body">
-              <h5 class="card-title">Mercedes Benz GLK</h5>
-              <p class="card-text">₦26,000,000 • Lagos</p>
-              <a href="car-details.html?id=car19" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCorolla_LE_2021_1.jpeg" class="card-img-top" alt="Toyota Corolla LE 2021">
-            <span class="sold">SOLD</span>
-            <div class="card-body">
-              <h5 class="card-title">Toyota Corolla LE</h5>
-              <p class="card-text">₦33,000,000 • Lagos</p>
-              <a href="car-details.html?id=car20" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaRav4_2015_xle_1.jpeg" class="card-img-top" alt="Toyota Rav4 xle">
-            <div class="card-body">
-              <h5 class="card-title">Toyota Rav4 XLE</h5>
-              <p class="card-text">₦25,000,000 • Lagos</p>
-              <a href="car-details.html?id=car21" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Lexus_RX_350_2010_1.jpeg" class="card-img-top" alt="Lexus RX 350 2010">
-            <div class="card-body">
-              <h5 class="card-title">Lexus RX 350</h5>
-              <p class="card-text">₦25,000,000 • Lagos</p>
-              <a href="car-details.html?id=car22" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/Mercedes_Benz_2013_1.jpeg" class="card-img-top" alt="Mercedes Benz ML 350">
-            <div class="card-body">
-              <h5 class="card-title">Mercedes Benz ML 350</h5>
-              <p class="card-text">₦35,000,000 • Lagos</p>
-              <a href="car-details.html?id=car23" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_1.jpeg" class="card-img-top" alt="Toyota Highlander LIMITED(FULL-OPTION)">
-            <div class="card-body">
-              <h5 class="card-title">2005 Toyota Highlander Limited – Full Option</h5>
-              <p class="card-text">₦15,000,000 • Lagos</p>
-              <a href="car-details.html?id=car24" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaHighlander_2013_limited_1.jpeg" class="card-img-top" alt="Toyota Highlander 2013 Limited">
-            <div class="card-body">
-              <h5 class="card-title">2013 Toyota Highlander Limited – Full Option </h5>
-              <p class="card-text">₦25,000,000 • Lagos</p>
-              <a href="car-details.html?id=car25" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
-
-        
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/LEXUS_RX_350_2013_1.jpeg" class="card-img-top" alt="2013 LEXUS RX 350">
-            <div class="card-body">
-              <h5 class="card-title">2013 LEXUS_RX_350 </h5>
-              <p class="card-text">₦30,000,000 • Lagos</p>
-              <a href="car-details.html?id=car26" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards -->
 
           <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/2017_Hyundai_SantaFe_Sport_1.jpeg" class="card-img-top" alt="2017 Hyundai SantaFe Sport">
-            <div class="card-body">
-              <h5 class="card-title">2017 Hyundai SantaFe </h5>
-              <p class="card-text">₦22,500,000 • Lagos</p>
-              <a href="car-details.html?id=car27" class="btn btn-primary btn-sm">View Details</a>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car6">
+                <img
+                  src="images/ToyotaCamry_1_gray_2011.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Camry 2011"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Camry 2011</h5>
+                <p class="card-text">₦14,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car6"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaRav4_2011_limited_1.jpeg" class="card-img-top" alt="2011 Toyota Rav4">
-            <div class="card-body">
-              <h5 class="card-title">2011 Toyota Rav4 Limited</h5>
-              <p class="card-text">₦18,200,000 • Lagos</p>
-              <a href="car-details.html?id=car28" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car7">
+                <img
+                  src="images/Pontiac_vibe_black_1_2010.jpeg"
+                  class="card-img-top"
+                  alt="Pontiac Vibe 2010"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Pontiac Vibe 2010</h5>
+                <p class="card-text">₦12,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car7"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/LEXUS_ES_350_2009_1.jpeg" class="card-img-top" alt="Lexus ES 350">
-            <div class="card-body">
-              <h5 class="card-title">2009 Lexus ES 350</h5>
-              <p class="card-text">₦17,500,000 • Lagos</p>
-              <a href="car-details.html?id=car29" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car8">
+                <img
+                  src="images/ToyotaCorolla_1_2010.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Corolla 2010"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Corolla 2010</h5>
+                <p class="card-text">₦12,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car8"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCorolla_LE_2013_1.jpeg" class="card-img-top" alt="Toyota Corolla 2013">
-            <div class="card-body">
-              <h5 class="card-title">2013 Toyota Corolla LE</h5>
-              <p class="card-text">₦15,500,000 • Lagos</p>
-              <a href="car-details.html?id=car30" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car9">
+                <img
+                  src="images/LEXUS_ES_350_2014_1.jpeg"
+                  class="card-img-top"
+                  alt="Lexus ES 350"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Lexus ES 350</h5>
+                <p class="card-text">₦24,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car9"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCorollaSport_2015_1.jpeg" class="card-img-top" alt="Toyota Corolla Sport">
-            <div class="card-body">
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car10">
+                <img
+                  src="images/Lexus_Es_350_gray_2014_8.jpeg"
+                  class="card-img-top"
+                  alt="Lexus ES 350"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Lexus ES 350</h5>
+                <p class="card-text">₦24,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car10"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/ToyotaCorolla_2007_1.jpeg"
+                class="card-img-top"
+                alt="Toyota Corolla 2007"
+              />
+              <div class="card-body">
+                <span class="sold">SOLD</span>
+                <h5 class="card-title">Toyota Corolla 2007</h5>
+                <p class="card-text">₦10,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car11"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car12">
+                <img
+                  src="images/HyundaiELANTRA_2013_limited_1.jpeg"
+                  class="card-img-top"
+                  alt="Hyundai ELANTRA 2013 limited"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Hyundai Elantra 2013</h5>
+                <p class="card-text">₦14,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car12"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car13">
+                <img
+                  src="images/lexusRX_350_2017_F-SPORTS_1.jpeg"
+                  class="card-img-top"
+                  alt="lexus RX 350 2017 F-SPORTS"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Lexus RX 350 F-SPORTS</h5>
+                <p class="card-text">₦60,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car13"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car14">
+                <img
+                  src="images/HondaCRV_2011_1.jpeg"
+                  class="card-img-top"
+                  alt="Honda CR-V 2011"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Honda CR-V 2011</h5>
+                <p class="card-text">₦15,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car14"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/toyotaHighlande_2009_1.jpeg"
+                class="card-img-top"
+                alt="Toyota Highlander 2009"
+              />
               <span class="sold">SOLD</span>
-              <h5 class="card-title">2015 Toyota Corolla Sport</h5>
-              <p class="card-text">₦19,500,000 • Lagos</p>
-              <a href="car-details.html?id=car31" class="btn btn-primary btn-sm">View Details</a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Highlander 2009</h5>
+                <p class="card-text">₦17,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car15"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/LEXUS-ES-350-2014_1.jpeg" class="card-img-top" alt="Lexus ES 350 2014">
-            <div class="card-body">
-              <h5 class="card-title">2014 Lexus ES 350</h5>
-              <p class="card-text">₦27,500,000 • Lagos</p>
-              <a href="car-details.html?id=car32" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car16">
+                <img
+                  src="images/LexusRX_350_2014_1.jpeg"
+                  class="card-img-top"
+                  alt="Lexus RX 350 2014"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Lexus RX 350</h5>
+                <p class="card-text">₦30,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car16"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaHighlander_Limited_2018_1.jpeg" class="card-img-top" alt="2018 Toyota Highlander Limited">
-            <div class="card-body">
-              <h5 class="card-title">2018 Toyota Highlander Limited</h5>
-              <p class="card-text">₦48,500,000 • Lagos</p>
-              <a href="car-details.html?id=car33" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car17">
+                <img
+                  src="images/toyotaCorolla_2015_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Corolla 2015"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Corolla 2015</h5>
+                <p class="card-text">₦18,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car17"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-        
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaHighlander_2006_limited_1.jpeg" class="card-img-top" alt="2006 Toyota Highlander Limited">
-            <div class="card-body">
-              <h5 class="card-title">2006 Toyota Highlander Limited</h5>
-              <p class="card-text">₦16,000,000 • Lagos</p>
-              <a href="car-details.html?id=car34" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car18">
+                <img
+                  src="images/toyotaHighlander_2006_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander 2006"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Highlander 2006</h5>
+                <p class="card-text">₦15,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car18"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaCamry_SE_2018_1.jpeg" class="card-img-top" alt="2018 Toyota Camry SE">
-            <div class="card-body">
-              <h5 class="card-title">2018 Toyota Camry SE</h5>
-              <p class="card-text">₦35,000,000 • Lagos</p>
-              <a href="car-details.html?id=car35" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car19">
+                <img
+                  src="images/MERCEDESBENZ_GLK_1.jpeg"
+                  class="card-img-top"
+                  alt="MERCEDES BENZ GLK"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Mercedes Benz GLK</h5>
+                <p class="card-text">₦26,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car19"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/toyotacorolla_LE_2021_1.jpeg" class="card-img-top" alt="2021 Toyota Corolla LE">
-            <div class="card-body">
-              <h5 class="card-title">2021 Toyota Corolla LE</h5>
-              <p class="card-text">₦34,000,000 • Lagos</p>
-              <a href="car-details.html?id=car36" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/ToyotaCorolla_LE_2021_1.jpeg"
+                class="card-img-top"
+                alt="Toyota Corolla LE 2021"
+              />
+              <span class="sold">SOLD</span>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Corolla LE</h5>
+                <p class="card-text">₦33,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car20"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/LEXUS_RX_350_2018_FullOption_1.jpeg" class="card-img-top" alt="2018 Lexus RX 350">
-            <div class="card-body">
-              <h5 class="card-title">2018 Lexus RX 350</h5>
-              <p class="card-text">₦50,000,000 • Lagos</p>
-              <a href="car-details.html?id=car37" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car21">
+                <img
+                  src="images/ToyotaRav4_2015_xle_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Rav4 xle"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Toyota Rav4 XLE</h5>
+                <p class="card-text">₦25,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car21"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-        
-        <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/MercedesBenz_GLE_2018_fullOption_1.jpeg" class="card-img-top" alt="Mercedes Benz GLE 2018 Full Option">
-            <div class="card-body">
-              <h5 class="card-title">2018 Mercedes-Benz GLE</h5>
-              <p class="card-text">₦50,000,000 • Lagos</p>
-              <a href="car-details.html?id=car38" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car22">
+                <img
+                  src="images/Lexus_RX_350_2010_1.jpeg"
+                  class="card-img-top"
+                  alt="Lexus RX 350 2010"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Lexus RX 350</h5>
+                <p class="card-text">₦25,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car22"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/MERCEDES-BENZ_GLK_2010_1.jpeg" class="card-img-top" alt="Mercedes Benz GLK 2010">
-            <div class="card-body">
-              <h5 class="card-title">2010 Mercedes-Benz GLK</h5>
-              <p class="card-text">₦25,000,000 • Lagos</p>
-              <a href="car-details.html?id=car39" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car23">
+                <img
+                  src="images/Mercedes_Benz_2013_1.jpeg"
+                  class="card-img-top"
+                  alt="Mercedes Benz ML 350"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Mercedes Benz ML 350</h5>
+                <p class="card-text">₦35,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car23"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaYarix_1.jpeg" class="card-img-top" alt="Toyota Yaris 2008">
-            <div class="card-body">
-              <h5 class="card-title">2008 Toyota Yaris</h5>
-              <p class="card-text">₦9,000,000 • Lagos</p>
-              <a href="car-details.html?id=car40" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car24">
+                <img
+                  src="images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander LIMITED(FULL-OPTION)"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  2005 Toyota Highlander Limited – Full Option
+                </h5>
+                <p class="card-text">₦15,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car24"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaMatrix_2008_1.jpeg" class="card-img-top" alt="Toyota Matrix 2008">
-            <div class="card-body">
-              <h5 class="card-title">2008 Toyota Matrix</h5>
-              <p class="card-text">₦9,500,000 • Lagos</p>
-              <a href="car-details.html?id=car41" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car25">
+                <img
+                  src="images/ToyotaHighlander_2013_limited_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander 2013 Limited"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  2013 Toyota Highlander Limited – Full Option
+                </h5>
+                <p class="card-text">₦25,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car25"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/TOYOTA_HIGHLANDER_LIMITED_2008_1.jpeg" class="card-img-top" alt="Toyota Highlander Limited 2008">
-            <div class="card-body">
-              <h5 class="card-title">2008 Toyota Highlander Limited</h5>
-              <p class="card-text">₦18,000,000 • Lagos</p>
-              <a href="car-details.html?id=car42" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car26">
+                <img
+                  src="images/LEXUS_RX_350_2013_1.jpeg"
+                  class="card-img-top"
+                  alt="2013 LEXUS RX 350"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2013 LEXUS_RX_350</h5>
+                <p class="card-text">₦30,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car26"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaHighlander_limited_2013_1.jpeg" class="card-img-top" alt="Toyota Highlander Limited 2013">
-            <div class="card-body">
-              <h5 class="card-title">2013 Toyota Highlander Limited</h5>
-              <p class="card-text">₦25,000,000 • Lagos</p>
-              <a href="car-details.html?id=car43" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car27">
+                <img
+                  src="images/2017_Hyundai_SantaFe_Sport_1.jpeg"
+                  class="card-img-top"
+                  alt="2017 Hyundai SantaFe Sport"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2017 Hyundai SantaFe</h5>
+                <p class="card-text">₦22,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car27"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
-        
-         <!-- Add more cards start -->
-         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="images/ToyotaHighlanderLimited_2013_12.jpeg" class="card-img-top" alt="Toyota Highlander Limited 2013">
-            <div class="card-body">
-              <h5 class="card-title">2013 Toyota Highlander Limited</h5>
-              <p class="card-text">₦25,000,000 • Lagos</p>
-              <a href="car-details.html?id=car44" class="btn btn-primary btn-sm">View Details</a>
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car28">
+                <img
+                  src="images/ToyotaRav4_2011_limited_1.jpeg"
+                  class="card-img-top"
+                  alt="2011 Toyota Rav4"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2011 Toyota Rav4 Limited</h5>
+                <p class="card-text">₦18,200,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car28"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add more cards end -->
+          <!-- Add more cards end -->
 
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car29">
+                <img
+                  src="images/LEXUS_ES_350_2009_1.jpeg"
+                  class="card-img-top"
+                  alt="Lexus ES 350"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2009 Lexus ES 350</h5>
+                <p class="card-text">₦17,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car29"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car30">
+                <img
+                  src="images/ToyotaCorolla_LE_2013_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Corolla 2013"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2013 Toyota Corolla LE</h5>
+                <p class="card-text">₦15,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car30"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/ToyotaCorollaSport_2015_1.jpeg"
+                class="card-img-top"
+                alt="Toyota Corolla Sport"
+              />
+              <div class="card-body">
+                <span class="sold">SOLD</span>
+                <h5 class="card-title">2015 Toyota Corolla Sport</h5>
+                <p class="card-text">₦19,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car31"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car32">
+                <img
+                  src="images/LEXUS-ES-350-2014_1.jpeg"
+                  class="card-img-top"
+                  alt="Lexus ES 350 2014"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2014 Lexus ES 350</h5>
+                <p class="card-text">₦27,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car32"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car33">
+                <img
+                  src="images/ToyotaHighlander_Limited_2018_1.jpeg"
+                  class="card-img-top"
+                  alt="2018 Toyota Highlander Limited"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2018 Toyota Highlander Limited</h5>
+                <p class="card-text">₦48,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car33"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car34">
+                <img
+                  src="images/ToyotaHighlander_2006_limited_1.jpeg"
+                  class="card-img-top"
+                  alt="2006 Toyota Highlander Limited"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2006 Toyota Highlander Limited</h5>
+                <p class="card-text">₦16,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car34"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car35">
+                <img
+                  src="images/ToyotaCamry_SE_2018_1.jpeg"
+                  class="card-img-top"
+                  alt="2018 Toyota Camry SE"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2018 Toyota Camry SE</h5>
+                <p class="card-text">₦35,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car35"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car36">
+                <img
+                  src="images/toyotacorolla_LE_2021_1.jpeg"
+                  class="card-img-top"
+                  alt="2021 Toyota Corolla LE"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2021 Toyota Corolla LE</h5>
+                <p class="card-text">₦34,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car36"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car37">
+                <img
+                  src="images/LEXUS_RX_350_2018_FullOption_1.jpeg"
+                  class="card-img-top"
+                  alt="2018 Lexus RX 350"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2018 Lexus RX 350</h5>
+                <p class="card-text">₦50,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car37"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car38">
+                <img
+                  src="images/MercedesBenz_GLE_2018_fullOption_1.jpeg"
+                  class="card-img-top"
+                  alt="Mercedes Benz GLE 2018 Full Option"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2018 Mercedes-Benz GLE</h5>
+                <p class="card-text">₦50,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car38"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car39">
+                <img
+                  src="images/MERCEDES-BENZ_GLK_2010_1.jpeg"
+                  class="card-img-top"
+                  alt="Mercedes Benz GLK 2010"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2010 Mercedes-Benz GLK</h5>
+                <p class="card-text">₦25,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car39"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car40">
+                <img
+                  src="images/ToyotaYarix_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Yaris 2008"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2008 Toyota Yaris</h5>
+                <p class="card-text">₦9,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car40"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car41">
+                <img
+                  src="images/ToyotaMatrix_2008_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Matrix 2008"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2008 Toyota Matrix</h5>
+                <p class="card-text">₦9,500,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car41"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car42">
+                <img
+                  src="images/TOYOTA_HIGHLANDER_LIMITED_2008_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander Limited 2008"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2008 Toyota Highlander Limited</h5>
+                <p class="card-text">₦18,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car42"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car43">
+                <img
+                  src="images/ToyotaHighlander_limited_2013_1.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander Limited 2013"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2013 Toyota Highlander Limited</h5>
+                <p class="card-text">₦25,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car43"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+
+          <!-- Add more cards start -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="car-details.html?id=car44">
+                <img
+                  src="images/ToyotaHighlanderLimited_2013_12.jpeg"
+                  class="card-img-top"
+                  alt="Toyota Highlander Limited 2013"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">2013 Toyota Highlander Limited</h5>
+                <p class="card-text">₦25,000,000 • Lagos</p>
+                <a
+                  href="car-details.html?id=car44"
+                  class="btn btn-primary btn-sm"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards end -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <div data-include="components/footer.html"></div>
- 
-  
+    <!-- Footer -->
+    <div data-include="components/footer.html"></div>
 
-  <!-- components JS -->
-  <script src="js/include.js"></script>
+    <!-- components JS -->
+    <script src="js/include.js"></script>
 
-  <!-- Bootstrap Local -->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-  <!-- Bootstrap JS CDN-->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Local -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6875060f6e075c190d32a5f2/1j04hvboe';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-</body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/6875060f6e075c190d32a5f2/1j04hvboe";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
 </html>
