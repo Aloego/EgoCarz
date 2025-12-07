@@ -97,18 +97,43 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    // Right column - Product info only
     document.getElementById("carName").textContent = car.name;
-    document.getElementById("carModel").textContent = `Model: ${car.model}`;
-    document.getElementById("carPrice").textContent = `Price: ${car.price}`;
-    document.getElementById("carYear").textContent = `Year: ${car.year}`;
-    document.getElementById("carMileage").textContent =
-      `Mileage: ${car.mileage}` || "Not Specified";
-    document.getElementById(
-      "carLocation"
-    ).textContent = `Location: ${car.location}`;
-    document.getElementById("carDescription").innerHTML = `${car.description}`;
-    document.getElementById("carCondition").textContent =
-      `Condition: ${car.condition}` || "Not specified";
+    document.getElementById("carPrice").textContent = car.price;
+    document.getElementById("carShortDescription").textContent =
+      car.shortDescription || car.description.substring(0, 150) + "...";
+
+    // Description tab
+    document.getElementById("carDescription").innerHTML = car.description;
+
+    // Specification tab - only show fields with data
+    const specs = [
+      { id: "specModel", value: car.model, element: "carModel" },
+      { id: "specYear", value: car.year, element: "carYear" },
+      { id: "specCondition", value: car.condition, element: "carCondition" },
+      { id: "specType", value: car.type, element: "carType" },
+      { id: "specColor", value: car.color, element: "carColor" },
+      { id: "specMileage", value: car.mileage, element: "carMileage" },
+      { id: "specFuelType", value: car.fuelType, element: "carFuelType" },
+      {
+        id: "specTransmission",
+        value: car.transmission,
+        element: "carTransmission",
+      },
+      { id: "specLocation", value: car.location, element: "carLocation" },
+    ];
+
+    specs.forEach((spec) => {
+      const row = document.getElementById(spec.id);
+      const element = document.getElementById(spec.element);
+
+      if (spec.value && spec.value !== "" && spec.value !== "Not specified") {
+        element.textContent = spec.value;
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
 
     // Contact Seller WhatsApp button
     const contactSellerBtn = document.getElementById("contactSellerBtn");

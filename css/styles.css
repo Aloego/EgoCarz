@@ -195,3 +195,24 @@ footer {
     padding: 3rem 0;
   }
 }
+
+/* Product Detail Tabs */
+.nav-tabs-custom .nav-link {
+  color: #000000 !important;
+  background-color: #e9ecef !important;
+  border: none !important;
+  transition: all 0.3s;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.nav-tabs-custom .nav-link:hover {
+  background-color: #d6d8db !important;
+  color: #000000 !important;
+}
+
+.nav-tabs-custom .nav-link.active {
+  color: #ffffff !important;
+  background-color: #007bff !important;
+  border: none !important;
+}

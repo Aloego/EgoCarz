@@ -20,6 +20,8 @@ const carData = [
     price: "₦27,500,000",
     // mileage: "45,000km",
     location: "Lagos",
+    shortDescription:
+      "Luxury SUV with reverse camera, navigation, and power boot. Perfect for city and long trips.",
     description:
       "Experience luxury and performance with this 2013 Lexus RX 350. This SUV is equipped with advanced features including REVERSE CAMERA, NAVIGATION, and POWER BOOT for your convenience. The spacious cabin offers comfort and modern technology to enhance your driving experience. With its sleek design and top-notch safety features, this Lexus RX 350 is perfect for both city driving and long road trips. Don't miss out on the opportunity to own this stylish and reliable vehicle.",
     condition: "Foreign Used",
@@ -56,6 +58,8 @@ const carData = [
     price: "₦23,500,000",
     // mileage: "35,000km",
     location: "Festac, Lagos",
+    shortDescription:
+      "Spacious family SUV with full options, reverse camera, 3-row seating, and keyless entry.",
     description:
       "This 2013 Toyota Highlander is a perfect blend of style and functionality. It features a spacious interior, advanced safety systems, and a powerful engine. Ideal for family trips or daily commutes, this SUV offers comfort and reliability. Full option, Reverse camera, 3 sitter row, Navigation, Keyless.",
     condition: "Foreign Used",
@@ -94,6 +98,8 @@ const carData = [
     price: "₦30,200,000",
     // mileage: "45,000km",
     location: "Lagos",
+    shortDescription:
+      "Premium SUV with keyless entry, power boot, reverse camera & navigation.",
     description:
       "Experience the ultimate in comfort and technology with this Toyota Highlander. Equipped with advanced features such as Keyless Entry, Power Boot, and a Reverse Camera, this car offers both convenience and peace of mind. The modern navigation system ensures you’re always on the right path, while the spacious interior and sleek exterior make every drive enjoyable. Perfect for city commutes and long journeys, this Highlander stands out for its reliability, safety, and style.",
     condition: "Foreign Used",
@@ -135,6 +141,8 @@ const carData = [
     price: "₦15,000,000",
     // mileage: "35,000km",
     location: "Lagos",
+    shortDescription:
+      "Spacious family SUV with leather seats & 3-row seating. Reliable & comfortable.",
     description:
       "Discover reliability and comfort with this 2007 Toyota Highlander Limited. Featuring a spacious interior, leather seats, and advanced safety features, this SUV is perfect for families and long journeys. Enjoy smooth performance, ample cargo space, and a reputation for durability. Ideal for city driving or road trips, the Highlander Limited offers a blend of luxury and practicality.",
     condition: "Foreign Used",
@@ -171,6 +179,8 @@ const carData = [
     price: "₦20,000,000",
     mileage: "101,000miles",
     location: "Lagos",
+    shortDescription:
+      "Sleek black Venza with panoramic roof, keyless entry, reverse camera & navigation.",
     description:
       "This 2010 Toyota Venza comes in a sleek black color and is packed with premium features including ALLOYED RIMS, KEYLESS entry, PANORAMIC ROOF, REVERSE CAMERA, and NAVIGATION. The car is as good as new, offering a spacious interior, advanced safety features, and a smooth ride. Perfect for daily commutes or weekend getaways, the Venza combines style, comfort, and modern technology for an exceptional driving experience.",
     condition: "Foreign Used",
@@ -213,6 +223,8 @@ const carData = [
     price: "₦14,000,000",
     // mileage: "101,000km/Hour",
     location: "Lagos",
+    shortDescription:
+      "Dependable gray Camry with excellent fuel economy & spacious interior.",
     description: `Introducing the 2011 Toyota Camry in a stunning metallic gray finish. The perfect blend of performance, comfort, and durability. This well-maintained sedan is engineered for those who value dependability, fuel efficiency, and elegant style. With its proven track record, the Camry continues to set the standard for mid-size sedans, and this model is no exception.  
               <ul>  
                 <li> Powerful yet smooth ride with a responsive engine</li>
@@ -254,6 +266,8 @@ const carData = [
     price: "₦12,000,000",
     mileage: ``,
     location: "Lagos",
+    shortDescription:
+      "Versatile black hatchback with fuel-efficient engine & spacious cargo area.",
     description: `<h6> Sleek and Versatile 2010 Pontiac Vibe – Black Hatchback. </h6>
                 Step into style and utility with this 2010 Pontiac Vibe, finished in a clean, glossy black that adds a bold presence on the road. Designed to offer the perfect blend of practicality, fuel efficiency, and sporty appeal, this hatchback stands out with its sharp lines, compact body, and high-roof design — ideal for city driving or weekend getaways.<br><br>
 
@@ -310,6 +324,8 @@ const carData = [
     price: "₦12,000,000",
     // mileage: "101,000km/Hour",
     location: "Lagos",
+    shortDescription:
+      "Reliable 2010 Corolla sedan - perfect for daily commutes & fuel efficiency.",
     description: ``,
     condition: "Foreign Used",
     type: "Sedan",
@@ -345,6 +361,8 @@ const carData = [
     price: "₦24,000,000",
     mileage: "94,217miles",
     location: "Lagos",
+    shortDescription:
+      "Luxury sedan with premium comfort & elegant styling. Low mileage.",
     description: ``,
     condition: "Foreign Used",
     type: "Sedan",
@@ -377,6 +395,8 @@ const carData = [
     price: "₦24,000,000",
     // mileage: "101,000km/Hour",
     location: "Lagos",
+    shortDescription:
+      "Elegant gray ES 350 with premium features & smooth performance.",
     description: ``,
     condition: "Foreign Used",
     type: "Sedan",
@@ -408,6 +428,8 @@ const carData = [
     price: "₦10,000,000",
     // mileage: "101,000km/Hour",
     location: "Lagos",
+    shortDescription:
+      "Affordable & dependable Corolla sedan - great for everyday use.",
     description: ``,
     condition: "Foreign Used",
     type: "Sedan",
@@ -440,6 +462,8 @@ const carData = [
     price: "₦14,000,000",
     mileage: "92,483miles",
     location: "Lagos",
+    shortDescription:
+      "Full-option Elantra with keyless entry, reverse camera & leather seats.",
     description: `keyless entry, power boot, reverse camera, navigation, full option, leather seats, alloyed rims, tinted windows. This 2013 Hyundai Elantra is a perfect blend of style and functionality. It features a spacious interior, advanced safety systems, and a powerful engine. Ideal for family trips or daily commutes, this sedan offers comfort and reliability.`,
     condition: "Foreign Used",
     type: "Sedan",
@@ -476,6 +500,8 @@ const carData = [
     price: "₦60,000,000",
     mileage: "118,516miles",
     location: "Lagos",
+    shortDescription:
+      "F-Sport with BSM, 360° camera, park assist & panoramic roof. Fully loaded!",
     description: `<strong>Experience Luxury and Performance – 2017 Lexus RX 350 F-Sport (Full Option)</strong>
 
               Elevate your driving experience with this 2017 Lexus RX 350 F-Sport, fully loaded with top-tier features for comfort, safety, and performance. This SUV combines Lexus’ signature reliability with sporty elegance and cutting-edge technology.
@@ -526,6 +552,8 @@ const carData = [
     price: "₦15,000,000",
     // mileage: "118,516 miles",
     location: "Lagos",
+    shortDescription:
+      "Spacious & reliable CRV with roomy interior & smooth handling.",
     description: `<strong>Discover the Perfect Blend of Comfort and Versatility – 2011 Honda CRV</strong>
               Step into a world of reliability and spaciousness with this 2011 Honda CRV. Known for its exceptional build quality and practicality, this SUV is designed to meet the needs of families and adventurers alike. With its roomy interior, advanced safety features, and smooth handling, the CRV is perfect for both city driving and weekend getaways.`,
     condition: "Foreign Used",
@@ -564,6 +592,8 @@ const carData = [
     price: "₦17,000,000",
     // mileage: "118,516 miles",
     location: "Lagos",
+    shortDescription:
+      "Family-friendly Highlander with spacious interior & dependable performance.",
     description: `<strong>Experience Reliability and Space – 2009 Toyota Highlander</strong>
               Discover the perfect family SUV with this 2009 Toyota Highlander. Known for its spacious interior and dependable performance, this vehicle is designed to accommodate your lifestyle. Whether you're commuting in the city or embarking on a road trip, the Highlander offers comfort, safety, and versatility for all your adventures.`,
     condition: "Foreign Used",
@@ -602,6 +632,8 @@ const carData = [
     price: "₦30,000,000",
     // mileage: "118,516 miles",
     location: "Lagos",
+    shortDescription:
+      "Luxury RX 350 with advanced features & premium comfort. Top-tier SUV.",
     description: `<strong>Luxury and Performance Combined – 2014 Lexus RX 350</strong>
               Step into the world of luxury with this 2014 Lexus RX 350. This SUV is designed for those who appreciate elegance and performance. With its spacious interior, advanced technology, and smooth ride, the RX 350 is perfect for everyday commutes including both short and long journeys. Experience the blend of comfort, style, and reliability that Lexus is known for.`,
     condition: "Foreign Used",
@@ -637,6 +669,8 @@ const carData = [
     price: "₦18,000,000",
     mileage: "114,636KM",
     location: "Lagos",
+    shortDescription:
+      "Fuel-efficient Corolla with comfortable interior & smooth handling.",
     description: `<strong>Reliable and Efficient – 2015 Toyota Corolla</strong>
               Discover the perfect compact sedan with this 2015 Toyota Corolla. Known for its reliability and fuel efficiency, this vehicle is ideal for daily commuting and city driving. With its comfortable interior, advanced safety features, and smooth handling, the Corolla offers a dependable and enjoyable driving experience.`,
     condition: "Foreign Used",
@@ -671,6 +705,8 @@ const carData = [
     price: "₦15,000,000",
     // mileage: "114,636km",
     location: "Lagos",
+    shortDescription:
+      "Spacious & durable Highlander for families - reliable Toyota quality.",
     description: `<strong>Versatile and Spacious – 2006 Toyota Highlander</strong>
               Experience the reliability and versatility of this 2006 Toyota Highlander. With its spacious interior and comfortable seating, this SUV is perfect for families and those who need extra cargo space. The Highlander is known for its durability and performance, making it a great choice for all kinds of road trips.`,
     condition: "Foreign Used",
@@ -706,6 +742,8 @@ const carData = [
     price: "₦26,000,000",
     // mileage: "114,636km",
     location: "Lagos",
+    shortDescription:
+      "Luxury GLK with panoramic roof, navigation & power boot. Full option!",
     description: `<strong>Luxury and Performance – 2014 Mercedes Benz GLK</strong>
               Step into the world of luxury with this 2014 Mercedes Benz GLK. This SUV combines elegance, performance, and advanced technology to provide a superior driving experience. With its spacious interior, high-end features, and smooth ride, the GLK is perfect for those who appreciate both style and functionality.`,
     condition: "Foreign Used",
@@ -754,6 +792,8 @@ const carData = [
     price: "₦33,000,000",
     mileage: "8,132miles",
     location: "Lagos",
+    shortDescription:
+      "Near-new Corolla LE with low mileage & modern tech. Like-new condition!",
     description: `<strong>Experience Modern Comfort and Efficiency – 2021 Toyota Corolla LE</strong>
               Discover the perfect blend of style, comfort, and technology with this 2021 Toyota Corolla LE. This compact sedan is designed for those who appreciate modern features and fuel efficiency. With its sleek design, spacious interior, and advanced safety systems, the Corolla LE is ideal for daily commuting and long drives alike.`,
     condition: "Foreign Used",
@@ -793,6 +833,8 @@ const carData = [
     price: "₦25,000,000",
     // mileage: "8,132miles",
     location: "Lagos",
+    shortDescription:
+      "RAV4 XLE with smart tech, comfortable ride & reliable Toyota engineering.",
     description: `<strong>Toyota RAV4 2015 XLE – Reliable Comfort Meets Smart Tech</strong>
               <p>Experience the perfect blend of style, utility, and technology with this well-maintained Toyota RAV4 2015 XLE. Whether you're commuting in the city or heading out on a road trip, this SUV delivers smooth performance, fuel efficiency, and Toyota’s legendary reliability.<p>
 
@@ -844,6 +886,8 @@ const carData = [
     price: "₦25,000,000",
     mileage: "126,422Miles",
     location: "Lagos",
+    shortDescription:
+      "Luxury RX with reverse camera, navigation, power boot & leather seats.",
     description: `<strong> Lexus RX 350 2010 – Luxury, Comfort, and Convenience Combined</strong>
 
               <p>Drive in style with this clean Lexus RX 350 2010, built for comfort and performance. It comes fully equipped with premium features including:</p>
@@ -894,6 +938,8 @@ const carData = [
     price: "₦35,000,000",
     // mileage: "126,422km",
     location: "Lagos",
+    shortDescription:
+      "ML 350 with 4MATIC AWD, panoramic roof & navigation. Premium luxury SUV.",
     description: `<strong> For Sale: 2013 Mercedes-Benz ML 350 | Excellent Condition | Well-Equipped</strong>
 
 <p>Up for sale is a well-maintained 2013 Mercedes-Benz ML 350 — a luxury midsize SUV that offers smooth performance, premium comfort, and timeless style. Powered by a 3.5L V6 engine and 7-speed automatic transmission, this SUV delivers a refined and responsive driving experience.</p>
@@ -953,6 +999,8 @@ const carData = [
     price: "₦15,000,000",
     // mileage: "126,422km",
     location: "Lagos",
+    shortDescription:
+      "Full-option Limited with leather seats, sunroof & premium audio.",
     description: `<strong>2005 Toyota Highlander Limited Full Option | Reliable and fully loaded </strong>
 This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a smooth ride, spacious interior, and premium features. As a "Full Option" model, it includes leather seats, a sunroof, premium audio system, alloy wheels, and advanced climate control. Known for its reliability and comfort, it's an excellent choice for families or daily commuting.`,
 
@@ -1033,6 +1081,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦30,000,000",
     mileage: "89,523Km",
     location: "Lagos",
+    shortDescription:
+      "Elegant RX 350 with low mileage, luxury interior & smooth performance.",
     description: `<strong>2013 Lexus RX 350 – Luxury and Performance in One Package</strong>
               <p>Step into the world of luxury with this 2013 Lexus RX 350. This SUV is designed for those who appreciate elegance and performance. With its spacious interior, advanced technology, and smooth ride, the RX 350 is perfect for everyday commutes and long journeys alike.</p>`,
     condition: "Foreign Used",
@@ -1070,6 +1120,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦22,500,000",
     mileage: "67,675miles",
     location: "Lagos",
+    shortDescription:
+      "Adventure-ready Santa Fe Sport with reverse camera & navigation.",
     description: `<strong>Hyundai Santa Fe Sport 2017 – Adventure-Ready & Family-Friendly!</strong>
               <p>Get ready to turn heads and own the road with this bold and beautiful 2017 Hyundai Santa Fe Sport!
                Power meets comfort in this sporty SUV – perfect for road trips, city cruising, or school runs in style.</p>
@@ -1119,6 +1171,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦18,200,000",
     mileage: "165,221miles",
     location: "Lagos",
+    shortDescription:
+      "RAV4 Limited with keyless start, reverse camera & navigation. Fully loaded!",
     description: `<strong>**Toyota RAV4 2011 Limited – Fully Loaded and Ready to Drive**</strong>,
               <p>If you're looking for a dependable, stylish SUV with all the top features, this **2011 Toyota RAV4 Limited** is the one for you. It’s the full option model, offering comfort, performance, and convenience in one solid package.</p>
               <b>Key Features:</b>
@@ -1167,6 +1221,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦17,500,000",
     mileage: "110,680miles",
     location: "Lagos",
+    shortDescription:
+      "Full-option ES 350 with panoramic roof, navigation & reverse camera.",
     description: `<strong>**Lexus ES 350 2009 – Luxury, Comfort, and Performance in One Ride**</strong>
               <p>Step into premium comfort with this well-maintained **Lexus ES 350 2009 model**, a full option sedan designed for those who appreciate class and performance. Known for its smooth ride and timeless design, this car is built to impress both inside and out.</p>
               <b>Key Features</b>
@@ -1214,6 +1270,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦15,500,000",
     mileage: "187,810miles",
     location: "Lagos",
+    shortDescription:
+      "Fuel-efficient Corolla LE with reverse camera, navigation & Bluetooth.",
     description: `<strong>**Toyota Corolla 2013 LE – Reliable, Efficient, and Well-Equipped**</strong>
               <p>Looking for a fuel-efficient and dependable car with modern features? This **2013 Toyota Corolla LE** is the perfect blend of practicality and comfort, ideal for both daily driving and long-distance trips.</p>
               <b>Key Features</b>
@@ -1262,6 +1320,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦19,500,000",
     mileage: "93,517miles",
     location: "Lagos",
+    shortDescription:
+      "Sporty Corolla with keyless start, reverse camera & full-option features.",
     description: `<strong>Toyota Corolla 2015 Sport – Full Option, Sleek and Reliable</strong>
               <p>Upgrade your drive with this stylish and well-maintained **Toyota Corolla 2015 Sport edition**. Built for comfort and performance, this full-option sedan combines modern tech with Toyota’s trusted reliability.</p>
 
@@ -1314,6 +1374,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦27,500,000",
     // mileage: "93,517miles",
     location: "Lagos",
+    shortDescription:
+      "ES 350 with BSM, power boot, ambient lighting & keyless entry. Luxury!",
     description: `<strong>Lexus ES 350 2014 – Luxury, Technology, and Comfort in One Powerful Ride</strong>
               <p>Experience true executive comfort with this **2014 Lexus ES 350 Full Option**, designed to deliver a smooth, quiet ride wrapped in luxury and loaded with intelligent features.</p>
               <b> Premium Highlights:</b>
@@ -1373,6 +1435,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦48,500,000",
     mileage: "116,739miles",
     location: "Lagos",
+    shortDescription:
+      "Platinum Edition with 360° camera, panoramic roof, BSM & park assist!",
     description: `<strong>Toyota Highlander 2018 Limited Platinum – Full Option, Top of the Line</strong>
               <p>Step into unmatched comfort, performance, and technology with this **Toyota Highlander 2018 Limited Platinum Edition**. This is not your average Highlander — it’s the **complete version**, fully loaded with every premium feature Toyota offers.</p>
               <b> Premium Features:</b>
@@ -1425,6 +1489,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦16,000,000",
     mileage: "140,249KM",
     location: "Lagos",
+    shortDescription:
+      "Full-option Limited with 3-row seating & formica interior. Family-ready!",
     description: `<strong>Toyota Highlander 2006 Limited – Full Option</strong>
               <p>Experience comfort, space, and reliability with this 2006 Toyota Highlander Limited.</p>
               
@@ -1477,6 +1543,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦35,000,000",
     mileage: "108,200Miles",
     location: "Lagos",
+    shortDescription:
+      "Stylish Camry SE with BSM, keyless entry, reverse camera & navigation.",
     description: `<strong>Toyota Camry 2018 SE – Sweet, Stylish & Ready to Impress</strong>
               <p>Fall in love with this 2018 Toyota Camry SE, built for comfort, safety, and style.</p>
               <b> Premium Features:</b>
@@ -1533,6 +1601,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦34,000,000",
     // mileage: "108,200Miles",
     location: "Lagos",
+    shortDescription:
+      "Modern 2021 Corolla LE with ECO system, BSM & reverse camera. Efficient!",
     description: `<strong>Toyota Corolla 2021 LE – Modern, Efficient & Safe</strong>
               <p>Step into comfort and smart driving with this 2021 Toyota Corolla LE, built for everyday excellence.</p>
               <b> Premium Features:</b>
@@ -1582,8 +1652,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/LEXUS_RX_350_2018_FullOption_11.jpeg",
     ],
     price: "₦50,000,000",
-    // mileage: "108,200Miles",
+    mileage: "",
     location: "Lagos",
+    shortDescription:
+      "Metallic gold RX 350 with navigation, power boot, sonar & new tires!",
     description: `<strong>Lexus RX 350 2018 – Full Option Luxury SUV</strong>
               <p>Drive in elegance and power with this 2018 Lexus RX 350 Full Option, finished in a stunning Metallic Lite Gold that radiates class.</p>
               <b> Premium Features:</b>
@@ -1638,8 +1710,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/MercedesBenz_GLE_2018_fullOption_12.jpeg",
     ],
     price: "₦50,000,000",
-    // mileage: "108,200Miles",
+    mileage: "",
     location: "Lagos",
+    shortDescription:
+      "Premium GLE with advanced tech, luxury interior & powerful performance.",
     description: `<strong>Mercedes-Benz GLE 2018 – Full Option Luxury SUV</strong>
               <p>Experience the perfect mix of power, elegance, and advanced technology with this 2018 Mercedes-Benz GLE Full Option.</p>
               <b> Premium Features:</b>
@@ -1698,6 +1772,8 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     price: "₦25,000,000",
     // mileage: "108,200Miles",
     location: "Lagos",
+    shortDescription:
+      "Luxury GLK with panoramic roof, reverse camera, power boot & style!",
     description: `<strong>Mercedes-Benz GLK 2010 – Luxury, Comfort & Style</strong>
               <p>Enjoy German engineering at its finest with this 2010 Mercedes-Benz GLK, built for drivers who value performance and elegance.</p>
               <b> Premium Features:</b>
@@ -1735,7 +1811,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     name: "Toyota",
     model: "Yaris",
     year: 2008,
-    // color: "Metalic LITE GOLD",
+    color: "",
     images: [
       "images/ToyotaYarix_1.jpeg",
       "images/ToyotaYarix_2.jpeg",
@@ -1747,11 +1823,12 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/ToyotaYarix_8.jpeg",
       "images/ToyotaYarix_9.jpeg",
       "images/ToyotaYarix_10.jpeg",
-      // "images/ToyotaYarix_11.jpeg",
     ],
     price: "₦9,000,000",
     mileage: "111,354KM",
     location: "Lagos",
+    shortDescription:
+      "Compact & economical Yaris - perfect for city driving & fuel savings.",
     description: `<strong>Toyota Yaris 2008 – Compact, Reliable & Economical</strong>
               <p>Get a car that’s easy to drive, fuel-efficient, and built to last. This 2008 Toyota Yaris is perfect for city driving and everyday use.</p>
               <b>Features:</b>
@@ -1785,7 +1862,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     name: "Toyota",
     model: "Matrix",
     year: 2008,
-    // color: "Metalic LITE GOLD",
+    color: "",
     images: [
       "images/ToyotaMatrix_2008_1.jpeg",
       "images/ToyotaMatrix_2008_2.jpeg",
@@ -1802,8 +1879,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/ToyotaMatrix_2008_13.jpeg",
     ],
     price: "₦9,500,000",
-    // mileage: "111,354KM",
+    mileage: "",
     location: "Lagos",
+    shortDescription:
+      "Versatile Matrix hatchback with flexible cargo space & fuel efficiency.",
     description: `<strong>Toyota Matrix 2008 – Reliable, Versatile, and Stylish</strong>
               <p>The 2008 Toyota Matrix blends the practicality of a hatchback with the sporty feel of a sedan. Powered by a fuel-efficient 1.8L 4-cylinder engine, it delivers smooth performance while keeping running costs low. Its spacious interior offers flexible cargo space thanks to fold-flat rear seats, making it perfect for daily commutes, family outings, or weekend adventures. With Toyota’s proven reliability, comfortable ride quality, and sleek design, the Matrix remains a smart choice for anyone seeking value, durability, and style in one package.</p>
               <p><strong>**Price**:  ₦9.5M</strong>.</p>
@@ -1827,7 +1906,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     name: "TOYOTA",
     model: "HIGHLANDER",
     year: 2008,
-    // color: "Metalic LITE GOLD",
+    color: "",
     images: [
       "images/TOYOTA_HIGHLANDER_LIMITED_2008_1.jpeg",
       "images/TOYOTA_HIGHLANDER_LIMITED_2008_2.jpeg",
@@ -1841,8 +1920,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/TOYOTA_HIGHLANDER_LIMITED_2008_10.jpeg",
     ],
     price: "₦18,000,000",
-    // mileage: "108,200Miles",
+    mileage: "",
     location: "Lagos",
+    shortDescription:
+      "Full-option Limited with 3-row seating, JBL sound & DVD player. Loaded!",
     description: `<strong>Toyota Highlander 2008 Limited – Full Option Luxury SUV</strong>
               <p>Experience premium comfort, power, and style with this 2008 Toyota Highlander Limited – fully loaded with every feature you could dream of.</p>
               <b> Premium Features:</b>
@@ -1882,7 +1963,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     name: "TOYOTA",
     model: "HIGHLANDER",
     year: 2013,
-    // color: "Metalic LITE GOLD",
+    color: "",
     images: [
       "images/ToyotaHighlander_limited_2013_1.jpeg",
       "images/ToyotaHighlander_limited_2013_2.jpeg",
@@ -1898,32 +1979,24 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/ToyotaHighlander_limited_2013_12.jpeg",
     ],
     price: "₦25,000,000",
-    mileage: "low mileage",
+    mileage: "",
     location: "Lagos",
-    description: `<strong>Toyota Highlander 2013 Limited – Full Option</strong>
-              <p>Experience comfort, luxury, and reliability with this **2013 Toyota Highlander Limited**. This SUV comes fully loaded with premium features, making it the perfect family or executive ride.</p>
-              <b> Premium Features:</b>
-              <ul>
-
-                 <li>Keyless Entry & Start** – Enjoy modern convenience.</li>
-
-                <li>3 Row Seating** – Spacious and comfortable for the whole family.</li>
-
-                <li>Built-in Navigation System** – Find your way with ease. </li>
-
-                <li>Bluetooth Connectivity** – Stay connected on the go.</li>
-
-                <li>Reverse Camera** – Safer and easier parking.</li>
-
-                <li>Power Boot** – Hassle-free trunk access.</li>
-
-                <li>Clean Title** – Buy with confidence</li>
-
-                <li>Low Mileage** – Well-maintained and ready to drive</li>
-
-              </ul>
-             
-              <p>This Highlander delivers a smooth drive, elegant design, and advanced features that make every journey enjoyable.</p>`,
+    shortDescription:
+      "Premium Limited with keyless entry, 3-row seating, navigation & reverse camera.",
+    description: `<strong>Toyota Highlander 2013 Limited – Premium Full Option SUV</strong>
+          <p>Discover the perfect combination of luxury, space, and dependability with this 2013 Toyota Highlander Limited. Fully equipped with premium features, this SUV is ideal for families and executives who value comfort and performance.</p>
+          <b>Key Features:</b>
+          <ul>
+          <li>Keyless Entry & Push Start – Modern convenience at your fingertips</li>
+          <li>3-Row Seating – Comfortable seating for up to 7 passengers</li>
+          <li>Built-in Navigation System – Stay on track with integrated GPS</li>
+          <li>Bluetooth Connectivity – Hands-free calls and wireless audio streaming</li>
+          <li>Reverse Camera – Enhanced safety for parking and maneuvering</li>
+          <li>Power Boot – Effortless trunk access</li>
+          <li>Clean Title – Purchase with complete confidence</li>
+          <li>Low Mileage – Well-maintained and road-ready</li>
+          </ul>
+          <p>This Highlander offers a refined driving experience with its smooth performance, sophisticated design, and advanced technology that enhances every journey.</p>`,
     condition: "Foreign Used",
     type: "SUV",
     fuelType: "Petrol",
@@ -1943,7 +2016,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     name: "TOYOTA",
     model: "HIGHLANDER",
     year: 2013,
-    // color: "Metalic LITE GOLD",
+    color: "",
     images: [
       "images/ToyotaHighlanderLimited_2013_1.jpeg",
       "images/ToyotaHighlanderLimited_2013_2.jpeg",
@@ -1960,8 +2033,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       // "images/ToyotaHighlanderLimited_2013_13.jpeg",
     ],
     price: "₦25,000,000",
-    mileage: "low mileage",
+    mileage: "",
     location: "Lagos",
+    shortDescription:
+      "Clean Limited with low mileage, 3-row seating, power boot & navigation.",
     description: `<strong>Toyota Highlander 2013 Limited – Full Option</strong>
               <p>Experience comfort, luxury, and reliability with this **2013 Toyota Highlander Limited**. This SUV comes fully loaded with premium features, making it the perfect family or executive ride.</p>
               <b> Premium Features:</b>
@@ -2014,8 +2089,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
       "images/HondaCity_2012_5.jpg",
     ],
     price: "₦7,000,000",
-    // mileage: "low mileage",
+    mileage: "",
     location: "Lagos",
+    shortDescription:
+      "Neat & stylish City sedan with smooth drive & excellent fuel economy.",
     description: `<strong>Honda City</strong>
               <p>Honda City is a neat and stylish small sedan known for its smooth driving, good fuel economy, and comfortable interior. It has a clean, modern look on the outside, roomy seats inside, and a reliable engine that’s great for everyday use. The Honda City is loved by many drivers because it’s affordable, easy to maintain, and perfect for both city roads and long trips.</p>`,
     condition: "Naija Used",

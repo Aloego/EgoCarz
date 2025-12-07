@@ -57,27 +57,79 @@
               </div>
             </div>
 
+            <!-- Right Column: Product Info Only -->
             <div class="col-md-6">
-              <h2 id="carName"></h2>
-              <p id="carModel"></p>
-              <p id="carPrice" class="h5"></p>
-               <p id="carYear"></p>
-                <p id="carColor"></p>
-              <p id="carMileage"></p>
-              <p id="carLocation"></p>
-              <p id="carDescription"></p>
-              <p id="carCondition"></p>
-              <p id="carType"></p>
-              <p id="carFuelType"></p>
-              <p id="carTransmission"></p>
+              <h2 id="carName" class="mb-3"></h2>
+              <h3 id="carPrice" class="text-primary mb-3"></h3>
+              <p id="carShortDescription" class="text-muted mb-4"></p>
               
-              <a id="buyNowBtn" href="#" class="btn btn-primary mr-2" data-toggle="modal" data-target="#appointmentModal">
+              <a id="buyNowBtn" href="#" class="btn btn-primary btn-lg mr-2 mb-2" data-toggle="modal" data-target="#appointmentModal">
                   Book Now
               </a>
-              <a id="contactSellerBtn" href="#" class="btn btn-success">
+              <a id="contactSellerBtn" href="#" class="btn btn-success btn-lg mb-2">
                   Contact Seller
               </a>
+            </div>
+          </div>
 
+          <!-- Tabs Section Below Image Gallery -->
+          <div class="row mt-5">
+            <div class="col-12">
+              <ul class="nav nav-tabs nav-tabs-custom" id="carDetailTabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active font-weight-bold" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" style="font-size: 16px; padding: 12px 24px;">Description</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-weight-bold" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="specification" aria-selected="false" style="font-size: 16px; padding: 12px 24px;">Specification</a>
+                </li>
+              </ul>
+              <div class="tab-content border border-top-0 p-4 bg-white" id="carDetailTabsContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                  <p id="carDescription"></p>
+                </div>
+                <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                  <table class="table table-striped">
+                    <tbody id="specTableBody">
+                      <tr id="specModel">
+                        <td class="font-weight-bold" width="30%">Model</td>
+                        <td id="carModel"></td>
+                      </tr>
+                      <tr id="specYear">
+                        <td class="font-weight-bold">Year</td>
+                        <td id="carYear"></td>
+                      </tr>
+                      <tr id="specCondition">
+                        <td class="font-weight-bold">Condition</td>
+                        <td id="carCondition"></td>
+                      </tr>
+                      <tr id="specType">
+                        <td class="font-weight-bold">Type</td>
+                        <td id="carType"></td>
+                      </tr>
+                      <tr id="specColor">
+                        <td class="font-weight-bold">Color</td>
+                        <td id="carColor"></td>
+                      </tr>
+                      <tr id="specMileage">
+                        <td class="font-weight-bold">Mileage</td>
+                        <td id="carMileage"></td>
+                      </tr>
+                      <tr id="specFuelType">
+                        <td class="font-weight-bold">Fuel Type</td>
+                        <td id="carFuelType"></td>
+                      </tr>
+                      <tr id="specTransmission">
+                        <td class="font-weight-bold">Transmission</td>
+                        <td id="carTransmission"></td>
+                      </tr>
+                      <tr id="specLocation">
+                        <td class="font-weight-bold">Location</td>
+                        <td id="carLocation"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
