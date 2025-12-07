@@ -33,7 +33,15 @@
             <div class="col-md-6">
                 <div class="car-image-gallery text-center">
                   
-                    <img id="mainCarImage" src="" class="img-fluid mb-3 border" data-bs-toggle="modal" data-bs-target="#imageModal" style="max-height: 400px; cursor: zoom-in;" alt="Main Car Image">
+                    <div style="position: relative; display: inline-block;">
+                      <img id="mainCarImage" src="" class="img-fluid mb-3 border" data-bs-toggle="modal" data-bs-target="#imageModal" style="max-height: 400px; cursor: zoom-in;" alt="Main Car Image">
+                      
+                      <!-- Left Arrow -->
+                      <button id="prevBtn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px 15px; cursor: pointer; font-size: 20px; border-radius: 3px;">&#10094;</button>
+                      
+                      <!-- Right Arrow -->
+                      <button id="nextBtn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px 15px; cursor: pointer; font-size: 20px; border-radius: 3px;">&#10095;</button>
+                    </div>
                   
                   <div id="carThumbnails" class="d-flex flex-wrap justify-content-center gap-2"></div>
                 </div>   
