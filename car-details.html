@@ -8,7 +8,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
 <!-- Time picker -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
@@ -33,8 +32,8 @@
             <div class="col-md-6">
                 <div class="car-image-gallery text-center">
                   
-                    <div style="position: relative; display: inline-block;">
-                      <img id="mainCarImage" src="" class="img-fluid mb-3 border" data-bs-toggle="modal" data-bs-target="#imageModal" style="max-height: 400px; cursor: zoom-in;" alt="Main Car Image">
+                    <div style="position: relative; display: inline-block; width: 100%; max-width: 600px;">
+                      <img id="mainCarImage" src="" class="img-fluid mb-3 border" data-bs-toggle="modal" data-bs-target="#imageModal" style="width: 100%; height: 400px; object-fit: cover; cursor: zoom-in;" alt="Main Car Image">
                       
                       <!-- Left Arrow -->
                       <button id="prevBtn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px 15px; cursor: pointer; font-size: 20px; border-radius: 3px;">&#10094;</button>
@@ -72,18 +71,12 @@
               <p id="carFuelType"></p>
               <p id="carTransmission"></p>
               
-              <!-- whatsapp appointment attached to the car details.js -->
-              <!-- <a id="bookButton" href="contact.html" target="_blank" class="btn btn-primary mt-3">Buy Now</a>  -->
-
-              <!-- this is for the script commented out below  -->
-               <!-- <a id="buyNowBtn" href="contact.html" class="btn btn-primary">Buy Now</a> -->
-
-               <!-- ================= BUY NOW BUTTON ================= -->
-                <!-- UPDATE START: Added Buy Now button that triggers modal -->
-                <a id="buyNowBtn" href="#" class="btn btn-primary" data-toggle="modal" data-target="#appointmentModal">
-                    Buy Now
-                </a>
-                <!-- UPDATE END -->
+              <a id="buyNowBtn" href="#" class="btn btn-primary mr-2" data-toggle="modal" data-target="#appointmentModal">
+                  Book Now
+              </a>
+              <a id="contactSellerBtn" href="#" class="btn btn-success">
+                  Contact Seller
+              </a>
 
             </div>
           </div>
@@ -105,16 +98,14 @@
     <!-- Bootstrap Local -->
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
+   
 <!-- Bootstrap JS CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <!-- Timepicker JS (place after your jQuery 3.5.1 script) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 <script src="js/cars-data.js"></script>
 <script src="js/car-details.js"></script>
@@ -122,7 +113,6 @@
 
 
 <!-- ================= APPOINTMENT MODAL ================= -->
-<!-- UPDATE START: Added Bootstrap 4 modal form for booking -->
 <div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-labelledby="appointmentModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -186,27 +176,7 @@
 </div>
 <!-- UPDATE END -->
 
- 
-
-
-
-
- 
-
-
-<!-- contact form with the car product details hidden input field -->
-<!-- <script>
-  const buyNowLink = document.getElementById('buyNowBtn');
-  const currentPage = window.location.href;
-  const encodedPage = encodeURIComponent(currentPage);
-
-  buyNowLink.href = `contact.html?from=${encodedPage}`;
-</script> -->
-
-
-
 <!-- ================= AUTO-FILL SCRIPT ================= -->
-<!-- UPDATE START: Script to auto-fill form fields with car details -->
 <script>
 document.getElementById('buyNowBtn').addEventListener('click', function() {
     document.getElementById('formCarName').value = document.getElementById('carName').innerText;
@@ -214,7 +184,6 @@ document.getElementById('buyNowBtn').addEventListener('click', function() {
     document.getElementById('formCarPrice').value = document.getElementById('carPrice').innerText;
 });
 </script>
-<!-- UPDATE END -->
 
 
 
@@ -233,11 +202,6 @@ $(document).ready(function(){
   });
 });
 </script>
-
-
-
-</body>
-</html>
 
 </body>
 </html>

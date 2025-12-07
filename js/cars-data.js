@@ -26,6 +26,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // LEXUS RX 350 2013 MODEL FULL OP
     // REVERSECAMERA
@@ -61,6 +62,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // Toyota highlander 2013
     // Full option
@@ -98,6 +100,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // Toyota highlander 2015 xle
     // OriginalPrice: 29.5m
@@ -138,6 +141,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // Toyota highlander 2007 limited
     // Full option
@@ -173,6 +177,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // Toyota Venza 2010 black
     //   Mileage-101,000M/HR
@@ -221,6 +226,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // Toyota Camry 2011 gray
     //  DUTY PAID
@@ -278,6 +284,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // PONTIAC VIBE 2010 black
     //  DUTY PAID
@@ -308,6 +315,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // Toyota corolla 2010
     //  DUTY PAID
@@ -342,6 +350,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: LEXUS ES 350 2014
     // OriginalPrice: 22.5Million Naira
@@ -373,6 +382,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: LEXUS ES 350 2014
     // OriginalPrice: 22.5Million Naira
@@ -403,6 +413,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla 2007
     // OriginalPrice: 8.7Million Naira
@@ -434,6 +445,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla 2007
     // OriginalPrice: 12Million Naira
@@ -481,6 +493,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla 2007
     // OriginalPrice: 56.5Million Naira
@@ -519,6 +532,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla 2007
     // OriginalPrice: 13Million Naira
@@ -556,6 +570,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName:
     // OriginalPrice: 15Million Naira
@@ -593,6 +608,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName:
     // OriginalPrice: 27.5Million Naira
@@ -627,6 +643,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla 2015
     // OriginalPrice: 16.8Million Naira
@@ -660,6 +677,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander 2006
     // OriginalPrice: 12.5Million Naira
@@ -694,6 +712,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: MERCEDES BENZ GLK
     // 2014 FULL OPTION REVERSECAMERA NAVIGATION
@@ -741,6 +760,7 @@ const carData = [
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla LE 2021
     // OriginalPrice: 29M
@@ -795,6 +815,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Rav4 XLE,
     // OriginalPrice: 22.5M
@@ -839,6 +860,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Lexus RX 350 2010,
     // OriginalPrice: 21M
@@ -898,6 +920,7 @@ const carData = [
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Mercedes Benz ML 350 2013,
     // OriginalPrice: 28.5M
@@ -937,6 +960,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander LIMITED(FULL-OPTION) 2005,
     // OriginalPrice: 12.5M
@@ -977,6 +1001,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander limited full-option 2013,
     // OriginalPrice: 22M
@@ -1014,6 +1039,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: LEXUS_RX_350_2013,
     // OriginalPrice: 27.5M
@@ -1061,6 +1087,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: 2017_Hyundai_SantaFe_Sports
     // OriginalPrice: 19.5M
@@ -1108,6 +1135,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Rav4
     // OriginalPrice: 15.2M
@@ -1155,6 +1183,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Lexus ES 350 2009,
     // OriginalPrice: 14.5M
@@ -1200,6 +1229,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla LE 2013,
     // OriginalPrice: 13.5M
@@ -1251,6 +1281,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla Sport 2015,
     // OriginalPrice: 16.5M
@@ -1301,6 +1332,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Lexus ES 350 2014,
     // OriginalPrice: 24.5M
@@ -1361,6 +1393,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander Limited 2018,
     // OriginalPrice: 45M
@@ -1410,6 +1443,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander Limited 2006,
     // OriginalPrice: 12.8M
@@ -1464,6 +1498,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Camry 2018 SE,
     // OriginalPrice: 30M
@@ -1517,6 +1552,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Corolla LE 2021,
     // OriginalPrice: 28.5M
@@ -1571,6 +1607,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Lexus RX 350 2018 Full Option,
     // OriginalPrice: 47M
@@ -1627,6 +1664,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Mercedes-Benz GLE 2018 Full Option,
     // OriginalPrice: 45M
@@ -1682,6 +1720,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Mercedes-Benz GLE 2018 Full Option,
     // OriginalPrice: 18.3M
@@ -1731,6 +1770,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Mercedes-Benz GLE 2018 Full Option,
     // OriginalPrice: 8.3M
@@ -1772,6 +1812,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     // type: "",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Matrix 2008,
     // OriginalPrice: 8.8M
@@ -1826,6 +1867,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander Limited 2008,
     // OriginalPrice: 17M BUT I AM GIVING U GUYS 16.5M
@@ -1886,6 +1928,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander Limited 2013,
     // OriginalPrice: 22.5M
@@ -1947,6 +1990,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "SUV",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Toyota Highlander Limited 2013,
     // OriginalPrice: 22M
@@ -1978,6 +2022,7 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     type: "Sedan",
     fuelType: "Petrol",
     transmission: "Automatic",
+    whatsappNumber: "",
     // VIN: 2345677668675554,
     // CarName: Honda City 2012,
     // OriginalPrice: 5M given at 4.6M

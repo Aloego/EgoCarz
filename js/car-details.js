@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       thumb.src = imgSrc;
       thumb.className = "img-thumbnail m-1";
       thumb.style.width = "80px";
+      thumb.style.height = "80px";
+      thumb.style.objectFit = "cover";
       thumb.style.cursor = "pointer";
 
       // Add click event to update main image
@@ -48,19 +50,19 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = car.images.indexOf(imgSrc);
       });
       thumbnails.appendChild(thumb);
-
-      // This modal isn't working
-      document
-        .getElementById("mainCarImage")
-        .addEventListener("click", function () {
-          const modalImage = document.getElementById("modalCarImage");
-          modalImage.src = this.src;
-          const modal = new bootstrap.Modal(
-            document.getElementById("imageModal")
-          );
-          modal.show();
-        });
     });
+
+    // Modal click event (moved outside forEach loop)
+    document
+      .getElementById("mainCarImage")
+      .addEventListener("click", function () {
+        const modalImage = document.getElementById("modalCarImage");
+        modalImage.src = this.src;
+        const modal = new bootstrap.Modal(
+          document.getElementById("imageModal")
+        );
+        modal.show();
+      });
 
     // Keyboard navigation (left/right arrow keys)
     document.addEventListener("keydown", (e) => {
@@ -107,36 +109,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("carDescription").innerHTML = `${car.description}`;
     document.getElementById("carCondition").textContent =
       `Condition: ${car.condition}` || "Not specified";
+
+    // Contact Seller WhatsApp button
+    const contactSellerBtn = document.getElementById("contactSellerBtn");
+    if (contactSellerBtn) {
+      contactSellerBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const message = `I'm interested in this car:\n- Car: ${car.name}\n- Price: ${car.price}\n- Location: ${car.location}`;
+        const encodedMessage = encodeURIComponent(message);
+        const phoneNumber = car.whatsappNumber || "2348100042876";
+
+        const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
+        const waLink = isMobile
+          ? `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+          : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+        window.open(waLink, "_blank");
+      });
+    }
   } else {
     document.querySelector(".car-detail").innerHTML = "<p>Car not found.</p>";
   }
-
-  // BUY button logic
-  const bookButton = document.getElementById("bookButton");
-
-  bookButton.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const message = `I want to buy:
-      - Car: ${car.name}
-      - Price: ₦${Number(car.price.replace(/[^\d]/g, "")).toLocaleString()}
-      - Mileage: ${car.mileage}
-      - Location: ${car.location}
-      - Year: ${car.year || "Not specified"}`;
-
-    const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "2348105031964"; // Replace with your WhatsApp number
-
-    const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
-    const waLink = isMobile
-      ? `https://wa.me/${phoneNumber}?text=${encodedMessage}`
-      : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
-
-    window.open(waLink, "_blank");
-  });
-
-  // Event Listeners for filters and Sorting
-  // document.getElementById("applyFilters").addEventListener("click", () => {
-  // applyFiltersAndSort();
-  // });
 });
