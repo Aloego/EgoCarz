@@ -52,26 +52,95 @@ document.addEventListener("DOMContentLoaded", () => {
       thumbnails.appendChild(thumb);
     });
 
-    // Modal click event (moved outside forEach loop)
+    // Modal click event with navigation
+    let modalCurrentIndex = 0;
+    const modalImage = document.getElementById("modalCarImage");
+    const modalCounter = document.getElementById("modalImageCounter");
+    const modalPrevBtn = document.getElementById("modalPrevBtn");
+    const modalNextBtn = document.getElementById("modalNextBtn");
+
+    function updateModalImage(index) {
+      modalCurrentIndex = (index + car.images.length) % car.images.length;
+      modalImage.src = car.images[modalCurrentIndex];
+      modalCounter.textContent = `${modalCurrentIndex + 1}/${
+        car.images.length
+      }`;
+    }
+
     document
       .getElementById("mainCarImage")
       .addEventListener("click", function () {
-        const modalImage = document.getElementById("modalCarImage");
-        modalImage.src = this.src;
+        modalCurrentIndex = currentIndex;
+        updateModalImage(modalCurrentIndex);
         const modal = new bootstrap.Modal(
           document.getElementById("imageModal")
         );
         modal.show();
+
+        // Show arrow buttons when modal opens
+        modalPrevBtn.style.display = "block";
+        modalNextBtn.style.display = "block";
       });
 
-    // Keyboard navigation (left/right arrow keys)
+    // Hide arrow buttons when modal closes
+    document
+      .getElementById("imageModal")
+      .addEventListener("hidden.bs.modal", function () {
+        modalPrevBtn.style.display = "none";
+        modalNextBtn.style.display = "none";
+      });
+
+    // Modal navigation buttons
+    modalPrevBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      updateModalImage(modalCurrentIndex - 1);
+    });
+
+    modalNextBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      updateModalImage(modalCurrentIndex + 1);
+    });
+
+    // Modal keyboard navigation
     document.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowLeft") {
-        updateMainImage(currentIndex - 1);
-      } else if (e.key === "ArrowRight") {
-        updateMainImage(currentIndex + 1);
+      const modal = document.getElementById("imageModal");
+      if (modal.classList.contains("show")) {
+        if (e.key === "ArrowLeft") {
+          updateModalImage(modalCurrentIndex - 1);
+        } else if (e.key === "ArrowRight") {
+          updateModalImage(modalCurrentIndex + 1);
+        }
+      } else {
+        // Main image navigation when modal is closed
+        if (e.key === "ArrowLeft") {
+          updateMainImage(currentIndex - 1);
+        } else if (e.key === "ArrowRight") {
+          updateMainImage(currentIndex + 1);
+        }
       }
     });
+
+    // Modal touch/swipe support for mobile
+    let modalTouchStartX = 0;
+    let modalTouchEndX = 0;
+
+    modalImage.addEventListener("touchstart", (e) => {
+      modalTouchStartX = e.changedTouches[0].screenX;
+    });
+
+    modalImage.addEventListener("touchend", (e) => {
+      modalTouchEndX = e.changedTouches[0].screenX;
+      handleModalSwipe();
+    });
+
+    function handleModalSwipe() {
+      const swipeThreshold = 50;
+      if (modalTouchStartX - modalTouchEndX > swipeThreshold) {
+        updateModalImage(modalCurrentIndex + 1);
+      } else if (modalTouchEndX - modalTouchStartX > swipeThreshold) {
+        updateModalImage(modalCurrentIndex - 1);
+      }
+    }
 
     // Touch/swipe support for mobile devices
     let touchStartX = 0;

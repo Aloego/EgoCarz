@@ -48,13 +48,24 @@
 
             <!-- Fullscreen Modal -->
            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content bg-transparent border-0">
-                  <div class="modal-body text-center">
-                    <img id="modalCarImage" src="" class="img-fluid rounded shadow" alt="Fullscreen Car Image">
+                  <div class="modal-body text-center p-5">
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 20px; z-index: 9999; font-size: 2.5rem; text-shadow: 0 0 10px rgba(0,0,0,0.8); opacity: 1;">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    
+                    <!-- Image Counter -->
+                    <div id="modalImageCounter" class="text-white bg-dark px-3 py-2 rounded" style="position: absolute; bottom: 30px; right: 30px; z-index: 9999; font-size: 16px; font-weight: bold;">1/1</div>
+                    
+                    <img id="modalCarImage" src="" class="img-fluid rounded shadow" alt="Fullscreen Car Image" style="max-height: 80vh; max-width: 100%; object-fit: contain; position: relative; z-index: 1;">
                   </div>
                 </div>
               </div>
+              
+              <!-- Navigation Arrows Outside modal-dialog -->
+              <button id="modalPrevBtn" class="btn btn-light" style="position: fixed; left: 30px; top: 50%; transform: translateY(-50%); z-index: 9999; border-radius: 50%; width: 60px; height: 60px; font-size: 28px; opacity: 1; box-shadow: 0 4px 8px rgba(0,0,0,0.5); display: none;">&#10094;</button>
+              <button id="modalNextBtn" class="btn btn-light" style="position: fixed; right: 30px; top: 50%; transform: translateY(-50%); z-index: 9999; border-radius: 50%; width: 60px; height: 60px; font-size: 28px; opacity: 1; box-shadow: 0 4px 8px rgba(0,0,0,0.5); display: none;">&#10095;</button>
             </div>
 
             <!-- Right Column: Product Info Only -->
