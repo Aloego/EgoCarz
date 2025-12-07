@@ -362,8 +362,25 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(updateNoResults, 100);
   }
 
-  // Apply filters button
-  document.querySelector(".btn-block").addEventListener("click", applyFilters);
+  // Reset filters button
+  document
+    .getElementById("resetFiltersBtn")
+    .addEventListener("click", function () {
+      // Clear all filter inputs
+      document.getElementById("makeFilter").value = "";
+      document.getElementById("modelFilter").value = "";
+      document.getElementById("priceFilter").value = "All";
+      document.getElementById("locationFilter").value = "";
+      document.getElementById("conditionFilter").value = "All";
+      document.getElementById("yearFilter").value = "All Years";
+      document.getElementById("mileageFilter").value = "";
+
+      // Reset Isotope to show all items
+      iso.arrange({ filter: "*" });
+
+      // Update no results message
+      setTimeout(updateNoResults, 100);
+    });
 
   // Real-time filtering on input/change
   document.getElementById("makeFilter").addEventListener("input", applyFilters);
