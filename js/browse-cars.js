@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const soldBadge = car.sold ? '<span class="sold">SOLD</span>' : "";
 
     item.innerHTML = `
-      <div class="card car-card" data-make="${car.name}" data-model="${car.model}" data-price="${priceValue}" data-condition="${car.condition}">
+      <div class="card car-card" data-make="${car.name}" data-model="${car.model}" data-price="${priceValue}" data-condition="${car.condition}" data-year="${car.year}">
         <a href="car-details.html?id=${car.id}">
           <img src="${car.images[0]}" class="card-img-top" alt="${car.name}" style="height: 250px; object-fit: cover;">
         </a>
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const soldBadge = car.sold ? '<span class="sold">SOLD</span>' : "";
 
       item.innerHTML = `
-        <div class="card car-card" data-make="${car.name}" data-model="${car.model}" data-price="${priceValue}" data-condition="${car.condition}">
+        <div class="card car-card" data-make="${car.name}" data-model="${car.model}" data-price="${priceValue}" data-condition="${car.condition}" data-year="${car.year}">
           <a href="car-details.html?id=${car.id}">
             <img src="${car.images[0]}" class="card-img-top" alt="${car.name}" style="height: 250px; object-fit: cover;">
           </a>
@@ -318,6 +318,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .value.trim()
       .toLowerCase();
     const price = document.getElementById("priceFilter").value;
+    const year = document.getElementById("yearFilter").value;
     const location = document
       .getElementById("locationFilter")
       .value.trim()
@@ -339,6 +340,8 @@ document.addEventListener("DOMContentLoaded", function () {
           matchPrice = priceInt > 2000000 && priceInt <= 5000000;
         else if (price === "₦5M+") matchPrice = priceInt > 5000000;
 
+        const matchYear = !year || year === "All Years" || data.year === year;
+
         const matchLocation =
           !location || card.innerText.toLowerCase().includes(location);
 
@@ -352,6 +355,7 @@ document.addEventListener("DOMContentLoaded", function () {
           matchMake &&
           matchModel &&
           matchPrice &&
+          matchYear &&
           matchLocation &&
           matchCondition
         );
