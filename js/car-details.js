@@ -222,6 +222,49 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open(waLink, "_blank");
       });
     }
+
+    // Social Media Share Buttons
+    const carUrl = window.location.href;
+    const carTitle = `${car.name} - ${car.price}`;
+    const carDescription =
+      car.shortDescription || car.description.substring(0, 150);
+
+    // Facebook Share
+    document
+      .getElementById("shareFacebook")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+          carUrl
+        )}`;
+        window.open(fbUrl, "_blank", "width=600,height=400");
+      });
+
+    // Twitter Share
+    document
+      .getElementById("shareTwitter")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+          carUrl
+        )}&text=${encodeURIComponent(carTitle)}`;
+        window.open(twitterUrl, "_blank", "width=600,height=400");
+      });
+
+    // WhatsApp Share
+    document
+      .getElementById("shareWhatsApp")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        const waMessage = `Check out this car: ${carTitle}\n${carDescription}\n${carUrl}`;
+        const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
+        const waUrl = isMobile
+          ? `https://wa.me/?text=${encodeURIComponent(waMessage)}`
+          : `https://web.whatsapp.com/send?text=${encodeURIComponent(
+              waMessage
+            )}`;
+        window.open(waUrl, "_blank");
+      });
   } else {
     document.querySelector(".car-detail").innerHTML = "<p>Car not found.</p>";
   }
