@@ -9,17 +9,29 @@ document.addEventListener("DOMContentLoaded", () => {
   if (car) {
     // Update page title and meta tags for SEO and social sharing
     document.title = `${car.name} ${car.year} - EgoCarz`;
-    
+
     // Update Open Graph tags
-    document.getElementById('og-title').setAttribute('content', `${car.name} ${car.year} - ${car.price}`);
-    document.getElementById('og-description').setAttribute('content', car.shortDescription);
-    document.getElementById('og-image').setAttribute('content', car.images[0]);
-    document.getElementById('og-url').setAttribute('content', window.location.href);
-    
+    document
+      .getElementById("og-title")
+      .setAttribute("content", `${car.name} ${car.year} - ${car.price}`);
+    document
+      .getElementById("og-description")
+      .setAttribute("content", car.shortDescription);
+    document.getElementById("og-image").setAttribute("content", car.images[0]);
+    document
+      .getElementById("og-url")
+      .setAttribute("content", window.location.href);
+
     // Update Twitter tags
-    document.getElementById('twitter-title').setAttribute('content', `${car.name} ${car.year} - ${car.price}`);
-    document.getElementById('twitter-description').setAttribute('content', car.shortDescription);
-    document.getElementById('twitter-image').setAttribute('content', car.images[0]);
+    document
+      .getElementById("twitter-title")
+      .setAttribute("content", `${car.name} ${car.year} - ${car.price}`);
+    document
+      .getElementById("twitter-description")
+      .setAttribute("content", car.shortDescription);
+    document
+      .getElementById("twitter-image")
+      .setAttribute("content", car.images[0]);
 
     const mainImage = document.getElementById("mainCarImage");
     const thumbnails = document.getElementById("carThumbnails");
