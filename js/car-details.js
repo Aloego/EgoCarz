@@ -272,9 +272,10 @@ document.addEventListener("DOMContentLoaded", () => {
       .getElementById("shareTwitter")
       .addEventListener("click", function (e) {
         e.preventDefault();
+        const twitterText = `Check out this ${car.name} ${car.year} - ${car.price}\n\n${carDescription}`;
         const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
           carUrl
-        )}&text=${encodeURIComponent(carTitle)}`;
+        )}&text=${encodeURIComponent(twitterText)}`;
         window.open(twitterUrl, "_blank", "width=600,height=400");
       });
 
