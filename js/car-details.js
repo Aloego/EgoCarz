@@ -294,6 +294,17 @@ document.addEventListener("DOMContentLoaded", () => {
         window.open(waUrl, "_blank");
       });
 
+    // LinkedIn Share
+    document
+      .getElementById("shareLinkedIn")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+          carUrl
+        )}`;
+        window.open(linkedInUrl, "_blank", "width=600,height=600");
+      });
+
     // Copy Link
     document.getElementById("copyLink").addEventListener("click", function (e) {
       e.preventDefault();
