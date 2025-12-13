@@ -304,29 +304,6 @@ document.addEventListener("DOMContentLoaded", () => {
         )}`;
         window.open(linkedInUrl, "_blank", "width=600,height=600");
       });
-
-    // Copy Link
-    document.getElementById("copyLink").addEventListener("click", function (e) {
-      e.preventDefault();
-      navigator.clipboard
-        .writeText(carUrl)
-        .then(() => {
-          const btn = this;
-          const originalHTML = btn.innerHTML;
-          btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
-          btn.classList.remove("btn-outline-secondary");
-          btn.classList.add("btn-success");
-          setTimeout(() => {
-            btn.innerHTML = originalHTML;
-            btn.classList.remove("btn-success");
-            btn.classList.add("btn-outline-secondary");
-          }, 2000);
-        })
-        .catch((err) => {
-          console.error("Failed to copy:", err);
-          alert("Failed to copy link. Please try again.");
-        });
-    });
   } else {
     document.querySelector(".car-detail").innerHTML = "<p>Car not found.</p>";
   }
