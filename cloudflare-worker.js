@@ -11,14 +11,14 @@ async function handleRequest(request) {
   const url = new URL(request.url);
   const userAgent = request.headers.get("User-Agent") || "";
 
-  // Check if this is a social media bot OR if it's car-details.html (for testing)
+  // Check if this is a social media bot
   const isSocialBot =
     /facebookexternalhit|Twitterbot|WhatsApp|LinkedInBot|Pinterest|facebookcatalog/i.test(
       userAgent
     );
 
-  // Intercept ALL car-details.html requests (not just bots) for now
-  if (url.pathname.includes("car-details.html")) {
+  // Only intercept car-details.html requests from social bots
+  if (isSocialBot && url.pathname.includes("car-details.html")) {
     const carId = url.searchParams.get("id");
 
     if (carId) {
@@ -32,13 +32,17 @@ async function handleRequest(request) {
       const response = await fetch(githubUrl);
       let html = await response.text();
 
-      // Fetch car data (you'll need to host cars-data.js or include it here)
+      // Fetch car data
       const carData = await getCarData(carId);
 
       if (carData) {
-        // Inject dynamic OG tags
+        // Remove existing OG tags first
+        html = html.replace(/<meta\s+property="og:[^"]*"[^>]*>/gi, "");
+        html = html.replace(/<meta\s+name="twitter:[^"]*"[^>]*>/gi, "");
+
+        // Inject new dynamic OG tags
         const ogTags = generateOGTags(carData, url.href);
-        html = html.replace("</head>", `${ogTags}</head>`);
+        html = html.replace("</head>", `${ogTags}\n</head>`);
       }
 
       return new Response(html, {
@@ -54,34 +58,25 @@ async function handleRequest(request) {
 }
 
 async function getCarData(carId) {
-  // Car data mapping - you can either:
-  // 1. Fetch from your cars-data.js file
-  // 2. Store data here (inline)
-  // 3. Use KV storage
-
-  // For simplicity, here's an example with inline data
-  const cars = {
-    car1: {
+  try {
+    // Fetch cars-og-data.json from GitHub - automatically updates when you push changes!
+    const response = await fetch('https://aloego.github.io/EgoCarz/cars-og-data.json');
+    const carData = await response.json();
+    
+    // Find the car by ID
+    const car = carData.find(c => c.id === carId);
+    
+    return car || null;
+  } catch (error) {
+    // Fallback to car1 if fetch fails
+    return {
       name: "Lexus RX 350",
       price: "₦27,500,000",
       year: 2013,
-      shortDescription:
-        "Luxury SUV with reverse camera, navigation, and power boot.",
-      image: "https://aloego.github.io/EgoCarz/images/lexusrx350010.jpeg",
-    },
-    car2: {
-      name: "Toyota Highlander",
-      price: "₦23,500,000",
-      year: 2013,
-      shortDescription:
-        "Spacious family SUV with full options and keyless entry.",
-      image:
-        "https://aloego.github.io/EgoCarz/images/toyotahighlander2013.jpeg",
-    },
-    // Add more cars here or fetch from external source
-  };
-
-  return cars[carId];
+      shortDescription: "Luxury SUV with reverse camera, navigation, and power boot.",
+      image: "https://aloego.github.io/EgoCarz/images/lexusrx350010.jpeg"
+    };
+  }
 }
 
 function generateOGTags(car, url) {

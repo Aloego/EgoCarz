@@ -1,0 +1,362 @@
+[
+  {
+    "id": "car1",
+    "name": "Lexus RX 350",
+    "price": "₦27,500,000",
+    "year": 2013,
+    "shortDescription": "Luxury SUV with reverse camera, navigation, and power boot. Perfect for city and long trips.",
+    "image": "https://aloego.github.io/EgoCarz/images/lexusrx350010.jpeg"
+  },
+  {
+    "id": "car2",
+    "name": "Toyota",
+    "price": "₦23,500,000",
+    "year": 2013,
+    "shortDescription": "Spacious family SUV with full options, reverse camera, 3-row seating, and keyless entry.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotahighlander2013.jpeg"
+  },
+  {
+    "id": "car3",
+    "name": "Toyota Highlander",
+    "price": "₦30,200,000",
+    "year": 2015,
+    "shortDescription": "Premium SUV with keyless entry, power boot, reverse camera & navigation.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotaHighlander2015_xle1.jpeg"
+  },
+  {
+    "id": "car4",
+    "name": "Toyota Highlander Limited",
+    "price": "₦15,000,000",
+    "year": 2007,
+    "shortDescription": "Spacious family SUV with leather seats & 3-row seating. Reliable & comfortable.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotahighlander2007limited_16.jpeg"
+  },
+  {
+    "id": "car5",
+    "name": "Toyota",
+    "price": "₦20,000,000",
+    "year": 2010,
+    "shortDescription": "Sleek black Venza with panoramic roof, keyless entry, reverse camera & navigation.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotaVenza-2010-black_1.jpeg"
+  },
+  {
+    "id": "car6",
+    "name": "Toyota",
+    "price": "₦14,000,000",
+    "year": 2011,
+    "shortDescription": "Dependable gray Camry with excellent fuel economy & spacious interior.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCamry_1_gray_2011.jpeg"
+  },
+  {
+    "id": "car7",
+    "name": "Pontiac Vibe",
+    "price": "₦12,000,000",
+    "year": 2010,
+    "shortDescription": "Versatile black hatchback with fuel-efficient engine & spacious cargo area.",
+    "image": "https://aloego.github.io/EgoCarz/images/Pontiac_vibe_black_1_2010.jpeg"
+  },
+  {
+    "id": "car8",
+    "name": "Toyota Corolla 2010",
+    "price": "₦12,000,000",
+    "year": 2010,
+    "shortDescription": "Reliable 2010 Corolla sedan - perfect for daily commutes & fuel efficiency.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCorolla_1_2010.jpeg"
+  },
+  {
+    "id": "car9",
+    "name": "LEXUS ES 350",
+    "price": "₦24,000,000",
+    "year": 2014,
+    "shortDescription": "Luxury sedan with premium comfort & elegant styling. Low mileage.",
+    "image": "https://aloego.github.io/EgoCarz/images/LEXUS_ES_350_2014_1.jpeg"
+  },
+  {
+    "id": "car10",
+    "name": "LEXUS ES 350",
+    "price": "₦24,000,000",
+    "year": 2014,
+    "shortDescription": "Elegant gray ES 350 with premium features & smooth performance.",
+    "image": "https://aloego.github.io/EgoCarz/images/Lexus_Es_350_gray_2014_8.jpeg"
+  },
+  {
+    "id": "car11",
+    "name": "Toyota Corolla",
+    "price": "₦10,000,000",
+    "year": 2007,
+    "shortDescription": "Affordable & dependable Corolla sedan - great for everyday use.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCorolla_2007_1.jpeg"
+  },
+  {
+    "id": "car12",
+    "name": "Hyundai Elantra",
+    "price": "₦14,000,000",
+    "year": 2013,
+    "shortDescription": "Full-option Elantra with keyless entry, reverse camera & leather seats.",
+    "image": "https://aloego.github.io/EgoCarz/images/HyundaiELANTRA_2013_limited_1.jpeg"
+  },
+  {
+    "id": "car13",
+    "name": "LEXUS RX 350 F- SPORTS",
+    "price": "₦60,000,000",
+    "year": 2017,
+    "shortDescription": "F-Sport with BSM, 360° camera, park assist & panoramic roof. Fully loaded!",
+    "image": "https://aloego.github.io/EgoCarz/images/lexusRX_350_2017_F-SPORTS_1.jpeg"
+  },
+  {
+    "id": "car14",
+    "name": "Honda CRV",
+    "price": "₦15,000,000",
+    "year": 2011,
+    "shortDescription": "Spacious & reliable CRV with roomy interior & smooth handling.",
+    "image": "https://aloego.github.io/EgoCarz/images/HondaCRV_2011_1.jpeg"
+  },
+  {
+    "id": "car15",
+    "name": "Toyota Highlander",
+    "price": "₦17,000,000",
+    "year": 2009,
+    "shortDescription": "Family-friendly Highlander with spacious interior & dependable performance.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotaHighlande_2009_1.jpeg"
+  },
+  {
+    "id": "car16",
+    "name": "Lexus ",
+    "price": "₦30,000,000",
+    "year": 2014,
+    "shortDescription": "Luxury RX 350 with advanced features & premium comfort. Top-tier SUV.",
+    "image": "https://aloego.github.io/EgoCarz/images/LexusRX_350_2014_1.jpeg"
+  },
+  {
+    "id": "car17",
+    "name": "Toyota Corolla",
+    "price": "₦18,000,000",
+    "year": 2015,
+    "shortDescription": "Fuel-efficient Corolla with comfortable interior & smooth handling.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotaCorolla_2015_1.jpeg"
+  },
+  {
+    "id": "car18",
+    "name": "Toyota",
+    "price": "₦15,000,000",
+    "year": 2006,
+    "shortDescription": "Spacious & durable Highlander for families - reliable Toyota quality.",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotaHighlander_2006_1.jpeg"
+  },
+  {
+    "id": "car19",
+    "name": "MERCEDES BENZ",
+    "price": "₦26,000,000",
+    "year": 2014,
+    "shortDescription": "Luxury GLK with panoramic roof, navigation & power boot. Full option!",
+    "image": "https://aloego.github.io/EgoCarz/images/MERCEDESBENZ_GLK_1.jpeg"
+  },
+  {
+    "id": "car20",
+    "name": "Toyota Corolla",
+    "price": "₦33,000,000",
+    "year": 2021,
+    "shortDescription": "Near-new Corolla LE with low mileage & modern tech. Like-new condition!",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCorolla_LE_2021_1.jpeg"
+  },
+  {
+    "id": "car21",
+    "name": "Toyota Rav4",
+    "price": "₦25,000,000",
+    "year": 2015,
+    "shortDescription": "RAV4 XLE with smart tech, comfortable ride & reliable Toyota engineering.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaRav4_2015_xle_1.jpeg"
+  },
+  {
+    "id": "car22",
+    "name": "Lexus RX 350",
+    "price": "₦25,000,000",
+    "year": 2010,
+    "shortDescription": "Luxury RX with reverse camera, navigation, power boot & leather seats.",
+    "image": "https://aloego.github.io/EgoCarz/images/Lexus_RX_350_2010_1.jpeg"
+  },
+  {
+    "id": "car23",
+    "name": "Mercedes_Benz",
+    "price": "₦35,000,000",
+    "year": 2013,
+    "shortDescription": "ML 350 with 4MATIC AWD, panoramic roof & navigation. Premium luxury SUV.",
+    "image": "https://aloego.github.io/EgoCarz/images/Mercedes_Benz_2013_1.jpeg"
+  },
+  {
+    "id": "car24",
+    "name": "Toyota Highlander_LIMITED(FULL-OPTION)",
+    "price": "₦15,000,000",
+    "year": 2005,
+    "shortDescription": "Full-option Limited with leather seats, sunroof & premium audio.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaHighlander_2005_LIMITED_FULL-OPTION_1.jpeg"
+  },
+  {
+    "id": "car25",
+    "name": "Toyota highlander limited full-option",
+    "price": "₦25,000,000",
+    "year": 2013,
+    "shortDescription": "Experience the ultimate in comfort and technology with this Toyota Highlander. Equipped with advanced features such as Keyless",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaHighlander_2013_limited_1.jpeg"
+  },
+  {
+    "id": "car26",
+    "name": "LEXUS",
+    "price": "₦30,000,000",
+    "year": 2013,
+    "shortDescription": "Elegant RX 350 with low mileage, luxury interior & smooth performance.",
+    "image": "https://aloego.github.io/EgoCarz/images/LEXUS_RX_350_2013_1.jpeg"
+  },
+  {
+    "id": "car27",
+    "name": "Hyundai",
+    "price": "₦22,500,000",
+    "year": 2017,
+    "shortDescription": "Adventure-ready Santa Fe Sport with reverse camera & navigation.",
+    "image": "https://aloego.github.io/EgoCarz/images/2017_Hyundai_SantaFe_Sport_1.jpeg"
+  },
+  {
+    "id": "car28",
+    "name": "Toyota",
+    "price": "₦18,200,000",
+    "year": 2011,
+    "shortDescription": "RAV4 Limited with keyless start, reverse camera & navigation. Fully loaded!",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaRav4_2011_limited_1.jpeg"
+  },
+  {
+    "id": "car29",
+    "name": "Lexus",
+    "price": "₦17,500,000",
+    "year": 2009,
+    "shortDescription": "Full-option ES 350 with panoramic roof, navigation & reverse camera.",
+    "image": "https://aloego.github.io/EgoCarz/images/LEXUS_ES_350_2009_1.jpeg"
+  },
+  {
+    "id": "car30",
+    "name": "Toyota",
+    "price": "₦15,500,000",
+    "year": 2013,
+    "shortDescription": "Fuel-efficient Corolla LE with reverse camera, navigation & Bluetooth.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCorolla_LE_2013_1.jpeg"
+  },
+  {
+    "id": "car31",
+    "name": "Toyota",
+    "price": "₦19,500,000",
+    "year": 2015,
+    "shortDescription": "Sporty Corolla with keyless start, reverse camera & full-option features.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCorollaSport_2015_1.jpeg"
+  },
+  {
+    "id": "car32",
+    "name": "Lexus ",
+    "price": "₦27,500,000",
+    "year": 2014,
+    "shortDescription": "ES 350 with BSM, power boot, ambient lighting & keyless entry. Luxury!",
+    "image": "https://aloego.github.io/EgoCarz/images/LEXUS-ES-350-2014_1.jpeg"
+  },
+  {
+    "id": "car33",
+    "name": "Toyota",
+    "price": "₦48,500,000",
+    "year": 2018,
+    "shortDescription": "Platinum Edition with 360° camera, panoramic roof, BSM & park assist!",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaHighlander_Limited_2018_1.jpeg"
+  },
+  {
+    "id": "car34",
+    "name": "Toyota",
+    "price": "₦16,000,000",
+    "year": 2006,
+    "shortDescription": "Full-option Limited with 3-row seating & formica interior. Family-ready!",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaHighlander_2006_limited_1.jpeg"
+  },
+  {
+    "id": "car35",
+    "name": "Toyota",
+    "price": "₦35,000,000",
+    "year": 2018,
+    "shortDescription": "Stylish Camry SE with BSM, keyless entry, reverse camera & navigation.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaCamry_SE_2018_1.jpeg"
+  },
+  {
+    "id": "car36",
+    "name": "Toyota",
+    "price": "₦34,000,000",
+    "year": 2021,
+    "shortDescription": "Modern 2021 Corolla LE with ECO system, BSM & reverse camera. Efficient!",
+    "image": "https://aloego.github.io/EgoCarz/images/toyotacorolla_LE_2021_1.jpeg"
+  },
+  {
+    "id": "car37",
+    "name": "Lexus",
+    "price": "₦50,000,000",
+    "year": 2018,
+    "shortDescription": "Metallic gold RX 350 with navigation, power boot, sonar & new tires!",
+    "image": "https://aloego.github.io/EgoCarz/images/LEXUS_RX_350_2018_FullOption_1.jpeg"
+  },
+  {
+    "id": "car38",
+    "name": "Mercedes-Benz",
+    "price": "₦50,000,000",
+    "year": 2018,
+    "shortDescription": "Premium GLE with advanced tech, luxury interior & powerful performance.",
+    "image": "https://aloego.github.io/EgoCarz/images/MercedesBenz_GLE_2018_fullOption_1.jpeg"
+  },
+  {
+    "id": "car39",
+    "name": "Mercedes-Benz",
+    "price": "₦25,000,000",
+    "year": 2010,
+    "shortDescription": "Luxury GLK with panoramic roof, reverse camera, power boot & style!",
+    "image": "https://aloego.github.io/EgoCarz/images/MERCEDES-BENZ_GLK_2010_1.jpeg"
+  },
+  {
+    "id": "car40",
+    "name": "Toyota",
+    "price": "₦9,000,000",
+    "year": 2008,
+    "shortDescription": "Compact & economical Yaris - perfect for city driving & fuel savings.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaYarix_1.jpeg"
+  },
+  {
+    "id": "car41",
+    "name": "Toyota",
+    "price": "₦9,500,000",
+    "year": 2008,
+    "shortDescription": "Versatile Matrix hatchback with flexible cargo space & fuel efficiency.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaMatrix_2008_1.jpeg"
+  },
+  {
+    "id": "car42",
+    "name": "TOYOTA",
+    "price": "₦18,000,000",
+    "year": 2008,
+    "shortDescription": "Full-option Limited with 3-row seating, JBL sound & DVD player. Loaded!",
+    "image": "https://aloego.github.io/EgoCarz/images/TOYOTA_HIGHLANDER_LIMITED_2008_1.jpeg"
+  },
+  {
+    "id": "car43",
+    "name": "TOYOTA",
+    "price": "₦25,000,000",
+    "year": 2013,
+    "shortDescription": "Premium Limited with keyless entry, 3-row seating, navigation & reverse camera.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaHighlander_limited_2013_1.jpeg"
+  },
+  {
+    "id": "car44",
+    "name": "TOYOTA",
+    "price": "₦25,000,000",
+    "year": 2013,
+    "shortDescription": "Clean Limited with low mileage, 3-row seating, power boot & navigation.",
+    "image": "https://aloego.github.io/EgoCarz/images/ToyotaHighlanderLimited_2013_1.jpeg"
+  },
+  {
+    "id": "car45",
+    "name": "Honda",
+    "price": "₦7,000,000",
+    "year": 2012,
+    "shortDescription": "Neat & stylish City sedan with smooth drive & excellent fuel economy.",
+    "image": "https://aloego.github.io/EgoCarz/images/HondaCity_2012_1.jpg"
+  }
+]
