@@ -250,7 +250,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Social Media Share Buttons
-    const carUrl = window.location.href;
+    const carId = urlParams.get("id");
+    const carUrl = `https://www.egocarz.name.ng/car-details.html?id=${carId}`;
     const carTitle = `${car.name} - ${car.price}`;
     const carDescription =
       car.shortDescription || car.description.substring(0, 150);
