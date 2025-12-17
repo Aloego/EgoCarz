@@ -1,0 +1,26 @@
+[
+  {
+    "id": "post1",
+    "title": "Why the Lexus RX 350 Remains Nigeria's Top Luxury SUV Choice",
+    "category": "Car Reviews",
+    "excerpt": "The Lexus RX 350 continues to dominate the Nigerian luxury SUV market. Discover why it's the go-to choice for executives and families alike.",
+    "content": "<p>The Lexus RX 350 is renowned for its reliability, comfort, and advanced features. In this review, we explore what makes the RX 350 stand out from its competitors in Nigeria...</p>",
+    "image": "images/lexusrx350010.jpeg"
+  },
+  {
+    "id": "post2",
+    "title": "5 Essential Maintenance Tips for Your Lexus",
+    "category": "Maintenance Tips",
+    "excerpt": "Keep your Lexus running smoothly with these expert maintenance tips that will extend your vehicle's lifespan and maintain its value.",
+    "content": "<ul><li>Regular oil changes</li><li>Check tire pressure</li><li>Inspect brakes</li><li>Replace air filters</li><li>Schedule professional servicing</li></ul>",
+    "image": "images/LEXUS_IS_250_F-SPORT_2014_1.jpg"
+  },
+  {
+    "id": "post3",
+    "title": "A Complete Guide to Buying Used Cars in Nigeria",
+    "category": "Buying Guide",
+    "excerpt": "Buying a used car in Nigeria can be tricky. Here’s a complete guide to help you make a smart purchase.",
+    "content": "<p>From checking vehicle history to negotiating price, this guide covers all you need to know about buying used cars in Nigeria...</p>",
+    "image": "images/lexusrx350010.jpeg"
+  }
+]

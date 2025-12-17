@@ -60,12 +60,14 @@ async function handleRequest(request) {
 async function getCarData(carId) {
   try {
     // Fetch cars-og-data.json from GitHub - automatically updates when you push changes!
-    const response = await fetch('https://aloego.github.io/EgoCarz/cars-og-data.json');
+    const response = await fetch(
+      "https://aloego.github.io/EgoCarz/cars-og-data.json"
+    );
     const carData = await response.json();
-    
+
     // Find the car by ID
-    const car = carData.find(c => c.id === carId);
-    
+    const car = carData.find((c) => c.id === carId);
+
     return car || null;
   } catch (error) {
     // Fallback to car1 if fetch fails
@@ -73,8 +75,9 @@ async function getCarData(carId) {
       name: "Lexus RX 350",
       price: "₦27,500,000",
       year: 2013,
-      shortDescription: "Luxury SUV with reverse camera, navigation, and power boot.",
-      image: "https://aloego.github.io/EgoCarz/images/lexusrx350010.jpeg"
+      shortDescription:
+        "Luxury SUV with reverse camera, navigation, and power boot.",
+      image: "https://aloego.github.io/EgoCarz/images/lexusrx350010.jpeg",
     };
   }
 }

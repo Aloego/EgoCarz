@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | EgoCarz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div data-include="components/navbar.html"></div>
+
+    <!-- Blog Main Section -->
+    <main class="container py-5">
+      <h1 class="text-center mb-4">Our Blog</h1>
+      <!-- Category Filter & Search (Desktop/Tablet Only) -->
+      <div class="row mb-4 d-none d-md-flex">
+        <div class="col-md-8">
+          <select
+            id="categoryDropdown"
+            class="form-select mb-2 w-auto"
+            style="min-width: 150px"
+          >
+            Categories
+          </select>
+        </div>
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Search posts..."
+          />
+        </div>
+      </div>
+      <!-- Blog Posts Container -->
+      <div class="row" id="blogPostsContainer"></div>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="components/footer.html"></div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Blog JS -->
+    <script src="js/blog.js"></script>
+    <!-- Script to load navbar/footer dynamically -->
+    <script>
+      $(document).ready(function () {
+        $("[data-include]").each(function () {
+          var $this = $(this);
+          var file = $this.data("include");
+          $this.load(file);
+        });
+      });
+    </script>
+  </body>
+</html>
