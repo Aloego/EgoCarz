@@ -1,3 +1,132 @@
+/* Blog Post Two-Column Layout & Responsive Sidebar */
+#postLayout {
+  align-items: flex-start;
+}
+
+#postContent {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+
+#carSidebar {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+#carSidebar .car-listing-card,
+#carMobileList .car-listing-card {
+  margin-bottom: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#carSidebar .car-listing-card img,
+#carMobileList .car-listing-card img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+#carSidebar .car-listing-info,
+#carMobileList .car-listing-info {
+  flex: 1;
+}
+
+#carSidebar .btn,
+#carMobileList .btn {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+}
+
+#carSidebar .view-all-cars-btn,
+#carMobileList .view-all-cars-btn {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Related Posts Grid */
+.related-posts-section {
+  margin-top: 2.5rem;
+}
+.related-posts-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.related-posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.related-post-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.related-post-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.related-post-card .card-body {
+  padding: 1rem;
+}
+.related-post-card .card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.related-post-card .card-category {
+  font-size: 0.85rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+.related-post-card .card-link {
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 991.98px) {
+  #postContent {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+  }
+  #carSidebar {
+    top: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #postContent {
+    padding: 0.7rem 0.2rem 1rem 0.2rem;
+  }
+  .related-posts-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  #carSidebar {
+    display: none !important;
+  }
+  #carMobileList {
+    display: block !important;
+  }
+}
 /* Blog Page Responsive Styles */
 @media (max-width: 767.98px) {
   #categoryFilters,

@@ -11,8 +11,34 @@
     <!-- Navbar -->
     <div data-include="components/navbar.html"></div>
 
-    <main class="container py-5" id="postContent">
-      <!-- Blog post will be loaded here -->
+    <main class="container py-5">
+      <div class="row" id="postLayout">
+        <!-- Main post content will be loaded here -->
+        <article
+          class="col-lg-8 col-md-8 col-12 mb-4"
+          id="postContent"
+          itemscope
+          itemtype="https://schema.org/BlogPosting"
+        >
+          <!-- Blog post will be loaded here by JS -->
+        </article>
+        <!-- Sidebar for car listing (hidden on mobile, shown below on mobile by JS) -->
+        <aside
+          class="col-lg-4 col-md-4 d-none d-md-block"
+          id="carSidebar"
+          aria-label="Car Listings"
+        >
+          <!-- Car listing will be loaded here by JS -->
+        </aside>
+      </div>
+      <!-- Car listing for mobile, shown below post content -->
+      <section
+        class="d-block d-md-none mt-4"
+        id="carMobileList"
+        aria-label="Car Listings"
+      >
+        <!-- Car listing will be loaded here by JS on mobile -->
+      </section>
     </main>
 
     <!-- Footer -->
