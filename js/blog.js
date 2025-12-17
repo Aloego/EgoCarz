@@ -1,3 +1,38 @@
+// Product card template
+// function getProductCard(car) {
+//   // URL encode image and name for query params
+//   const idParam = encodeURIComponent(car.id);
+//   // const nameParam = encodeURIComponent(car.name);
+//   return `
+//       <div class="col-md-4 mb-4">
+//         <div class="card h-100 shadow-sm product-card" tabindex="0" aria-label="Featured car: ${car.name}">
+//           <img src="${car.image}" loading="lazy" class="card-img-top" alt="${car.name}" style="object-fit:cover;max-height:220px;">
+//           <div class="card-body d-flex flex-column">
+//             <h5 class="card-title">${car.name}</h5>
+//             <p class="card-text fw-bold text-success" aria-label="Price">${car.price}</p>
+//             <a href="car-details.html?image=${idParam}&name=${nameParam}" class="btn btn-outline-primary mt-auto" aria-label="View details for ${car.name}">View Details</a>
+//           </div>
+//         </div>
+//       </div>
+//     `;
+// }
+
+// Product card template
+function getProductCard(car) {
+  const idParam = encodeURIComponent(car.id);
+  return `
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm product-card" tabindex="0" aria-label="Featured car: ${car.name}">
+          <img src="${car.image}" loading="lazy" class="card-img-top" alt="${car.name}" style="object-fit:cover;max-height:220px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">${car.name}</h5>
+            <p class="card-text fw-bold text-success" aria-label="Price">${car.price}</p>
+            <a href="car-details.html?id=${idParam}" class="btn btn-outline-primary mt-auto" aria-label="View details for ${car.name}">View Details</a>
+          </div>
+        </div>
+      </div>
+    `;
+}
 // js/blog.js
 // Dynamically loads blog posts, categories, and handles search/filter for desktop/tablet
 
@@ -6,13 +41,18 @@ $(document).ready(function () {
   let categories = [];
   let activeCategory = "All";
 
-  // Fetch posts from JSON
-  $.getJSON("blog-posts.json", function (data) {
-    posts = data;
-    categories = getUniqueCategories(posts);
-    renderCategoryFilters(categories);
-    renderPosts(posts);
-  });
+  // Fetch posts and cars from JSON
+  let cars = [];
+  let productCardInterval = 3; // Change this value to adjust interval
+  $.when($.getJSON("blog-posts.json"), $.getJSON("cars-og-data.json")).done(
+    function (postData, carData) {
+      posts = postData[0];
+      cars = carData[0];
+      categories = getUniqueCategories(posts);
+      renderCategoryFilters(categories);
+      renderPosts(posts);
+    }
+  );
 
   // Get unique categories from posts
   function getUniqueCategories(posts) {
@@ -45,7 +85,10 @@ $(document).ready(function () {
       );
       return;
     }
-    postsToRender.forEach((post) => {
+    let carIndex = 0;
+    let cardCount = 0;
+    postsToRender.forEach((post, i) => {
+      // Add blog post card
       $container.append(`
         <div class="col-md-4 mb-4">
           <div class="card h-100 shadow-sm">
@@ -67,6 +110,12 @@ $(document).ready(function () {
           </div>
         </div>
       `);
+      cardCount++;
+      // Insert product card after every N posts
+      if (cardCount % productCardInterval === 0 && cars.length > 0) {
+        $container.append(getProductCard(cars[carIndex]));
+        carIndex = (carIndex + 1) % cars.length;
+      }
     });
   }
 
