@@ -40,7 +40,6 @@ $(document).ready(function () {
           }</li>
         </ol>
       </nav>
-      <a href="blog.html" class="btn btn-outline-primary mb-3 backToBlog" title="Back to Blog">&larr; Back to Blog</a>
       <a href="blog.html?category=${encodeURIComponent(
         post.category
       )}" class="d-inline-block mb-2 text-primary font-weight-bold" title="View all posts in ${
