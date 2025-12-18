@@ -195,8 +195,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Right column - Product info only
     document.getElementById("carName").textContent = car.name;
     document.getElementById("carPrice").textContent = car.price;
-    document.getElementById("carShortDescription").textContent =
-      car.shortDescription || car.description.substring(0, 150) + "...";
+    document.getElementById("carShortDescription").innerHTML =
+      car.shortDescription || car.description.substring(0, 110) + "...";
 
     // Description tab
     document.getElementById("carDescription").innerHTML = car.description;

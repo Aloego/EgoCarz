@@ -54,23 +54,15 @@ $(document).ready(function () {
       <div class="mb-4 post-content" itemprop="articleBody">${
         post.content
       }</div>
-      <div class="mb-4">
-        <span class="mr-2">Share:</span>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-          window.location.href
-        )}" target="_blank" rel="noopener" class="mx-1" title="Share on Facebook" aria-label="Share on Facebook"><img src="images/facebook.svg" alt="Facebook" width="28" height="28"></a>
-        <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(
-          window.location.href
-        )}&text=${encodeURIComponent(
-        post.title
-      )}" target="_blank" rel="noopener" class="mx-1" title="Share on Twitter" aria-label="Share on Twitter"><img src="images/twitter.svg" alt="Twitter" width="28" height="28"></a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
-          window.location.href
-        )}&title=${encodeURIComponent(
-        post.title
-      )}" target="_blank" rel="noopener" class="mx-1" title="Share on LinkedIn" aria-label="Share on LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="mx-1" title="Share on Instagram" aria-label="Share on Instagram"><img src="images/instagram.svg" alt="Instagram" width="28" height="28"></a>
+      <!-- AddToAny BEGIN -->
+      <div class="a2a_kit a2a_kit_size_32 a2a_default_style mt-4" id="shareButtons">
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_x"></a>
+        <a class="a2a_button_whatsapp"></a>
+        <a class="a2a_button_linkedin"></a>
+        <a class="a2a_button_copy_link"></a>
       </div>
+      <!-- AddToAny END -->
       <section class="related-posts-section" aria-label="Related Posts">
         <div class="related-posts-title">Related Posts</div>
         <div class="related-posts-grid">
@@ -105,6 +97,11 @@ $(document).ready(function () {
       </section>
     `;
       $("#postContent").html(postHtml);
+
+      // Re-initialize AddToAny after dynamic content is loaded
+      if (window.a2a && typeof window.a2a.init_all === "function") {
+        window.a2a.init_all();
+      }
 
       // Responsive car listing logic
       function getNumCarsToShow() {
