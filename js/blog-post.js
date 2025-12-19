@@ -25,6 +25,12 @@ $(document).ready(function () {
         return;
       }
 
+      // When rendering car listings, filter out cars with sold === true
+      const availableCars = cars.filter((car) => car.sold !== true);
+
+      // Use availableCars for random selection and display
+      const randomCars = getRandomCars(availableCars, getNumCarsToShow());
+
       // Related posts (same category, exclude current)
       const relatedPosts = posts.filter(
         (p) => p.category === post.category && p.id !== post.id
@@ -117,7 +123,7 @@ $(document).ready(function () {
       }
       function renderCarListing(targetSelector) {
         const numCars = getNumCarsToShow();
-        const randomCars = getRandomCars(cars, numCars);
+        const randomCars = getRandomCars(availableCars, numCars);
         const carCards = randomCars
           .map(
             (car) => `

@@ -166,8 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Reverse carData to show newest first (car45 to car1)
   const reversedCars = [...carData].reverse();
 
+  // Filter out sold cars
+  const availableCars = reversedCars.filter((car) => !car.sold);
+
   // Generate all car cards dynamically
-  reversedCars.forEach((car) => {
+  availableCars.forEach((car) => {
     const item = document.createElement("div");
     item.classList.add("car-item", "col-md-6", "col-lg-4", "mb-4");
 
