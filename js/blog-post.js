@@ -60,15 +60,23 @@ $(document).ready(function () {
       <div class="mb-4 post-content" itemprop="articleBody">${
         post.content
       }</div>
-      <!-- AddToAny BEGIN -->
-      <div class="a2a_kit a2a_kit_size_32 a2a_default_style mt-4" id="shareButtons">
-        <a class="a2a_button_facebook"></a>
-        <a class="a2a_button_x"></a>
-        <a class="a2a_button_whatsapp"></a>
-        <a class="a2a_button_linkedin"></a>
-        <a class="a2a_button_copy_link"></a>
+      <div class="mt-4 pt-3 border-top">
+        <h6 class="mb-3">Share this post:</h6>
+        <div class="d-flex gap-3">
+          <a href="#" id="shareFacebook" class="btn btn-outline-primary btn-sm" title="Share on Facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+          </a>
+          <a href="#" id="shareTwitter" class="btn btn-outline-info btn-sm" title="Share on Twitter" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a href="#" id="shareWhatsApp" class="btn btn-outline-success btn-sm" title="Share on WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <button id="shareLinkedIn" class="btn btn-outline-primary btn-sm" title="Share on LinkedIn">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </button>
+        </div>
       </div>
-      <!-- AddToAny END -->
       <section class="related-posts-section" aria-label="Related Posts">
         <div class="related-posts-title">Related Posts</div>
         <div class="related-posts-grid">
@@ -104,10 +112,73 @@ $(document).ready(function () {
     `;
       $("#postContent").html(postHtml);
 
-      // Re-initialize AddToAny after dynamic content is loaded
-      if (window.a2a && typeof window.a2a.init_all === "function") {
-        window.a2a.init_all();
-      }
+      // --- DYNAMIC META TAGS FOR SOCIAL SHARING ---
+      // Set Open Graph meta tags
+      const postUrl = window.location.href;
+      const postTitle = post.title;
+      const postImage = post.image || "";
+      document.title = `${postTitle} | EgoCarz Blog`;
+      // Open Graph
+      const setMeta = (id, value) => {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute("content", value);
+      };
+      setMeta("og-title", postTitle);
+      setMeta("og-description", "Read this blog post on EgoCarz");
+      setMeta("og-image", postImage);
+      setMeta("og-url", postUrl);
+      // Twitter Card
+      setMeta("twitter-title", postTitle);
+      setMeta("twitter-description", "Read this blog post on EgoCarz");
+      setMeta("twitter-image", postImage);
+      setMeta("twitter-url", postUrl);
+
+      // --- CUSTOM SOCIAL SHARE BUTTONS ---
+      // Facebook Share
+      document
+        .getElementById("shareFacebook")
+        ?.addEventListener("click", function (e) {
+          e.preventDefault();
+          const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+            postUrl
+          )}`;
+          window.open(fbUrl, "_blank", "width=600,height=400");
+        });
+      // Twitter Share
+      document
+        .getElementById("shareTwitter")
+        ?.addEventListener("click", function (e) {
+          e.preventDefault();
+          const twitterText = `${postTitle}`;
+          const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+            postUrl
+          )}&text=${encodeURIComponent(twitterText)}`;
+          window.open(twitterUrl, "_blank", "width=600,height=400");
+        });
+      // WhatsApp Share
+      document
+        .getElementById("shareWhatsApp")
+        ?.addEventListener("click", function (e) {
+          e.preventDefault();
+          const waMessage = `${postTitle}\n${postUrl}`;
+          const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
+          const waUrl = isMobile
+            ? `https://wa.me/?text=${encodeURIComponent(waMessage)}`
+            : `https://web.whatsapp.com/send?text=${encodeURIComponent(
+                waMessage
+              )}`;
+          window.open(waUrl, "_blank");
+        });
+      // LinkedIn Share
+      document
+        .getElementById("shareLinkedIn")
+        ?.addEventListener("click", function (e) {
+          e.preventDefault();
+          const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+            postUrl
+          )}`;
+          window.open(linkedInUrl, "_blank", "width=600,height=600");
+        });
 
       // Responsive car listing logic
       function getNumCarsToShow() {
