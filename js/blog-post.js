@@ -115,7 +115,14 @@ $(document).ready(function () {
       // --- DYNAMIC META TAGS FOR SOCIAL SHARING & CANONICAL ---
       const postUrl = window.location.href;
       const postTitle = post.title;
-      const postImage = post.image || "";
+      // Ensure absolute image URL for social cards
+      let postImage = post.image || "";
+      if (postImage && !/^https?:\/\//.test(postImage)) {
+        postImage = `https://aloego.github.io/EgoCarz/${postImage.replace(
+          /^\/+/,
+          ""
+        )}`;
+      }
       const postDescription =
         post.description ||
         post.content?.replace(/<[^>]+>/g, "").substring(0, 150) ||
