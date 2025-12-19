@@ -112,26 +112,38 @@ $(document).ready(function () {
     `;
       $("#postContent").html(postHtml);
 
-      // --- DYNAMIC META TAGS FOR SOCIAL SHARING ---
-      // Set Open Graph meta tags
+      // --- DYNAMIC META TAGS FOR SOCIAL SHARING & CANONICAL ---
       const postUrl = window.location.href;
       const postTitle = post.title;
       const postImage = post.image || "";
+      const postDescription =
+        post.description ||
+        post.content?.replace(/<[^>]+>/g, "").substring(0, 150) ||
+        "Read this blog post on EgoCarz";
       document.title = `${postTitle} | EgoCarz Blog`;
+      // Set or update canonical link
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.setAttribute("rel", "canonical");
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute("href", postUrl);
       // Open Graph
       const setMeta = (id, value) => {
         const el = document.getElementById(id);
         if (el) el.setAttribute("content", value);
       };
       setMeta("og-title", postTitle);
-      setMeta("og-description", "Read this blog post on EgoCarz");
+      setMeta("og-description", postDescription);
       setMeta("og-image", postImage);
       setMeta("og-url", postUrl);
       // Twitter Card
       setMeta("twitter-title", postTitle);
-      setMeta("twitter-description", "Read this blog post on EgoCarz");
+      setMeta("twitter-description", postDescription);
       setMeta("twitter-image", postImage);
       setMeta("twitter-url", postUrl);
+      // For Cloudshare or other share integrations, ensure meta tags are set before share buttons are used.
 
       // --- CUSTOM SOCIAL SHARE BUTTONS ---
       // Facebook Share
@@ -149,7 +161,7 @@ $(document).ready(function () {
         .getElementById("shareTwitter")
         ?.addEventListener("click", function (e) {
           e.preventDefault();
-          const twitterText = `${postTitle}`;
+          const twitterText = `${postTitle} - ${postDescription}`;
           const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
             postUrl
           )}&text=${encodeURIComponent(twitterText)}`;
@@ -160,7 +172,7 @@ $(document).ready(function () {
         .getElementById("shareWhatsApp")
         ?.addEventListener("click", function (e) {
           e.preventDefault();
-          const waMessage = `${postTitle}\n${postUrl}`;
+          const waMessage = `${postTitle}\n${postDescription}\n${postUrl}`;
           const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
           const waUrl = isMobile
             ? `https://wa.me/?text=${encodeURIComponent(waMessage)}`
