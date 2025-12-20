@@ -17,13 +17,17 @@ async function handleRequest(request) {
       userAgent
     );
 
-  // Only intercept car-details.html requests from social bots
-  if (isSocialBot && url.pathname.includes("car-details.html")) {
-    const carId = url.searchParams.get("id");
-
-    if (carId) {
+  // Intercept car-details.html and blog-post.html for social bots
+  if (
+    isSocialBot &&
+    (url.pathname.includes("car-details.html") ||
+      url.pathname.includes("blog-post.html"))
+  ) {
+    let id = url.searchParams.get("id");
+    let isCar = url.pathname.includes("car-details.html");
+    let isBlog = url.pathname.includes("blog-post.html");
+    if (id) {
       // Fetch the original page from GitHub Pages directly
-      // Add /EgoCarz/ if not already in path
       let pathname = url.pathname;
       if (!pathname.includes("/EgoCarz/")) {
         pathname = "/EgoCarz" + pathname;
@@ -32,16 +36,22 @@ async function handleRequest(request) {
       const response = await fetch(githubUrl);
       let html = await response.text();
 
-      // Fetch car data
-      const carData = await getCarData(carId);
+      let data = null;
+      if (isCar) {
+        data = await getCarData(id);
+      } else if (isBlog) {
+        data = await getBlogPostData(id);
+      }
 
-      if (carData) {
-        // Remove existing OG tags first
+      if (data) {
+        // Remove existing OG/Twitter tags first
         html = html.replace(/<meta\s+property="og:[^"]*"[^>]*>/gi, "");
         html = html.replace(/<meta\s+name="twitter:[^"]*"[^>]*>/gi, "");
 
         // Inject new dynamic OG tags
-        const ogTags = generateOGTags(carData, url.href);
+        const ogTags = isCar
+          ? generateOGTags(data, url.href)
+          : generateBlogOGTags(data, url.href);
         html = html.replace("</head>", `${ogTags}\n</head>`);
       }
 
@@ -58,6 +68,49 @@ async function handleRequest(request) {
 }
 
 async function getCarData(carId) {
+  async function getBlogPostData(postId) {
+    try {
+      const response = await fetch(
+        "https://aloego.github.io/EgoCarz/blog-posts.json"
+      );
+      const posts = await response.json();
+      const post = posts.find((p) => p.id === postId);
+      return post || null;
+    } catch (error) {
+      return null;
+    }
+  }
+  function generateBlogOGTags(post, url) {
+    // Fallbacks for missing fields
+    const title = post.title || "EgoCarz Blog Post";
+    const description =
+      post.excerpt ||
+      post.content?.replace(/<[^>]+>/g, "").substring(0, 150) ||
+      "Read this blog post on EgoCarz";
+    const image = post.image
+      ? `https://aloego.github.io/EgoCarz/${post.image.replace(/^\//, "")}`
+      : "https://aloego.github.io/EgoCarz/images/lexusrx350010.jpeg";
+    return `
+      <!-- Open Graph / Facebook -->
+      <meta property="og:title" content="${title}">
+      <meta property="og:description" content="${description}">
+      <meta property="og:image" content="${image}">
+      <meta property="og:image:secure_url" content="${image}">
+      <meta property="og:image:type" content="image/jpeg">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta property="og:image:alt" content="${title}">
+      <meta property="og:url" content="${url}">
+      <meta property="og:type" content="article">
+      <meta property="og:site_name" content="EgoCarz">
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="${title}">
+      <meta name="twitter:description" content="${description}">
+      <meta name="twitter:image" content="${image}">
+      <meta name="twitter:url" content="${url}">
+    `;
+  }
   try {
     // Fetch cars-og-data.json from GitHub - automatically updates when you push changes!
     const response = await fetch(
