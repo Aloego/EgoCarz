@@ -22,3 +22,5 @@
 }
 
 js/weather.html
+cloudflare1-workers.js
+cloudflareremote-workers.js
