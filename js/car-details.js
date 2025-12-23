@@ -304,6 +304,14 @@ document.addEventListener("DOMContentLoaded", () => {
         )}`;
         window.open(linkedInUrl, "_blank", "width=600,height=600");
       });
+
+    // Instagram Share
+    document
+      .getElementById("shareInstagram")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        window.open("https://instagram.com", "_blank");
+      });
   } else {
     document.querySelector(".car-detail").innerHTML = "<p>Car not found.</p>";
   }
