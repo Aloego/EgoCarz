@@ -2152,4 +2152,52 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
   },
 
   // Add more cars ends here
+
+  // Add more cars starts here
+
+  {
+    id: "car46",
+    name: "Lexus",
+    model: "RX 350",
+    year: 2012,
+    color: "",
+    images: [
+      "images/LexusRX350.jpg",
+      "images/LexusRX350_1.jpg",
+      "images/LexusRX350_2.jpg",
+      "images/LexusRX350_3.jpg",
+      "images/LexusRX350_4.jpg",
+      "images/LexusRX350_5.jpg",
+      "images/LexusRX350_6.jpg",
+      "images/LexusRX350_7.jpg",
+    ],
+    price: "₦11,500,000",
+    mileage: "",
+    location: "Lagos",
+    shortDescription:
+      "Registered 2012 RX 350, first body, first user, engine & gear untouched, AC chilling.",
+    description: `<strong>Lexus RX 350 2012 – Registered, First Body, First User</strong>
+      <p>
+      Basic option, registered Lexus RX 350 (2012 model).<br>
+      <ul>
+        <li>First body, first user</li>
+        <li>Engine untouched 💯</li>
+        <li>Gear untouched 💯</li>
+        <li>AC chilling effectively 💯</li>
+        <li>Condition: only body needs paint</li>
+      </ul>
+      Buy and zoom!
+      </p>`,
+    condition: "Naija Used",
+    type: "SUV",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    whatsappNumber: "",
+    sold: "",
+    // VIN: 2345677668675554,
+    // CarName: Lexus RX 350 2012,
+    // OriginalPrice: 11M given at given at 10.5M
+  },
+
+  // Add more cars ends here
 ];

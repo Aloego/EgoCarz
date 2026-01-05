@@ -113,6 +113,12 @@ function generateOGTags(car, url) {
     <meta name="twitter:description" content="${car.shortDescription}">
     <meta name="twitter:image" content="${car.image}">
     <meta name="twitter:url" content="${url}">
+
+    <!-- Instagram (for parity, not used by Instagram web sharing) -->
+    <meta name="instagram:title" content="${car.name} ${car.year} - ${car.price}">
+    <meta name="instagram:description" content="${car.shortDescription}">
+    <meta name="instagram:image" content="${car.image}">
+    <meta name="instagram:url" content="${url}">
   `;
 }
 
