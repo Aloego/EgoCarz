@@ -404,5 +404,14 @@
     "shortDescription": "Neat & stylish City sedan with smooth drive & excellent fuel economy.",
     "image": "https://aloego.github.io/EgoCarz/images/HondaCity_2012_1.jpg",
     "sold": ""
+  },
+  {
+    "id": "car46",
+    "name": "Lexus",
+    "price": "₦11,500,000",
+    "year": 2012,
+    "shortDescription": "Registered 2012 RX 350, first body, first user, engine & gear untouched, AC chilling.",
+    "image": "https://aloego.github.io/EgoCarz/images/LexusRX350.jpg",
+    "sold": ""
   }
 ]
