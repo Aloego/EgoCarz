@@ -2223,10 +2223,10 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
     mileage: "",
     location: "Lagos",
     shortDescription:
-      "Registered Lexus RX300 2002, cream leather interior, chilling AC, engine and gear in perfect condition.",
+      "Registered Lexus RX300 2002, leather interior, chilling AC, engine and gear in perfect condition.",
     description: `<strong>Lexus RX 300 2002</strong>
       <p>
-       Registered, Toks-standard 2002 Lexus RX 300 with smooth cream leather and formica interior. AC chilling, engine and gear in perfect working condition. Affordable, reliable, and ready to drive anywhere!
+       Registered, Toks-standard 2002 Lexus RX 300 with smooth leather and formica interior. AC chilling, engine and gear in perfect working condition. Affordable, reliable, and ready to drive anywhere!
       </p>`,
     condition: "Naija Used",
     type: "SUV",

@@ -413,5 +413,15 @@
     "shortDescription": "Registered 2012 RX 350, first body, first user, engine & gear untouched, AC chilling.",
     "image": "https://aloego.github.io/EgoCarz/images/LexusRX350.jpg",
     "sold": "false"
+  },
+
+  {
+    "id": "car47",
+    "name": "Lexus",
+    "price": "₦5,500,000",
+    "year": 2002,
+    "shortDescription": "Registered Lexus RX300 2002, leather interior, chilling AC, engine and gear in perfect condition.",
+    "image": "https://aloego.github.io/EgoCarz/images/LEXUS_RX300_2002_1.jpg",
+    "sold": ""
   }
 ]
