@@ -2200,4 +2200,44 @@ This 2005 Toyota Highlander Limited is a fully loaded midsize SUV, offering a sm
   },
 
   // Add more cars ends here
+
+  // Add more cars starts here
+
+  {
+    id: "car47",
+    name: "Lexus",
+    model: "RX 300",
+    year: 2002,
+    color: "",
+    images: [
+      "images/LEXUS_RX300_2002_1.jpg",
+      "images/LEXUS_RX300_2002_2.jpg",
+      "images/LEXUS_RX300_2002_3.jpg",
+      "images/LEXUS_RX300_2002_4.jpg",
+      "images/LEXUS_RX300_2002_5.jpg",
+      "images/LEXUS_RX300_2002_6.jpg",
+      "images/LEXUS_RX300_2002_7.jpg",
+      "images/LEXUS_RX300_2002_8.jpg",
+    ],
+    price: "₦5,500,000",
+    mileage: "",
+    location: "Lagos",
+    shortDescription:
+      "Registered Lexus RX300 2002, cream leather interior, chilling AC, engine and gear in perfect condition.",
+    description: `<strong>Lexus RX 300 2002</strong>
+      <p>
+       Registered, Toks-standard 2002 Lexus RX 300 with smooth cream leather and formica interior. AC chilling, engine and gear in perfect working condition. Affordable, reliable, and ready to drive anywhere!
+      </p>`,
+    condition: "Naija Used",
+    type: "SUV",
+    fuelType: "Petrol",
+    transmission: "Automatic",
+    whatsappNumber: "",
+    sold: "",
+    // VIN: 2345677668675554,
+    // CarName: Lexus RX 300 2002,
+    // OriginalPrice: 4.550M
+  },
+
+  // Add more cars ends here
 ];
